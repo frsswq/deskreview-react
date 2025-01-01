@@ -1,7 +1,7 @@
-import GlobalStyles from "../components/styles/GlobalStyles.tsx";
-import Navbar from "../components/Navbar.tsx";
-import Main from "../components/Main.tsx";
-import Footer from "../components/Footer.tsx";
+import GlobalStyles from "../components/common/styles/GlobalStyles.tsx";
+import Navbar from "../components/common/Navbar.tsx";
+import Footer from "../components/common/Footer.tsx";
+import Main from "../components/home/Main.tsx";
 
 function Home() {
   return (

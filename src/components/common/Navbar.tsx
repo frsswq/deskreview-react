@@ -3,7 +3,8 @@ import {
   NavbarContainer,
   NavbarLogo,
 } from "./styles/NavbarStyled.tsx";
-import navbarLogo from "../assets/svg/logo_full_navbar.svg";
+
+import navbarLogo from "../../assets/svg/logo_full_navbar.svg";
 
 export default function Navbar() {
   return (
