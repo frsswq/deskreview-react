@@ -13,11 +13,12 @@ export const Divider = styled.hr`
 `;
 
 export const WorkItemStyled = styled.div`
-  & > p {
-    font-size: 20px;
-    font-weight: 300;
-    padding: 20px 0;
-    line-height: 0;
-    letter-spacing: -0.025em;
+  display: grid;
+  grid-template-columns: 7fr 2fr 1fr;
+  font-size: 20px;
+  padding: 8px 0;
+
+  & > p:last-child {
+    text-align: right;
   }
 `;

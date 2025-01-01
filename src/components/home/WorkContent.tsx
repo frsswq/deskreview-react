@@ -8,15 +8,35 @@ export default function WorkContent() {
   return (
     <WorkContentContainer>
       <Divider />
-      <WorkItem companyName="Astra Honda" />
+      <WorkItem
+        companyName="Astra Honda"
+        companyIndustry="Vehicle Manufacture"
+        projectYear="2023"
+      />
       <Divider />
-      <WorkItem companyName="Telkomsel" />
+      <WorkItem
+        companyName="Telkomsel"
+        companyIndustry="Telecommunication"
+        projectYear="2023"
+      />
       <Divider />
-      <WorkItem companyName="Salam Ganesha Academy" />
+      <WorkItem
+        companyName="Salam Ganesha Academy"
+        companyIndustry="Education Tech"
+        projectYear="2024"
+      />
       <Divider />
-      <WorkItem companyName="Rococo Group Indonesia" />
+      <WorkItem
+        companyName="Rococo Group Indonesia"
+        companyIndustry="Luxury Fashion Retail"
+        projectYear="2023"
+      />
       <Divider />
-      <WorkItem companyName="Hayati Karya Lestari" />
+      <WorkItem
+        companyName="Hayati Karya Lestari"
+        companyIndustry="NGO"
+        projectYear="2023"
+      />
       <Divider />
     </WorkContentContainer>
   );
@@ -24,12 +44,16 @@ export default function WorkContent() {
 
 interface WorkProps {
   companyName: string;
+  companyIndustry: string;
+  projectYear: string;
 }
 
-function WorkItem({ companyName }: WorkProps) {
+function WorkItem({ companyName, companyIndustry, projectYear }: WorkProps) {
   return (
     <WorkItemStyled>
-      <p>{companyName}</p>
+      <a>{companyName}</a>
+      <p>{companyIndustry}</p>
+      <p>{projectYear}</p>
     </WorkItemStyled>
   );
 }
