@@ -1,29 +1,35 @@
-import { WorkContentStyled, Divider } from "./styles/WorkContentStyled.tsx";
+import {
+  WorkContentContainer,
+  WorkItemStyled,
+  Divider,
+} from "./styles/WorkContentStyled.tsx";
 
 export default function WorkContent() {
   return (
-    <WorkContentStyled>
+    <WorkContentContainer>
       <Divider />
-      <div>
-        <p>Astra Honda</p>
-      </div>
+      <WorkItem companyName="Astra Honda" />
       <Divider />
-      <div>
-        <p>Telkomsel</p>
-      </div>
+      <WorkItem companyName="Telkomsel" />
       <Divider />
-      <div>
-        <p>Salam Ganesha Academy</p>
-      </div>
+      <WorkItem companyName="Salam Ganesha Academy" />
       <Divider />
-      <div>
-        <p>Rococo Group Indonesia</p>
-      </div>
+      <WorkItem companyName="Rococo Group Indonesia" />
       <Divider />
-      <div>
-        <p>Hayati Karya Lestari</p>
-      </div>
+      <WorkItem companyName="Hayati Karya Lestari" />
       <Divider />
-    </WorkContentStyled>
+    </WorkContentContainer>
+  );
+}
+
+interface WorkProps {
+  companyName: string;
+}
+
+function WorkItem({ companyName }: WorkProps) {
+  return (
+    <WorkItemStyled>
+      <p>{companyName}</p>
+    </WorkItemStyled>
   );
 }
