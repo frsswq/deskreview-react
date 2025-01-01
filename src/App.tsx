@@ -1,17 +1,12 @@
-import GlobalStyles from "./components/styles/GlobalStyles.tsx";
-import Navbar from "./components/Navbar.tsx";
-import Main from "./components/Main.tsx";
-import Footer from "./components/Footer.tsx";
+import { Routes, Route } from "react-router";
+import Home from "./pages/Home.tsx";
+import Blog from "./pages/Blog.tsx";
 
-function App() {
+export default function App() {
   return (
-    <>
-      <GlobalStyles />
-      <Navbar />
-      <Main />
-      <Footer />
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/blog" element={<Blog />} />
+    </Routes>
   );
 }
-
-export default App;
