@@ -18,12 +18,12 @@ export const WorkItemStyled = styled.div`
   padding: 4px 0;
   align-items: center;
 
-  p:first-child {
+  p:first-of-type {
     font-size: 24px;
     font-weight: 400;
   }
 
-  p:last-child {
+  p:last-of-type {
     text-align: right;
   }
 
@@ -34,11 +34,11 @@ export const WorkItemStyled = styled.div`
       font-size: 16px;
     }
 
-    p:first-child {
+    p:first-of-type {
       font-size: 20px;
     }
 
-    p:nth-child(2) {
+    p:nth-of-type(2) {
       display: none;
     }
   }
@@ -51,7 +51,7 @@ export const WorkDetailStyled = styled.div`
   letter-spacing: -0.025rem;
   padding: 4px 0;
 
-  & > p:last-child {
+  & > p:last-of-type {
     text-align: right;
   }
 
@@ -62,7 +62,7 @@ export const WorkDetailStyled = styled.div`
       font-size: 16px;
     }
 
-    & > p:nth-child(2) {
+    & > p:nth-of-type(2) {
       display: none;
     }
   }

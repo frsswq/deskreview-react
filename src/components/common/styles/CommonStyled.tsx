@@ -14,7 +14,7 @@ export const HomeTitle = styled.h1`
   letter-spacing: -0.05em;
   max-width: 650px;
   padding: 0;
-  margin: 15px auto;
+  margin: 0 auto 15px;
 
   @media (width <= 768px) {
     font-size: 50px;
