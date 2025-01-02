@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const NavbarStyled = styled.nav`
-  background-color: #ffffff;
+  background-color: rgb(var(--desk-white));
   padding: 16px 16px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid rgb(var(--desk-gray-300));
   position: sticky;
   top: 0;
   width: 100%;

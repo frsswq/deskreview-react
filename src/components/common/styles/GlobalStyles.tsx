@@ -6,6 +6,17 @@ const GlobalStyles = createGlobalStyle`
     @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 
     /* global styles */
+    :root {
+        --desk-gray-300: 234, 236, 236;
+        --desk-gray-500: 187, 189, 191;
+        --desk-gray-700: 52, 53, 53;
+        --desk-blue: 46, 89, 169;
+        --desk-brown: 87, 74, 67;
+        --desk-orange: 227, 108, 42;
+        --desk-white: 255, 255, 255;
+        --desk-black: 5, 5, 5;
+    }
+
     * {
         box-sizing: border-box;
         margin: 0;

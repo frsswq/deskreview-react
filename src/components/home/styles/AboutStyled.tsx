@@ -38,7 +38,7 @@ export const AboutManifesto = styled.div`
   blockquote {
     padding: 20px 20px;
     margin-top: 40px;
-    background-color: #e5e5e525;
+    background-color: rgba(var(--desk-gray-300), 0.25);
 
     & > p {
       font-family: "EB Garamond", sans-serif;
