@@ -1,4 +1,4 @@
-import { Container } from "../common/styles/CommonStyled.tsx";
+import { Container, HomeTitle } from "../common/styles/CommonStyled.tsx";
 import { AboutStyled, AboutManifesto } from "./styles/AboutStyled.tsx";
 
 export default function About() {
@@ -6,7 +6,7 @@ export default function About() {
     <AboutStyled>
       <Container>
         <AboutManifesto>
-          <h1>Manifesto</h1>
+          <HomeTitle>Manifesto</HomeTitle>
           <p>
             To Seek for The Sun–A commitment to constantly exploring innovative
             and emerging sciences in marketing and branding. We focus on
@@ -39,8 +39,9 @@ export default function About() {
             this distinction.
           </p>
           <blockquote>
-            "A Brand Is Not What You Say It Is; It's What They Say It Is" <br />{" "}
-            - Marty Neumeier
+            <p>"A Brand Is Not What You Say It Is;</p>
+            <p>It's What They Say It Is"</p>
+            <p>- Marty Neumeier</p>
           </blockquote>
         </AboutManifesto>
       </Container>

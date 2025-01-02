@@ -3,31 +3,47 @@ import styled from "styled-components";
 export const AboutStyled = styled.section``;
 
 export const AboutManifesto = styled.div`
-  width: fit-content;
+  max-width: 600px;
   margin: 0 auto;
-
-  h1 {
-    font-family: "EB Garamond", "sans-serif";
-    font-weight: 400;
-    font-style: italic;
-    font-size: 80px;
-    letter-spacing: -0.075em;
-  }
 
   p {
     font-size: 20px;
     font-weight: 300;
-    letter-spacing: -0.025em;
-    line-height: 1.6;
     word-wrap: break-word;
+    letter-spacing: 0em;
     overflow-wrap: break-word;
-    max-width: 60ch;
     margin-bottom: 15px;
   }
 
+  @media (width <= 768px) {
+    p {
+      font-size: 16px;
+    }
+  }
+
   blockquote {
-    font-size: 20px;
-    letter-spacing: -0.025em;
-    max-width: 60ch;
+    padding: 20px 20px;
+    margin: 40px 0;
+    background-color: #e5e5e525;
+
+    & > p {
+      font-family: "EB Garamond", "sans-serif";
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.2;
+      margin-bottom: 0;
+      letter-spacing: -0.025em;
+      font-size: 25px;
+
+      &:last-child {
+        text-align: right;
+      }
+    }
+
+    @media (width <= 768px) {
+      p {
+        font-size: 20px;
+      }
+    }
   }
 `;

@@ -2,16 +2,15 @@ import styled from "styled-components";
 
 export const WorkStyled = styled.section``;
 
-export const Portofolio = styled.div``;
-
-export const Divider = styled.hr`
-  border-top: 1px solid #e5e5e5;
+export const WorkItemContainer = styled.div`
+  max-width: 1000px;
+  margin: 0 auto;
 `;
 
 export const WorkItemStyled = styled.div`
   display: grid;
   grid-template-columns: 6.5fr 2.5fr 1fr;
-  font-size: 20px;
+  font-size: 24px;
   padding: 4px 0;
 
   & > p:last-child {
