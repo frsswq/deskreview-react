@@ -14,14 +14,13 @@ export const AboutManifesto = styled.div`
     margin-bottom: 15px;
 
     & > span {
-      font-family: "EB Garamond", sans-serif;
+      font-family: "EB Garamond", serif;
       font-style: oblique;
       font-size: 22px;
     }
 
     &:first-of-type > span:first-of-type {
       font-size: 24px;
-      line-height: inherit;
     }
   }
 
@@ -32,6 +31,10 @@ export const AboutManifesto = styled.div`
       & > span {
         font-size: 18px;
       }
+
+      &:first-of-type > span:first-of-type {
+        font-size: 20px;
+      }
     }
   }
 
@@ -41,7 +44,7 @@ export const AboutManifesto = styled.div`
     background-color: rgba(var(--desk-gray-300), 0.25);
 
     & > p {
-      font-family: "EB Garamond", sans-serif;
+      font-family: "EB Garamond", serif;
       font-weight: 300;
       font-style: italic;
       line-height: 1.2;

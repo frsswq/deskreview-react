@@ -66,6 +66,7 @@ function WorkItem({ companyName, companyIndustry, projectYear }: WorkProps) {
       <p>{companyName}</p>
       <p>{companyIndustry}</p>
       <p>{projectYear}</p>
+      <p>&gt;</p>
     </WorkItemStyled>
   );
 }
@@ -76,6 +77,7 @@ function WorkDetail() {
       <p>Company</p>
       <p>Industry</p>
       <p>Year</p>
+      <p></p>
     </WorkDetailStyled>
   );
 }

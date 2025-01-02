@@ -7,7 +7,7 @@ export const Container = styled.div`
 `;
 
 export const HomeTitle = styled.h1`
-  font-family: "EB Garamond", sans-serif;
+  font-family: "EB Garamond", serif;
   font-weight: 400;
   font-style: italic;
   font-size: 80px;
@@ -22,5 +22,5 @@ export const HomeTitle = styled.h1`
 `;
 
 export const Divider = styled.hr`
-  border: 1px solid #e5e5e5;
+  border: 1px solid rgb(var(--desk-gray-300));
 `;
