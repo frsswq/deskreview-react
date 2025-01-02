@@ -1,12 +1,14 @@
 import {
   WorkContentContainer,
   WorkItemStyled,
+  WorkDetailStyled,
   Divider,
 } from "./styles/WorkContentStyled.tsx";
 
 export default function WorkContent() {
   return (
     <WorkContentContainer>
+      <WorkDetail />
       <Divider />
       <WorkItem
         companyName="Astra Honda"
@@ -55,5 +57,15 @@ function WorkItem({ companyName, companyIndustry, projectYear }: WorkProps) {
       <p>{companyIndustry}</p>
       <p>{projectYear}</p>
     </WorkItemStyled>
+  );
+}
+
+function WorkDetail() {
+  return (
+    <WorkDetailStyled>
+      <p>Company</p>
+      <p>Industry</p>
+      <p>Year</p>
+    </WorkDetailStyled>
   );
 }
