@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   max-width: 1440px;
   width: 100%;
-  margin: 20px auto;
+  margin: 0px auto 40px;
 `;
 
 export const HomeTitle = styled.h1`
@@ -11,7 +11,7 @@ export const HomeTitle = styled.h1`
   font-weight: 400;
   font-style: italic;
   font-size: 80px;
-  letter-spacing: -0.075em;
+  letter-spacing: -0.05em;
   max-width: 650px;
   padding: 0;
   margin: 15px auto;

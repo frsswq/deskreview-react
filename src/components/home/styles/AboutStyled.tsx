@@ -22,7 +22,7 @@ export const AboutManifesto = styled.div`
 
   blockquote {
     padding: 20px 20px;
-    margin: 40px 0;
+    margin-top: 40px;
     background-color: #e5e5e525;
 
     & > p {

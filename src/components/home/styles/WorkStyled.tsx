@@ -34,6 +34,10 @@ export const WorkItemStyled = styled.div`
       font-size: 16px;
     }
 
+    p:first-child {
+      font-size: 20px;
+    }
+
     p:nth-child(2) {
       display: none;
     }
@@ -55,7 +59,7 @@ export const WorkDetailStyled = styled.div`
     grid-template-columns: 8fr 2fr;
 
     & > p {
-      font-size: 12px;
+      font-size: 16px;
     }
 
     & > p:nth-child(2) {
