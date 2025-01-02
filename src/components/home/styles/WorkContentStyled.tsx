@@ -38,7 +38,7 @@ export const WorkItemStyled = styled.div`
 export const WorkDetailStyled = styled.div`
   display: grid;
   grid-template-columns: 6.5fr 2.5fr 1fr;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 300;
   letter-spacing: -0.025rem;
   padding: 4px 0;
@@ -51,7 +51,7 @@ export const WorkDetailStyled = styled.div`
     grid-template-columns: 8fr 2fr;
 
     & > p {
-      font-size: 11px;
+      font-size: 12px;
     }
 
     & > p:nth-child(2) {
