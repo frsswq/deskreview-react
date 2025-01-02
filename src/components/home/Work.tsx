@@ -18,35 +18,15 @@ export default function Work() {
         <WorkItemContainer>
           <WorkDetail />
           <Divider />
-          <WorkItem
-            companyName="Astra Honda"
-            companyIndustry="Vehicle Manufacture"
-            projectYear="2023"
-          />
+          <WorkItem companyName="Astra Honda" />
           <Divider />
-          <WorkItem
-            companyName="Telkomsel"
-            companyIndustry="Telecommunication"
-            projectYear="2023"
-          />
+          <WorkItem companyName="Telkomsel" />
           <Divider />
-          <WorkItem
-            companyName="Salam Ganesha Academy"
-            companyIndustry="Education Tech"
-            projectYear="2024"
-          />
+          <WorkItem companyName="Salam Ganesha Academy" />
           <Divider />
-          <WorkItem
-            companyName="Rococo Group Indonesia"
-            companyIndustry="Luxury Fashion Retail"
-            projectYear="2023"
-          />
+          <WorkItem companyName="Rococo Group Indonesia" />
           <Divider />
-          <WorkItem
-            companyName="Hayati Karya Lestari"
-            companyIndustry="NGO"
-            projectYear="2023"
-          />
+          <WorkItem companyName="Hayati Karya Lestari" />
           <Divider />
         </WorkItemContainer>
       </Container>
@@ -56,16 +36,12 @@ export default function Work() {
 
 interface WorkProps {
   companyName: string;
-  companyIndustry: string;
-  projectYear: string;
 }
 
-function WorkItem({ companyName, companyIndustry, projectYear }: WorkProps) {
+function WorkItem({ companyName }: WorkProps) {
   return (
     <WorkItemStyled>
       <p>{companyName}</p>
-      <p>{companyIndustry}</p>
-      <p>{projectYear}</p>
       <p>&gt;</p>
     </WorkItemStyled>
   );
@@ -75,8 +51,6 @@ function WorkDetail() {
   return (
     <WorkDetailStyled>
       <p>Company</p>
-      <p>Industry</p>
-      <p>Year</p>
       <p></p>
     </WorkDetailStyled>
   );

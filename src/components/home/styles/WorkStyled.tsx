@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const gridTemplate = "5fr 2fr 1fr 0.1fr";
+const gridTemplate = "8fr 2fr";
 const gridTemplateMobile = "8fr 2fr";
 
 export const WorkStyled = styled.section`
@@ -10,7 +10,7 @@ export const WorkStyled = styled.section`
 `;
 
 export const WorkItemContainer = styled.div`
-  max-width: 1000px;
+  max-width: 650px;
   margin: 0 auto;
 `;
 
@@ -22,6 +22,7 @@ export const WorkItemStyled = styled.button`
   font-weight: 300;
   letter-spacing: -0.05em;
   padding: 4px 0;
+  padding-right: 8px;
   align-items: center;
   text-align: left;
   width: 100%;
@@ -38,7 +39,6 @@ export const WorkItemStyled = styled.button`
     width: fit-content;
     transform: rotate(90deg);
     margin-left: auto;
-    margin-right: 8px;
   }
 
   @media (width <= 768px) {
@@ -51,11 +51,6 @@ export const WorkItemStyled = styled.button`
     p:first-of-type {
       font-size: 20px;
     }
-
-    & > p:nth-of-type(2),
-    & > p:nth-of-type(3) {
-      display: none;
-    }
   }
 `;
 
@@ -65,8 +60,9 @@ export const WorkDetailStyled = styled.div`
   font-size: 16px;
   letter-spacing: -0.025rem;
   padding: 4px 0;
+  padding-right: 8px;
 
-  & > p:last-of-type {
+  p:last-of-type {
     text-align: right;
   }
 
@@ -75,11 +71,6 @@ export const WorkDetailStyled = styled.div`
 
     & > p {
       font-size: 16px;
-    }
-
-    & > p:nth-of-type(2),
-    & > p:nth-of-type(3) {
-      display: none;
     }
   }
 `;
