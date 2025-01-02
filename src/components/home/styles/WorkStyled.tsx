@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const WorkStyled = styled.section``;
+export const WorkStyled = styled.section`
+  & > div > h1 {
+    text-indent: -0.15em;
+  }
+`;
 
 export const WorkItemContainer = styled.div`
   max-width: 1000px;
@@ -10,21 +14,27 @@ export const WorkItemContainer = styled.div`
 export const WorkItemStyled = styled.div`
   display: grid;
   grid-template-columns: 6.5fr 2.5fr 1fr;
-  font-size: 24px;
+  font-size: 20px;
   padding: 4px 0;
+  align-items: center;
 
-  & > p:last-child {
+  p:first-child {
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  p:last-child {
     text-align: right;
   }
 
   @media (width <= 768px) {
     grid-template-columns: 8fr 2fr;
 
-    & > p {
+    p {
       font-size: 16px;
     }
 
-    & > p:nth-child(2) {
+    p:nth-child(2) {
       display: none;
     }
   }
@@ -34,7 +44,6 @@ export const WorkDetailStyled = styled.div`
   display: grid;
   grid-template-columns: 6.5fr 2.5fr 1fr;
   font-size: 16px;
-  font-weight: 300;
   letter-spacing: -0.025rem;
   padding: 4px 0;
 

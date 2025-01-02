@@ -3,12 +3,11 @@ import styled from "styled-components";
 export const AboutStyled = styled.section``;
 
 export const AboutManifesto = styled.div`
-  max-width: 600px;
+  max-width: 650px;
   margin: 0 auto;
 
   p {
     font-size: 20px;
-    font-weight: 300;
     word-wrap: break-word;
     letter-spacing: 0em;
     overflow-wrap: break-word;

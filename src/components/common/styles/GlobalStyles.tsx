@@ -14,9 +14,11 @@ const GlobalStyles = createGlobalStyle`
 
     body {
         font-family: 'DM Sans', sans-serif;
+        font-weight: 300;
         background-color: #ffffff;
         line-height: 1.333;
         letter-spacing: -0.05em;
+        height: 300vh;
     }
 
     main {
