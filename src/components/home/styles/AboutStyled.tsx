@@ -39,7 +39,7 @@ export const AboutManifesto = styled.div`
   }
 
   blockquote {
-    margin: 0 auto;
+    margin-top: 20px;
 
     p {
       font-family: "EB Garamond", serif;
@@ -51,6 +51,7 @@ export const AboutManifesto = styled.div`
       font-size: var(--text-3xl);
 
       &:last-of-type {
+        font-style: italic;
         text-align: right;
       }
     }
