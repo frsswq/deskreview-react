@@ -14,11 +14,23 @@ export const Divider = styled.hr`
 
 export const WorkItemStyled = styled.div`
   display: grid;
-  grid-template-columns: 7fr 2fr 1fr;
+  grid-template-columns: 6.5fr 2.5fr 1fr;
   font-size: 20px;
-  padding: 8px 0;
+  padding: 4px 0;
 
   & > p:last-child {
     text-align: right;
+  }
+
+  @media (width <= 768px) {
+    grid-template-columns: 8fr 2fr;
+
+    & > p {
+      font-size: 16px;
+    }
+
+    & > p:nth-child(2) {
+      display: none;
+    }
   }
 `;

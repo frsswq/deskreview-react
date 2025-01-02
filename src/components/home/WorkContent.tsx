@@ -51,7 +51,7 @@ interface WorkProps {
 function WorkItem({ companyName, companyIndustry, projectYear }: WorkProps) {
   return (
     <WorkItemStyled>
-      <a>{companyName}</a>
+      <p>{companyName}</p>
       <p>{companyIndustry}</p>
       <p>{projectYear}</p>
     </WorkItemStyled>
