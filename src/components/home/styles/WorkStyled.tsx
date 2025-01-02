@@ -18,7 +18,7 @@ export const WorkItemStyled = styled.button`
   display: grid;
   grid-template-columns: ${gridTemplate};
   font-family: "DM Sans", sans-serif;
-  font-size: 20px;
+  font-size: var(--text-xl);
   font-weight: 300;
   letter-spacing: -0.05em;
   padding: 4px 0;
@@ -30,12 +30,12 @@ export const WorkItemStyled = styled.button`
   border: none;
 
   p:first-of-type {
-    font-size: 24px;
+    font-size: var(--text-3xl);
     font-weight: 400;
     font-family: "DM Sans", sans-serif;
   }
 
-  p:last-of-type {
+  span {
     width: fit-content;
     transform: rotate(90deg);
     margin-left: auto;
@@ -44,33 +44,20 @@ export const WorkItemStyled = styled.button`
   @media (width <= 768px) {
     grid-template-columns: ${gridTemplateMobile};
 
-    p {
-      font-size: 16px;
-    }
-
     p:first-of-type {
-      font-size: 20px;
+      font-size: var(--text-xl);
     }
   }
 `;
 
 export const WorkDetailStyled = styled.div`
-  display: grid;
-  grid-template-columns: ${gridTemplate};
-  font-size: 16px;
+  font-size: var(--text-base);
   letter-spacing: -0.025rem;
   padding: 4px 0;
-  padding-right: 8px;
-
-  p:last-of-type {
-    text-align: right;
-  }
 
   @media (width <= 768px) {
-    grid-template-columns: ${gridTemplateMobile};
-
     & > p {
-      font-size: 16px;
+      font-size: var(--text-base);
     }
   }
 `;

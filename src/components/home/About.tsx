@@ -39,8 +39,10 @@ export default function About() {
             —can achieve this distinction.
           </p>
           <blockquote>
-            <p>"A Brand Is Not What You Say It Is;</p>
-            <p>It's What They Say It Is"</p>
+            <p>
+              A brand is not what you say it is; <br />
+              It's what they say it is
+            </p>
             <p>- Marty Neumeier</p>
           </blockquote>
         </AboutManifesto>

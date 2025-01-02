@@ -42,7 +42,7 @@ function WorkItem({ companyName }: WorkProps) {
   return (
     <WorkItemStyled>
       <p>{companyName}</p>
-      <p>&gt;</p>
+      <span>&gt;</span>
     </WorkItemStyled>
   );
 }

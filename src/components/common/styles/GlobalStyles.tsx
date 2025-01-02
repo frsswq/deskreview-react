@@ -5,7 +5,9 @@ const GlobalStyles = createGlobalStyle`
     @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 
-    /* global styles */
+    /* global variables */
+
+    /* colours */
     :root {
         --desk-gray-300: 234, 236, 236;
         --desk-gray-500: 187, 189, 191;
@@ -16,7 +18,19 @@ const GlobalStyles = createGlobalStyle`
         --desk-white: 255, 255, 255;
         --desk-black: 5, 5, 5;
     }
-
+    
+    /* font sizes */
+    :root {
+        --text-xs: 0.75rem;
+        --text-sm: 0.875rem;
+        --text-base: 1rem;
+        --text-lg: 1.125rem;
+        --text-xl: 1.25rem;
+        --text-2xl: 1.375rem;
+        --text-3xl: 1.5rem;
+    }
+    
+    /* global styles */
     * {
         box-sizing: border-box;
         margin: 0;

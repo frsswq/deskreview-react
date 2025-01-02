@@ -7,7 +7,7 @@ export const AboutManifesto = styled.div`
   margin: 0 auto;
 
   p {
-    font-size: 20px;
+    font-size: var(--text-xl);
     word-wrap: break-word;
     letter-spacing: -0.025em;
     overflow-wrap: break-word;
@@ -16,41 +16,39 @@ export const AboutManifesto = styled.div`
     & > span {
       font-family: "EB Garamond", serif;
       font-style: oblique;
-      font-size: 22px;
+      font-size: var(--text-2xl);
     }
 
     &:first-of-type > span:first-of-type {
-      font-size: 24px;
+      font-size: var(--text-3xl);
     }
   }
 
   @media (width <= 768px) {
     p {
-      font-size: 16px;
+      font-size: var(--text-base);
 
       & > span {
-        font-size: 18px;
+        font-size: var(--text-lg);
       }
 
       &:first-of-type > span:first-of-type {
-        font-size: 20px;
+        font-size: var(--text-xl);
       }
     }
   }
 
   blockquote {
-    padding: 20px 20px;
-    margin-top: 40px;
-    background-color: rgba(var(--desk-gray-300), 0.25);
+    margin: 0 auto;
 
-    & > p {
+    p {
       font-family: "EB Garamond", serif;
       font-weight: 300;
-      font-style: italic;
       line-height: 1.2;
+      text-align: left;
       margin-bottom: 0;
       letter-spacing: -0.025em;
-      font-size: 25px;
+      font-size: var(--text-3xl);
 
       &:last-of-type {
         text-align: right;
@@ -59,7 +57,7 @@ export const AboutManifesto = styled.div`
 
     @media (width <= 768px) {
       p {
-        font-size: 20px;
+        font-size: var(--text-xl);
       }
     }
   }
