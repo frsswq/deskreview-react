@@ -13,24 +13,28 @@ export const WorkItemDetailStyled = styled.div<WorkItemDetailProps>`
   grid-template-columns: 1fr 2fr;
   font-size: var(--text-xl);
   font-weight: 300;
+  letter-spacing: -0.025em;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.87, 0, 0.13, 1);
   transition-duration: 300ms;
 
-  & > * {
+  p:first-of-type,
+  ul:first-of-type {
+    margin-top: 8px;
+  }
+
+  p:last-of-type {
+    max-width: 26ch;
+    overflow-wrap: break-word;
     margin-bottom: 16px;
+  }
 
-    &:first-of-type {
-      margin-top: 16px;
-    }
-
-    &:last-of-type {
-      margin-bottom: 24px;
-    }
+  & > * {
+    margin-bottom: 8px;
   }
 
   & > ul > li {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 
     &:last-of-type {
       margin-bottom: 0px;
@@ -44,24 +48,8 @@ export const WorkItemDetailStyled = styled.div<WorkItemDetailProps>`
   @media (width <= 768px) {
     font-size: var(--text-base);
 
-    & > * {
-      margin-bottom: 8px;
-
-      &:first-of-type {
-        margin-top: 8px;
-      }
-
-      &:last-of-type {
-        margin-bottom: 16px;
-      }
-    }
-
-    & > ul > li {
-      margin-bottom: 8px;
-
-      &:last-of-type {
-        margin-bottom: 0px;
-      }
+    p:last-of-type {
+      max-width: 18ch;
     }
   }
 `;

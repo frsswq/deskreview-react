@@ -8,7 +8,6 @@ export const AboutManifesto = styled.div`
 
   p {
     font-size: var(--text-xl);
-    word-wrap: break-word;
     letter-spacing: -0.025em;
     overflow-wrap: break-word;
     margin-bottom: 15px;
