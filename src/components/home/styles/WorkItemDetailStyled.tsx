@@ -6,7 +6,7 @@ interface WorkItemDetailProps {
 
 export const WorkItemDetailStyled = styled.div<WorkItemDetailProps>`
   max-height: ${(props) =>
-    props.isOpen ? "100vh" : "0"}; /* Adjust max-height based on content */
+    props.isOpen ? "1000px" : "0"}; /* Adjust max-height based on content */
   visibility: ${(props) => (props.isOpen ? "visible" : "hidden")};
   display: grid;
   overflow: hidden;
@@ -39,5 +39,29 @@ export const WorkItemDetailStyled = styled.div<WorkItemDetailProps>`
 
   li {
     list-style-type: none;
+  }
+
+  @media (width <= 768px) {
+    font-size: var(--text-base);
+
+    & > * {
+      margin-bottom: 8px;
+
+      &:first-of-type {
+        margin-top: 8px;
+      }
+
+      &:last-of-type {
+        margin-bottom: 16px;
+      }
+    }
+
+    & > ul > li {
+      margin-bottom: 8px;
+
+      &:last-of-type {
+        margin-bottom: 0px;
+      }
+    }
   }
 `;

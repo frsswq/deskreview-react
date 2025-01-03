@@ -22,6 +22,14 @@ export default function Work() {
 
   const workItems = [
     {
+      companyName: "Astra Honda",
+      servicesItems: ["Content Research & Analytic", "Digital Trend Analytic"],
+      year: "2023",
+      industry: "Vehicle Manufacture",
+      detail:
+        "As their effort to gain trust with local wisdom and the spirit of #OneHeart, Honda aims to reach more trust and connection withing Indonesia market.",
+    },
+    {
       companyName: "Telkomsel",
       servicesItems: [
         "Campaign Strategy & Development",
