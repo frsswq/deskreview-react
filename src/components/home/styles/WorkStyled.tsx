@@ -15,7 +15,7 @@ export const WorkItemContainer = styled.div`
 `;
 
 interface WorkItemProps {
-  isClicked: boolean;
+  isOpen: boolean;
 }
 
 export const WorkItemStyled = styled.button<WorkItemProps>`
@@ -42,8 +42,10 @@ export const WorkItemStyled = styled.button<WorkItemProps>`
 
   svg {
     margin-left: auto;
-    transform: ${(props) =>
-      props.isClicked ? "rotate(180deg)" : "rotate(0deg)"};
+    transform: ${(props) => (props.isOpen ? "rotate(180deg)" : "rotate(0deg)")};
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.87, 0, 0.13, 1);
+    transition-duration: 300ms;
   }
 
   @media (width <= 768px) {
