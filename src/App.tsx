@@ -10,7 +10,7 @@ export default function App() {
       <GlobalStyles />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/blog" element={<Blog />} />
+        <Route path="/study" element={<Blog />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
