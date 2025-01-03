@@ -41,10 +41,4 @@ export const WorkItemDetailStyled = styled.div<WorkItemDetailProps>`
   li {
     list-style-type: none;
   }
-
-  @media (width <= 768px) {
-    p:last-of-type {
-      max-width: 26ch;
-    }
-  }
 `;

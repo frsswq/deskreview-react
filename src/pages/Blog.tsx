@@ -1,7 +1,7 @@
 import Navbar from "../components/common/Navbar.tsx";
 import Footer from "../components/common/Footer.tsx";
 
-function Home() {
+export default function Home() {
   return (
     <>
       <Navbar />
@@ -9,5 +9,3 @@ function Home() {
     </>
   );
 }
-
-export default Home;

@@ -39,7 +39,6 @@ const GlobalStyles = createGlobalStyle`
 
     body {
         background-color: #ffffff;
-        height: 500vh;
     }
 
     p, li {
