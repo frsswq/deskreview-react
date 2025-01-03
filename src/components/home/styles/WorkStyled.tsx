@@ -22,7 +22,7 @@ export const WorkItemStyled = styled.button`
   font-weight: 300;
   letter-spacing: -0.05em;
   padding: 4px 0;
-  padding-right: 8px;
+  padding-right: 9px;
   align-items: center;
   text-align: left;
   width: 100%;
@@ -35,9 +35,7 @@ export const WorkItemStyled = styled.button`
     font-family: "DM Sans", sans-serif;
   }
 
-  span {
-    width: fit-content;
-    transform: rotate(90deg);
+  svg {
     margin-left: auto;
   }
 

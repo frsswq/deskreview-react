@@ -9,6 +9,8 @@ import {
   WorkDetailStyled,
   WorkItemContainer,
 } from "./styles/WorkStyled.tsx";
+import { WorkItemDetailStyled } from "./styles/WorkItemDetailStyled.tsx";
+import { CaretDownIcon } from "@radix-ui/react-icons";
 
 export default function Work() {
   return (
@@ -18,7 +20,15 @@ export default function Work() {
         <WorkItemContainer>
           <WorkDetail />
           <Divider />
-          <WorkItem companyName="Astra Honda" />
+          <WorkItem
+            companyName="Astra Honda"
+            servicesItems={[
+              "Content Research & Analytic",
+              "Digital Trend Analytic",
+            ]}
+            year="2023"
+            industry="Vehicle Manufacture"
+          />
           <Divider />
           <WorkItem companyName="Telkomsel" />
           <Divider />
@@ -34,24 +44,46 @@ export default function Work() {
   );
 }
 
-interface WorkProps {
-  companyName: string;
-}
-
-function WorkItem({ companyName }: WorkProps) {
-  return (
-    <WorkItemStyled>
-      <p>{companyName}</p>
-      <span>&gt;</span>
-    </WorkItemStyled>
-  );
-}
-
 function WorkDetail() {
   return (
     <WorkDetailStyled>
       <p>Company</p>
       <p></p>
     </WorkDetailStyled>
+  );
+}
+
+interface WorkProps {
+  companyName: string;
+  servicesItems?: string[];
+  year?: string;
+  industry?: string;
+}
+
+function WorkItem({
+  companyName,
+  servicesItems = [],
+  year,
+  industry,
+}: WorkProps) {
+  return (
+    <>
+      <WorkItemStyled>
+        <p>{companyName}</p>
+        <CaretDownIcon />
+      </WorkItemStyled>
+      <WorkItemDetailStyled>
+        <p>Services</p>
+        <ul>
+          {servicesItems.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+        <p>Year</p>
+        <p>{year}</p>
+        <p>Industry</p>
+        <p>{industry}</p>
+      </WorkItemDetailStyled>
+    </>
   );
 }
