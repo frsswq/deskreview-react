@@ -5,27 +5,24 @@ interface WorkItemDetailProps {
 }
 
 export const WorkItemDetailStyled = styled.div<WorkItemDetailProps>`
-  max-height: ${(props) =>
-    props.isOpen ? "1000px" : "0"}; /* Adjust max-height based on content */
+  max-height: ${(props) => (props.isOpen ? "1000px" : "0")};
   visibility: ${(props) => (props.isOpen ? "visible" : "hidden")};
   display: grid;
   overflow: hidden;
   grid-template-columns: 1fr 2fr;
-  font-size: var(--text-xl);
   font-weight: 300;
-  letter-spacing: -0.025em;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.87, 0, 0.13, 1);
   transition-duration: 300ms;
 
   p:first-of-type,
-  ul:first-of-type {
+  li:first-of-type {
     margin-top: 8px;
   }
 
   p:last-of-type {
-    max-width: 26ch;
     overflow-wrap: break-word;
+    max-width: 26ch;
     margin-bottom: 16px;
   }
 
@@ -46,10 +43,8 @@ export const WorkItemDetailStyled = styled.div<WorkItemDetailProps>`
   }
 
   @media (width <= 768px) {
-    font-size: var(--text-base);
-
     p:last-of-type {
-      max-width: 18ch;
+      max-width: 26ch;
     }
   }
 `;

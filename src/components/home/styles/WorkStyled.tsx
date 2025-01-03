@@ -1,8 +1,5 @@
 import styled from "styled-components";
 
-const gridTemplate = "8fr 2fr";
-const gridTemplateMobile = "8fr 2fr";
-
 export const WorkStyled = styled.section`
   & > div > h1 {
     text-indent: -0.15em;
@@ -21,23 +18,20 @@ interface WorkItemProps {
 export const WorkItemStyled = styled.button<WorkItemProps>`
   display: grid;
   cursor: pointer;
-  grid-template-columns: ${gridTemplate};
-  font-family: "DM Sans", sans-serif;
-  font-size: var(--text-xl);
-  font-weight: 300;
-  letter-spacing: -0.05em;
+  grid-template-columns: 8fr 2fr;
   padding: 4px 0;
-  padding-right: 9px;
+  padding-right: 8px;
   align-items: center;
   text-align: left;
   width: 100%;
   background-color: transparent;
   border: none;
 
-  p:first-of-type {
+  p {
     font-size: var(--text-3xl);
     font-weight: 400;
     font-family: "DM Sans", sans-serif;
+    letter-spacing: -0.025em;
   }
 
   svg {
@@ -49,9 +43,9 @@ export const WorkItemStyled = styled.button<WorkItemProps>`
   }
 
   @media (width <= 768px) {
-    grid-template-columns: ${gridTemplateMobile};
+    grid-template-columns: 8fr 2fr;
 
-    p:first-of-type {
+    p {
       font-size: var(--text-xl);
     }
   }
@@ -59,12 +53,9 @@ export const WorkItemStyled = styled.button<WorkItemProps>`
 
 export const WorkDetailStyled = styled.div`
   font-size: var(--text-base);
-  letter-spacing: -0.025rem;
   padding: 4px 0;
 
   @media (width <= 768px) {
-    & > p {
-      font-size: var(--text-base);
-    }
+    font-size: var(--text-sm);
   }
 `;

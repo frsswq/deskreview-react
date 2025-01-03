@@ -107,7 +107,6 @@ function WorkDetail() {
   return (
     <WorkDetailStyled>
       <p>Company</p>
-      <p></p>
     </WorkDetailStyled>
   );
 }

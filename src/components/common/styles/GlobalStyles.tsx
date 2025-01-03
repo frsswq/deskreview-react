@@ -38,12 +38,20 @@ const GlobalStyles = createGlobalStyle`
     }
 
     body {
+        background-color: #ffffff;
+        height: 500vh;
+    }
+
+    p, li {
         font-family: 'DM Sans', sans-serif;
         font-weight: 300;
-        background-color: #ffffff;
+        font-size: var(--text-xl);
         line-height: 1.333;
-        letter-spacing: -0.05em;
-        height: 300vh;
+        letter-spacing: -0.025em;
+        
+        @media (width <= 768px) {
+            font-size: var(--text-base);
+        }      
     }
 
     main {

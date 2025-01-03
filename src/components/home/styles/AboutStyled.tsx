@@ -7,12 +7,10 @@ export const AboutManifesto = styled.div`
   margin: 0 auto;
 
   p {
-    font-size: var(--text-xl);
-    letter-spacing: -0.025em;
     overflow-wrap: break-word;
     margin-bottom: 15px;
 
-    & > span {
+    span {
       font-family: "EB Garamond", serif;
       font-style: oblique;
       font-size: var(--text-2xl);
@@ -25,9 +23,7 @@ export const AboutManifesto = styled.div`
 
   @media (width <= 768px) {
     p {
-      font-size: var(--text-base);
-
-      & > span {
+      span {
         font-size: var(--text-lg);
       }
 
@@ -46,7 +42,6 @@ export const AboutManifesto = styled.div`
       line-height: 1.2;
       text-align: left;
       margin-bottom: 0;
-      letter-spacing: -0.025em;
       font-size: var(--text-3xl);
 
       &:last-of-type {
