@@ -39,6 +39,8 @@ const GlobalStyles = createGlobalStyle`
 
     body {
         background-color: #ffffff;
+        overflow-y: scroll;
+        scrollbar-gutter: stable;
     }
 
     p, li {
@@ -55,6 +57,24 @@ const GlobalStyles = createGlobalStyle`
 
     main {
         padding: 0 16px;
+    }
+
+    /* scrollbar */
+    body::-webkit-scrollbar {
+        width: 0.8vw;
+    }
+ 
+    body::-webkit-scrollbar-track {
+        background-color: rgb(var(--desk-gray-300));    
+    }
+    
+    body::-webkit-scrollbar-thumb {
+        background-color: rgba(var(--desk-gray-500), 0.8);
+        border-radius: 1em;
+
+        &:hover {
+            background-color: rgba(var(--desk-gray-500), 1);
+        }
     }
 `;
 

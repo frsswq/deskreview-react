@@ -43,6 +43,7 @@ export const NavbarMenu = styled.ul`
 
     &:hover {
       color: rgb(var(--desk-black));
+      font-weight: 500;
     }
   }
 `;

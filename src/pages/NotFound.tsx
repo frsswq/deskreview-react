@@ -30,7 +30,7 @@ const NotFoundStyled = styled.main<{ navbarHeight: number }>`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: ${(props) => `calc(100vh - ${props.navbarHeight}px)`};
+  height: ${(props) => `calc(100vh - ${props.navbarHeight}px - 1vh)`};
 
   p {
     font-family: "DM Sans", sans-serif;
