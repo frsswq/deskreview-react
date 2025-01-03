@@ -14,8 +14,13 @@ export const WorkItemContainer = styled.div`
   margin: 0 auto;
 `;
 
-export const WorkItemStyled = styled.button`
+interface WorkItemProps {
+  isClicked: boolean;
+}
+
+export const WorkItemStyled = styled.button<WorkItemProps>`
   display: grid;
+  cursor: pointer;
   grid-template-columns: ${gridTemplate};
   font-family: "DM Sans", sans-serif;
   font-size: var(--text-xl);
@@ -37,6 +42,8 @@ export const WorkItemStyled = styled.button`
 
   svg {
     margin-left: auto;
+    transform: ${(props) =>
+      props.isClicked ? "rotate(180deg)" : "rotate(0deg)"};
   }
 
   @media (width <= 768px) {
