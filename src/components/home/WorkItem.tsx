@@ -67,7 +67,7 @@ export function WorkItem({
           <WorkItemGrid>
             <p className="title">
               {images.length === 1 ? "Picture" : "Pictures"} <br />
-              {currentImageIndex + 1} / {images.length}
+              {currentImageIndex + 1} ⁄ {images.length}
             </p>
             <img src={images[currentImageIndex]} onClick={handleImageClick} />
           </WorkItemGrid>
