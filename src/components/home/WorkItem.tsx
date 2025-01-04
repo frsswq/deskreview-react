@@ -73,7 +73,7 @@ export function WorkItem({
               src={images[currentImageIndex]}
               onClick={handleImageClick}
               width="340"
-              height="340"
+              height="425"
               loading="lazy"
             />
           </WorkItemGrid>

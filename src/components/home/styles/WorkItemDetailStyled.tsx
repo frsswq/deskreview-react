@@ -21,9 +21,10 @@ export const WorkItemDetailStyled = styled.div<WorkItemDetailProps>`
   }
 
   img {
-    object-fit: cover;
+    object-fit: contain;
     cursor: pointer;
     max-width: 85%;
+    height: auto;
     max-height: 100%;
     margin-right: auto;
     border: 1.5px solid rgb(var(--desk-gray-700));
