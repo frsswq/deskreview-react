@@ -39,6 +39,7 @@ export const AboutManifesto = styled.div`
 
     p {
       font-family: "EB Garamond", serif;
+      font-style: normal;
       font-weight: 300;
       line-height: 1.2;
       text-align: left;
