@@ -22,5 +22,5 @@ export const HomeTitle = styled.h1`
 `;
 
 export const Divider = styled.hr`
-  border: 1px solid rgb(var(--desk-gray-300));
+  border: 0.5px solid rgba(var(--desk-gray-500), 0.6);
 `;
