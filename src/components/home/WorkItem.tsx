@@ -40,6 +40,8 @@ export function WorkItem({
         <p>{industry}</p>
         <p></p>
         <p>{detail}</p>
+        <div></div>
+        <img src="src\assets\img\ganesha_1.webp" />
       </WorkItemDetailStyled>
     </>
   );

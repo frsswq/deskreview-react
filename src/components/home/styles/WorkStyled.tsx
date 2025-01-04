@@ -9,8 +9,10 @@ export const WorkStyled = styled.section`
 export const WorkItemContainer = styled.div`
   max-width: 650px;
   margin: 0 auto;
+`;
 
-  & > div > p {
+export const WorkItemTitle = styled.div`
+  p {
     font-size: var(--text-base);
     padding: 4px 0;
 

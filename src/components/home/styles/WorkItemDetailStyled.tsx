@@ -5,7 +5,7 @@ interface WorkItemDetailProps {
 }
 
 export const WorkItemDetailStyled = styled.div<WorkItemDetailProps>`
-  max-height: ${({ isOpen }) => (isOpen ? "1000px" : "0")};
+  max-height: ${({ isOpen }) => (isOpen ? "3000px" : "0")};
   visibility: ${({ isOpen }) => (isOpen ? "visible" : "hidden")};
   display: grid;
   overflow: hidden;
@@ -23,14 +23,14 @@ export const WorkItemDetailStyled = styled.div<WorkItemDetailProps>`
   p:last-of-type {
     overflow-wrap: break-word;
     max-width: 26ch;
-    margin-bottom: 16px;
   }
 
-  & > * {
+  * {
     margin-bottom: 8px;
   }
 
-  & > ul > li {
+  li {
+    list-style-type: none;
     margin-bottom: 8px;
 
     &:last-of-type {
@@ -38,7 +38,12 @@ export const WorkItemDetailStyled = styled.div<WorkItemDetailProps>`
     }
   }
 
-  li {
-    list-style-type: none;
+  img {
+    object-fit: cover;
+    max-width: 90%;
+    max-height: 100%;
+    margin: 16px auto 24px 0;
+    border: 2px solid black;
+    border-radius: 8px;
   }
 `;
