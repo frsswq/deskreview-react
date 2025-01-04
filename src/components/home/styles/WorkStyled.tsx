@@ -7,7 +7,7 @@ export const WorkStyled = styled.section`
 `;
 
 export const WorkItemContainer = styled.div`
-  max-width: 650px;
+  max-width: var(--max-w);
   margin: 0 auto;
 `;
 

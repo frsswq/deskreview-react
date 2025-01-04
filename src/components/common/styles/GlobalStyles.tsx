@@ -30,6 +30,11 @@ const GlobalStyles = createGlobalStyle`
         --text-3xl: 1.5rem;
     }
     
+    /* others */
+    :root {
+        --max-w: 600px;
+    }
+
     /* global styles */
     * {
         box-sizing: border-box;

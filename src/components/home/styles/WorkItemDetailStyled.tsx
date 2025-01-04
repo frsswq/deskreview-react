@@ -15,18 +15,22 @@ export const WorkItemDetailStyled = styled.div<WorkItemDetailProps>`
   transition-timing-function: cubic-bezier(0.87, 0, 0.13, 1);
   transition-duration: 300ms;
 
+  * {
+    margin-bottom: 8px;
+  }
+
   p:first-of-type,
   li:first-of-type {
     margin-top: 8px;
   }
 
-  p:last-of-type {
+  p:nth-of-type(7) {
     overflow-wrap: break-word;
     max-width: 26ch;
   }
 
-  * {
-    margin-bottom: 8px;
+  p:last-of-type {
+    margin-top: 20px;
   }
 
   li {
@@ -40,10 +44,21 @@ export const WorkItemDetailStyled = styled.div<WorkItemDetailProps>`
 
   img {
     object-fit: cover;
-    max-width: 90%;
+    max-width: 85%;
     max-height: 100%;
     margin: 16px auto 24px 0;
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 8px;
+  }
+
+  @media (width <= 768px) {
+    img {
+      margin: 8px auto 16px 0;
+      max-width: 95%;
+    }
+
+    p:last-of-type {
+      margin-top: 8px;
+    }
   }
 `;

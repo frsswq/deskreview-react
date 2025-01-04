@@ -4,6 +4,7 @@ type WorkItemData = {
   year: string;
   industry: string;
   detail: string;
+  images?: string[];
 };
 
 export const workItemData: WorkItemData[] = [
@@ -14,6 +15,11 @@ export const workItemData: WorkItemData[] = [
     industry: "Vehicle Manufacture",
     detail:
       "As their effort to gain trust with local wisdom and the spirit of #OneHeart, Honda aims to reach more trust and connection withing Indonesia market.",
+    images: [
+      "img/home/work/astra_1.webp",
+      "img/home/work/astra_2.webp",
+      "img/home/work/astra_3.webp",
+    ],
   },
   {
     companyName: "Telkomsel",
@@ -26,6 +32,11 @@ export const workItemData: WorkItemData[] = [
     industry: "Telecommunication",
     detail:
       "After their merger with IndiHome, Telkomsel aimed to create a nationwide corporate messaging campaign under #BersatuLebihMaju, resulting in +1 million impression, 20% increase of Engagement Rate, and more than 3000 followers.",
+    images: [
+      "img/home/work/telkomsel_1.webp",
+      "img/home/work/telkomsel_2.webp",
+      "img/home/work/telkomsel_3.webp",
+    ],
   },
   {
     companyName: "Salam Ganesha Academy",
@@ -38,6 +49,11 @@ export const workItemData: WorkItemData[] = [
     industry: "Education Tech",
     detail:
       "As an education startup, Salam Ganesha Academy transitioned to targeting a more mature senior executive market. Several digital strategies were executed to ensure a smooth transition.",
+    images: [
+      "img/home/work/ganesha_1.webp",
+      "img/home/work/ganesha_2.webp",
+      "img/home/work/ganesha_3.webp",
+    ],
   },
   {
     companyName: "Rococo Group Indonesia",
@@ -50,6 +66,11 @@ export const workItemData: WorkItemData[] = [
     industry: "Luxury Fashion Retail",
     detail:
       "Rococo Group Indonesia is a luxury fashion retailer established in 2000, focusing on high-end fashion brands with partners from Italy, UK, and Hongkong.",
+    images: [
+      "img/home/work/rococo_1.webp",
+      "img/home/work/rococo_2.webp",
+      "img/home/work/rococo_3.webp",
+    ],
   },
   {
     companyName: "Hayati Karya Lestari",

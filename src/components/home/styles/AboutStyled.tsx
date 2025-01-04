@@ -3,10 +3,11 @@ import styled from "styled-components";
 export const AboutStyled = styled.section``;
 
 export const AboutManifesto = styled.div`
-  max-width: 650px;
+  max-width: var(--max-w);
   margin: 0 auto;
 
   p {
+    max-width: 40ch;
     overflow-wrap: break-word;
     margin-bottom: 15px;
 
@@ -41,6 +42,7 @@ export const AboutManifesto = styled.div`
       font-weight: 300;
       line-height: 1.2;
       text-align: left;
+      max-width: 100%;
       margin-bottom: 0;
       font-size: var(--text-3xl);
 

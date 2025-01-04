@@ -4,10 +4,11 @@ import { CaretDownIcon } from "@radix-ui/react-icons";
 
 interface WorkProps {
   companyName: string;
-  servicesItems?: string[];
-  year?: string;
-  industry?: string;
-  detail?: string;
+  servicesItems: string[];
+  year: string;
+  industry: string;
+  detail: string;
+  images?: string[];
   isOpen: boolean;
   onClick: () => void;
 }
@@ -18,7 +19,9 @@ export function WorkItem({
   year,
   industry,
   detail,
+  images = [],
   isOpen,
+
   onClick,
 }: WorkProps) {
   return (
@@ -38,10 +41,10 @@ export function WorkItem({
         <p>{year}</p>
         <p>Industry</p>
         <p>{industry}</p>
-        <p></p>
+        <p>Description</p>
         <p>{detail}</p>
-        <div></div>
-        <img src="src\assets\img\ganesha_1.webp" />
+        <p>Pictures</p>
+        <img src={images[0]} />
       </WorkItemDetailStyled>
     </>
   );

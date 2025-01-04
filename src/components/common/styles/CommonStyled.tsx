@@ -12,7 +12,7 @@ export const HomeTitle = styled.h1`
   font-style: italic;
   font-size: 80px;
   letter-spacing: -0.05em;
-  max-width: 650px;
+  max-width: var(--max-w);
   padding: 0;
   margin: 0 auto 15px;
 
