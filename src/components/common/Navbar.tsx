@@ -11,7 +11,12 @@ export default function Navbar() {
     <NavbarStyled>
       <NavbarContainer>
         <NavLink to="/">
-          <NavbarLogo src="svg/logo_full_navbar.svg" alt="Navbar_Logo" />
+          <NavbarLogo
+            src="svg/logo_full_navbar.svg"
+            alt="Navbar_Logo"
+            width="120"
+            height="30"
+          />
         </NavLink>
         <NavbarMenu>
           <NavLink to="/study">Study</NavLink>

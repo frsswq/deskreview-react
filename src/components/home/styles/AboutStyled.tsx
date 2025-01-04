@@ -7,7 +7,7 @@ export const AboutManifesto = styled.div`
   margin: 0 auto;
 
   p {
-    max-width: 40ch;
+    max-width: 530px;
     overflow-wrap: break-word;
     margin-bottom: 15px;
 
@@ -24,6 +24,8 @@ export const AboutManifesto = styled.div`
 
   @media (width <= 768px) {
     p {
+      max-width: 100%;
+
       span {
         font-size: var(--text-lg);
       }

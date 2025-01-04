@@ -16,7 +16,7 @@ async function convertToWebP(inputDir, outputDir) {
       const outputPath = path.join(outputDir, `${path.parse(file).name}.webp`);
 
       await sharp(inputPath)
-        .resize(800, null)
+        .resize(680, null)
         .webp({ quality: 80 })
         .toFile(outputPath);
     }
@@ -26,6 +26,6 @@ async function convertToWebP(inputDir, outputDir) {
 }
 
 const inputDir = "public/img/unoptimized";
-const outputDir = "public/img";
+const outputDir = "public/img/home/work";
 
 convertToWebP(inputDir, outputDir);
