@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router";
+import { BrowserRouter, HashRouter as Routes, Route } from "react-router";
 import GlobalStyles from "./components/common/styles/GlobalStyles.tsx";
 import Home from "./pages/Home.tsx";
 import Blog from "./pages/Blog.tsx";
