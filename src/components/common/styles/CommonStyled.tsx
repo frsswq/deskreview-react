@@ -9,7 +9,7 @@ export const Container = styled.div`
 export const HomeTitle = styled.h1`
   font-family: "EB Garamond", serif;
   font-weight: 400;
-  font-style: italic;
+  font-style: oblique;
   font-size: 80px;
   letter-spacing: -0.05em;
   max-width: var(--max-w);

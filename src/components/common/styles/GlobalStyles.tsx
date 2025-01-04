@@ -1,12 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-const GlobalStyles = createGlobalStyle`
-    /* import fonts */
-    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
-
-    /* global variables */
-
+const GlobalStyles = createGlobalStyle`  
     /* colours */
     :root {
         --desk-gray-300: 234, 236, 236;

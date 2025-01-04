@@ -25,7 +25,7 @@ export const NavbarLogo = styled.img`
   display: block;
 `;
 
-export const NavbarMenu = styled.ul`
+export const NavbarMenu = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;

@@ -47,7 +47,7 @@ export const AboutManifesto = styled.div`
       font-size: var(--text-3xl);
 
       &:last-of-type {
-        font-style: italic;
+        font-style: oblique;
         text-align: right;
       }
     }
