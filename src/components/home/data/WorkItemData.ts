@@ -1,0 +1,66 @@
+type WorkItemData = {
+  companyName: string;
+  servicesItems: string[];
+  year: string;
+  industry: string;
+  detail: string;
+};
+
+export const workItemData: WorkItemData[] = [
+  {
+    companyName: "Astra Honda",
+    servicesItems: ["Content Research & Analytic", "Digital Trend Analytic"],
+    year: "2023",
+    industry: "Vehicle Manufacture",
+    detail:
+      "As their effort to gain trust with local wisdom and the spirit of #OneHeart, Honda aims to reach more trust and connection withing Indonesia market.",
+  },
+  {
+    companyName: "Telkomsel",
+    servicesItems: [
+      "Campaign Strategy & Development",
+      "Social Media Strategy",
+      "Online Activation Development",
+    ],
+    year: "2023",
+    industry: "Telecommunication",
+    detail:
+      "After their merger with IndiHome, Telkomsel aimed to create a nationwide corporate messaging campaign under #BersatuLebihMaju, resulting in +1 million impression, 20% increase of Engagement Rate, and more than 3000 followers.",
+  },
+  {
+    companyName: "Salam Ganesha Academy",
+    servicesItems: [
+      "Campaign Strategy & Development",
+      "Social Media Development",
+      "Kol Management",
+    ],
+    year: "2024",
+    industry: "Education Tech",
+    detail:
+      "As an education startup, Salam Ganesha Academy transitioned to targeting a more mature senior executive market. Several digital strategies were executed to ensure a smooth transition.",
+  },
+  {
+    companyName: "Rococo Group Indonesia",
+    servicesItems: [
+      "Campaign Strategy & Development",
+      "Social Media Development",
+      "Kol Management",
+    ],
+    year: "2023",
+    industry: "Luxury Fashion Retail",
+    detail:
+      "Rococo Group Indonesia is a luxury fashion retailer established in 2000, focusing on high-end fashion brands with partners from Italy, UK, and Hongkong.",
+  },
+  {
+    companyName: "Hayati Karya Lestari",
+    servicesItems: [
+      "Branding Strategy",
+      "Social Media & Website",
+      "Brand Architecture",
+    ],
+    year: "2023",
+    industry: "NGO",
+    detail:
+      "Hayati Karya Lestari is a global carbon trading corporation with various business line, launching in Indonesia with the vision to create sustainable future for Indonesia.",
+  },
+];
