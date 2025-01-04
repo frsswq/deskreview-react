@@ -11,7 +11,7 @@ export default function App() {
       <Routes>
         <Route path="/deskreview-react/" element={<Home />} />
         <Route path="/deskreview-react/study" element={<Blog />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="/deskreview-react/*" element={<NotFound />} />
       </Routes>
     </>
   );
