@@ -4,8 +4,8 @@ import {
   Divider,
 } from "../common/styles/CommonStyled.tsx";
 import { WorkStyled, WorkItemContainer } from "./styles/WorkStyled.tsx";
-import { workItemData } from "./data/WorkItemData.ts";
-import { WorkDetail, WorkItem } from "./WorkItem.tsx";
+import { workItemData } from "../../data/home/WorkItemData.ts";
+import { WorkItem } from "./WorkItem.tsx";
 import { useState } from "react";
 
 export default function Work() {
@@ -20,7 +20,9 @@ export default function Work() {
       <Container>
         <HomeTitle>Works</HomeTitle>
         <WorkItemContainer>
-          <WorkDetail />
+          <div>
+            <p>Company</p>
+          </div>
           <Divider />
           {workItemData.map((item, index) => (
             <>

@@ -1,4 +1,4 @@
-import { WorkDetailStyled, WorkItemStyled } from "./styles/WorkItemStyled.tsx";
+import { WorkItemStyled } from "./styles/WorkItemStyled.tsx";
 import { WorkItemDetailStyled } from "./styles/WorkItemDetailStyled.tsx";
 import { CaretDownIcon } from "@radix-ui/react-icons";
 
@@ -42,13 +42,5 @@ export function WorkItem({
         <p>{detail}</p>
       </WorkItemDetailStyled>
     </>
-  );
-}
-
-export function WorkDetail() {
-  return (
-    <WorkDetailStyled>
-      <p>Company</p>
-    </WorkDetailStyled>
   );
 }

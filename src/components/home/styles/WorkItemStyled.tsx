@@ -39,12 +39,3 @@ export const WorkItemStyled = styled.button<WorkItemProps>`
     }
   }
 `;
-
-export const WorkDetailStyled = styled.div`
-  font-size: var(--text-base);
-  padding: 4px 0;
-
-  @media (width <= 768px) {
-    font-size: var(--text-sm);
-  }
-`;
