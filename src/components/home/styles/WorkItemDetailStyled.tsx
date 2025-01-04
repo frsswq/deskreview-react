@@ -5,8 +5,8 @@ interface WorkItemDetailProps {
 }
 
 export const WorkItemDetailStyled = styled.div<WorkItemDetailProps>`
-  max-height: ${(props) => (props.isOpen ? "1000px" : "0")};
-  visibility: ${(props) => (props.isOpen ? "visible" : "hidden")};
+  max-height: ${({ isOpen }) => (isOpen ? "1000px" : "0")};
+  visibility: ${({ isOpen }) => (isOpen ? "visible" : "hidden")};
   display: grid;
   overflow: hidden;
   grid-template-columns: 1fr 2fr;
