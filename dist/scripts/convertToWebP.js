@@ -26,6 +26,6 @@ async function convertToWebP(inputDir, outputDir) {
 }
 
 const inputDir = "public/img/unoptimized";
-const outputDir = "src/assets/img";
+const outputDir = "public/img";
 
 convertToWebP(inputDir, outputDir);
