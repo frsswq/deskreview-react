@@ -9,9 +9,9 @@ export default function App() {
     <>
       <GlobalStyles />
       <Routes>
-        <Route path="/deskreview-react/" element={<Home />} />
-        <Route path="/deskreview-react/study" element={<Blog />} />
-        <Route path="/deskreview-react/*" element={<NotFound />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/study" element={<Blog />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   );
