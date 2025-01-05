@@ -202,7 +202,7 @@ Please change the parent <Route path="${q}"> to <Route path="${q==="/"?"*":`${q}
     font-size: 50px;
   }
 `,ki=Ht.hr`
-  border: 0.5px solid rgba(var(--desk-gray-500), 0.6);
+  border: 1px solid rgba(var(--desk-gray-500), 0.6);
 `,P0=Ht.h2`
   font-family: "DM Sans", sans-serif;
   font-size: var(--text-base);
@@ -217,9 +217,10 @@ Please change the parent <Route path="${q}"> to <Route path="${q==="/"?"*":`${q}
   font-weight: 400;
   font-family: "DM Sans", sans-serif;
   letter-spacing: -0.025em;
-  padding: 4px 0;
+  padding: 8px 0;
 
   @media (width <= 768px) {
+    padding: 4px 0;
     font-size: var(--text-base);
   }
 `,op=[{companyName:"Astra Honda",servicesItems:["Content Research & Analytic","Digital Trend Analytic"],year:"2023",industry:"Vehicle Manufacture",detail:"As their effort to gain trust with local wisdom and the spirit of #OneHeart, Honda aims to reach more trust and connection withing Indonesia market.",images:["img/home/work/astra_1.webp","img/home/work/astra_2.webp","img/home/work/astra_3.webp"]},{companyName:"Telkomsel",servicesItems:["Campaign Strategy & Development","Social Media Strategy","Online Activation Development"],year:"2023",industry:"Telecommunication",detail:"After their merger with IndiHome, Telkomsel aimed to create a nationwide corporate messaging campaign under #BersatuLebihMaju, resulting in +1 million impression, 20% increase of Engagement Rate, and more than 3000 followers.",images:["img/home/work/telkomsel_1.webp","img/home/work/telkomsel_2.webp","img/home/work/telkomsel_3.webp"]},{companyName:"Salam Ganesha Academy",servicesItems:["Campaign Strategy & Development","Social Media Development","Kol Management"],year:"2024",industry:"Education Tech",detail:"As an education startup, Salam Ganesha Academy transitioned to targeting a more mature senior executive market. Several digital strategies were executed to ensure a smooth transition.",images:["img/home/work/ganesha_1.webp","img/home/work/ganesha_2.webp","img/home/work/ganesha_3.webp"]},{companyName:"Rococo Group Indonesia",servicesItems:["Campaign Strategy & Development","Social Media Development","Kol Management"],year:"2023",industry:"Luxury Fashion Retail",detail:"Rococo Group Indonesia is a luxury fashion retailer established in 2000, focusing on high-end fashion brands with partners from Italy, UK, and Hongkong.",images:["img/home/work/rococo_1.webp","img/home/work/rococo_2.webp","img/home/work/rococo_3.webp"]},{companyName:"Hayati Karya Lestari",servicesItems:["Branding Strategy","Social Media & Website","Brand Architecture"],year:"2023",industry:"NGO",detail:"Hayati Karya Lestari is a global carbon trading corporation with various business line, launching in Indonesia with the vision to create sustainable future for Indonesia."}],sp=Ht.button`
@@ -327,7 +328,7 @@ Please change the parent <Route path="${q}"> to <Route path="${q==="/"?"*":`${q}
     }
   }
 `;function hp(u,c){if(u==null)return{};var f={},r=Object.keys(u),s,h;for(h=0;h<r.length;h++)s=r[h],!(c.indexOf(s)>=0)&&(f[s]=u[s]);return f}var mp=["color"],yp=M.forwardRef(function(u,c){var f=u.color,r=f===void 0?"currentColor":f,s=hp(u,mp);return M.createElement("svg",Object.assign({width:"15",height:"15",viewBox:"0 0 15 15",fill:"none",xmlns:"http://www.w3.org/2000/svg"},s,{ref:c}),M.createElement("path",{d:"M4.18179 6.18181C4.35753 6.00608 4.64245 6.00608 4.81819 6.18181L7.49999 8.86362L10.1818 6.18181C10.3575 6.00608 10.6424 6.00608 10.8182 6.18181C10.9939 6.35755 10.9939 6.64247 10.8182 6.81821L7.81819 9.81821C7.73379 9.9026 7.61934 9.95001 7.49999 9.95001C7.38064 9.95001 7.26618 9.9026 7.18179 9.81821L4.18179 6.81821C4.00605 6.64247 4.00605 6.35755 4.18179 6.18181Z",fill:r,fillRule:"evenodd",clipRule:"evenodd"}))});function vp({companyName:u,servicesItems:c=[],year:f,industry:r,detail:s,images:h=[],isOpen:g,onClick:x}){const[v,m]=M.useState(0);M.useEffect(()=>{h.forEach(_=>{const z=new Image;z.src=_})},[h]);const R=()=>{h.length>0&&m(_=>(_+1)%h.length)};return B.jsxs(B.Fragment,{children:[B.jsxs(sp,{onClick:x,isOpen:g,children:[B.jsx(I0,{children:u}),B.jsx(yp,{})]}),B.jsxs(dp,{isOpen:g,children:[B.jsxs(iu,{children:[B.jsx("p",{className:"title",children:"Services"}),B.jsx("ul",{children:c.map(_=>B.jsx("li",{className:"text",children:_}))})]}),B.jsxs(iu,{children:[B.jsx("p",{className:"title",children:"Year"}),B.jsx("p",{className:"text",children:f})]}),B.jsxs(iu,{children:[B.jsx("p",{className:"title",children:"Industry"}),B.jsx("p",{className:"text",children:r})]}),B.jsxs(iu,{children:[B.jsx("p",{className:"title",children:"Description"}),B.jsx("p",{className:"text",children:s})]}),h.length>0&&B.jsxs(iu,{children:[B.jsxs("p",{className:"title",children:[h.length===1?"Picture":"Pictures"," ",B.jsx("br",{}),v+1," ⁄ ",h.length]}),B.jsx("img",{src:h[v],onClick:R,width:"340",height:"425",loading:"eager"})]})]})]})}function gp(){const[u,c]=M.useState(null),f=r=>{c(s=>s===r?null:r)};return B.jsxs($f,{children:[B.jsx(Wf,{style:{textIndent:"-0.15em"},children:"Works"}),B.jsx(P0,{children:"Company"}),B.jsx(ki,{}),op.map((r,s)=>B.jsxs(B.Fragment,{children:[B.jsx(vp,{isOpen:u===s,onClick:()=>f(s),...r},s),B.jsx(ki,{})]}))]})}const wi=Ht.p`
-  max-width: 530px;
+  font-size: var(--text-xl);
   overflow-wrap: break-word;
   margin-bottom: 15px;
 
@@ -337,19 +338,11 @@ Please change the parent <Route path="${q}"> to <Route path="${q==="/"?"*":`${q}
     font-size: var(--text-2xl);
   }
 
-  &:first-of-type > span:first-of-type {
-    font-size: var(--text-3xl);
-  }
-
   @media (width <= 768px) {
-    max-width: 100%;
+    font-size: var(--text-base);
 
     span {
       font-size: var(--text-lg);
-    }
-
-    &:first-of-type > span:first-of-type {
-      font-size: var(--text-xl);
     }
   }
 `,pp=Ht.blockquote`
@@ -357,7 +350,6 @@ Please change the parent <Route path="${q}"> to <Route path="${q==="/"?"*":`${q}
 
   p {
     font-family: "EB Garamond", serif;
-    font-style: normal;
     font-weight: 300;
     line-height: 1.2;
     text-align: left;
@@ -366,7 +358,7 @@ Please change the parent <Route path="${q}"> to <Route path="${q==="/"?"*":`${q}
     font-size: var(--text-3xl);
 
     &:last-of-type {
-      font-style: oblique;
+      font-style: italic;
       text-align: right;
     }
   }

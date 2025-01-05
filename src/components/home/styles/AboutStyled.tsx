@@ -30,10 +30,10 @@ export const ManifestoQuote = styled.blockquote`
     text-align: left;
     max-width: 100%;
     margin-bottom: 0;
-    font-size: var(--text-2xl);
+    font-size: var(--text-3xl);
 
     &:last-of-type {
-      font-style: oblique;
+      font-style: italic;
       text-align: right;
     }
   }
