@@ -3,6 +3,7 @@ import {
   WorkItemDetailStyled,
   WorkItemGrid,
 } from "./styles/WorkItemDetailStyled.tsx";
+import { HomeItemText } from "../common/styles/CommonStyled.tsx";
 import { CaretDownIcon } from "@radix-ui/react-icons";
 import { useState, useEffect } from "react";
 
@@ -46,7 +47,7 @@ export function WorkItem({
   return (
     <>
       <WorkItemStyled onClick={onClick} isOpen={isOpen}>
-        <p>{companyName}</p>
+        <HomeItemText>{companyName}</HomeItemText>
         <CaretDownIcon />
       </WorkItemStyled>
       <WorkItemDetailStyled isOpen={isOpen}>

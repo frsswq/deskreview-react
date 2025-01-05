@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-export const AboutStyled = styled.section``;
-
 export const ManifestoText = styled.p`
   max-width: 530px;
   overflow-wrap: break-word;

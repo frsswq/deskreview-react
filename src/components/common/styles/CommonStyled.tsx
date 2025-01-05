@@ -6,6 +6,12 @@ export const Container = styled.div`
   margin: 0px auto 40px;
 `;
 
+export const SectionContainer = styled.section`
+  max-width: var(--max-w);
+  width: 100%;
+  margin: 0px auto 40px;
+`;
+
 export const HomeTitle = styled.h1`
   font-family: "EB Garamond", serif;
   font-weight: 400;
@@ -32,5 +38,17 @@ export const HomeItemTitle = styled.h2`
 
   @media (width <= 768px) {
     font-size: var(--text-sm);
+  }
+`;
+
+export const HomeItemText = styled.p`
+  font-size: var(--text-3xl);
+  font-weight: 400;
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: -0.025em;
+  padding: 4px 0;
+
+  @media (width <= 768px) {
+    font-size: var(--text-xl);
   }
 `;

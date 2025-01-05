@@ -64,12 +64,13 @@ const GlobalStyles = createGlobalStyle`
     }
  
     body::-webkit-scrollbar-track {
-        background-color: rgb(var(--desk-gray-300));    
+        background-color: rgb(var(--desk-gray-300));
     }
     
     body::-webkit-scrollbar-thumb {
         background-color: rgba(var(--desk-gray-500), 0.8);
         border-radius: 1em;
+    
 
         &:hover {
             background-color: rgba(var(--desk-gray-500), 1);
