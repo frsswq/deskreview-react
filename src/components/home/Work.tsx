@@ -4,7 +4,7 @@ import {
   Divider,
   HomeItemTitle,
 } from "../common/styles/CommonStyled.tsx";
-import { workItemData } from "../../data/home/WorkItemData.ts";
+import { workItemData } from "../../data/home/workItemData.ts";
 import { WorkItem } from "./WorkItem.tsx";
 import { useState } from "react";
 

@@ -37,18 +37,18 @@ export const HomeItemTitle = styled.h2`
   padding: 4px 0;
 
   @media (width <= 768px) {
-    font-size: var(--text-sm);
+    font-size: var(--text-xs);
   }
 `;
 
 export const HomeItemText = styled.p`
-  font-size: var(--text-3xl);
+  font-size: var(--text-2xl);
   font-weight: 400;
   font-family: "DM Sans", sans-serif;
   letter-spacing: -0.025em;
   padding: 4px 0;
 
   @media (width <= 768px) {
-    font-size: var(--text-xl);
+    font-size: var(--text-base);
   }
 `;
