@@ -26,7 +26,6 @@ export function WorkItem({
   detail,
   images = [],
   isOpen,
-
   onClick,
 }: WorkProps) {
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
