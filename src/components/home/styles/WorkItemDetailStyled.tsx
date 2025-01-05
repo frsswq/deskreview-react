@@ -13,7 +13,7 @@ export const WorkItemDetailStyled = styled.div<WorkItemDetailProps>`
   transition-duration: 300ms;
   display: flex;
   flex-direction: column;
-  gap: 16px 0;
+  gap: 12px 0;
 
   img {
     object-fit: contain;
@@ -41,7 +41,7 @@ export const WorkItemGrid = styled.div`
 
   ul {
     display: grid;
-    gap: 8px 0;
+    gap: 4px 0;
   }
 
   &:first-of-type {
@@ -56,18 +56,27 @@ export const WorkItemGrid = styled.div`
     margin: 8px 0 32px;
   }
 
+  .text,
+  .title {
+    font-size: var(--text-lg);
+  }
+
   .title {
     font-weight: 400;
   }
 
   .text {
     overflow-wrap: break-word;
-    max-width: 25ch;
+    max-width: 27ch;
   }
 
   @media (width <= 768px) {
     ul {
-      gap: 4px 0;
+      gap: 2px 0;
+    }
+
+    &:first-of-type {
+      margin-top: 8px;
     }
 
     &:last-of-type {
