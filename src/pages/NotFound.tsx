@@ -1,31 +1,13 @@
-import { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import Navbar from "../components/common/Navbar.tsx";
 
 export default function NotFound() {
-  const navbarRef = useRef<HTMLDivElement>(null);
-  const [navbarHeight, setNavbarHeight] = useState(0);
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (navbarRef.current) {
-        setNavbarHeight(navbarRef.current.offsetHeight);
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   return (
     <>
-      <div ref={navbarRef}>
+      <FixedContainer>
         <Navbar />
-      </div>
-      <NotFoundStyled navbarHeight={navbarHeight}>
+      </FixedContainer>
+      <NotFoundStyled>
         <p>404</p>
         <p>Not Found</p>
       </NotFoundStyled>
@@ -33,17 +15,23 @@ export default function NotFound() {
   );
 }
 
-const NotFoundStyled = styled.main<{ navbarHeight: number }>`
+const FixedContainer = styled.div`
+  nav {
+    position: fixed;
+  }
+`;
+
+const NotFoundStyled = styled.main`
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: ${(props) => `calc(100vh - ${props.navbarHeight}px - 1vh)`};
+  height: 100vh;
 
   p {
     font-family: "DM Sans", sans-serif;
     font-weight: 300;
-    letter-spacing: 0em;
+    letter-spacing: -0.025em;
     font-size: 4rem;
     line-height: 1;
 
@@ -61,7 +49,7 @@ const NotFoundStyled = styled.main<{ navbarHeight: number }>`
 
       &:first-of-type {
         margin-right: 0;
-        line-height: 1.2;
+        line-height: 1;
         font-size: 5rem;
       }
     }
