@@ -27,7 +27,7 @@ export const HomeTitle = styled.h1`
 `;
 
 export const Divider = styled.hr`
-  border: 0.5px solid rgba(var(--desk-gray-500), 0.6);
+  border: 1px solid rgba(var(--desk-gray-500), 0.6);
 `;
 
 export const HomeItemTitle = styled.h2`
@@ -46,9 +46,10 @@ export const HomeItemText = styled.p`
   font-weight: 400;
   font-family: "DM Sans", sans-serif;
   letter-spacing: -0.025em;
-  padding: 4px 0;
+  padding: 8px 0;
 
   @media (width <= 768px) {
+    padding: 4px 0;
     font-size: var(--text-base);
   }
 `;

@@ -249,7 +249,7 @@ Please change the parent <Route path="${q}"> to <Route path="${q==="/"?"*":`${q}
   transition-duration: 300ms;
   display: flex;
   flex-direction: column;
-  gap: 16px 0;
+  gap: 12px 0;
 
   img {
     object-fit: contain;
@@ -275,7 +275,7 @@ Please change the parent <Route path="${q}"> to <Route path="${q==="/"?"*":`${q}
 
   ul {
     display: grid;
-    gap: 8px 0;
+    gap: 4px 0;
   }
 
   &:first-of-type {
@@ -290,18 +290,27 @@ Please change the parent <Route path="${q}"> to <Route path="${q==="/"?"*":`${q}
     margin: 8px 0 32px;
   }
 
+  .text,
+  .title {
+    font-size: var(--text-lg);
+  }
+
   .title {
     font-weight: 400;
   }
 
   .text {
     overflow-wrap: break-word;
-    max-width: 25ch;
+    max-width: 27ch;
   }
 
   @media (width <= 768px) {
     ul {
-      gap: 4px 0;
+      gap: 2px 0;
+    }
+
+    &:first-of-type {
+      margin-top: 8px;
     }
 
     &:last-of-type {
