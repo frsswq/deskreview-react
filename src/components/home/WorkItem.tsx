@@ -4,7 +4,7 @@ import {
   WorkItemGrid,
 } from "./styles/WorkItemDetailStyled.tsx";
 import { CaretDownIcon } from "@radix-ui/react-icons";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 interface WorkProps {
   companyName: string;
@@ -29,6 +29,13 @@ export function WorkItem({
   onClick,
 }: WorkProps) {
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
+
+  useEffect(() => {
+    images.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, [images]);
 
   const handleImageClick = (): void => {
     if (images.length > 0) {
@@ -74,7 +81,7 @@ export function WorkItem({
               onClick={handleImageClick}
               width="340"
               height="425"
-              loading="lazy"
+              loading="eager"
             />
           </WorkItemGrid>
         )}
