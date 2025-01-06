@@ -4,8 +4,8 @@ import {
   WorkItemGrid,
 } from "./styles/WorkItemDetailStyled.tsx";
 import { HomeItemText } from "../common/styles/CommonStyled.tsx";
-import { usePreloadImages } from "../../hooks/preloadImages.ts";
-import { WorkItemDetailData } from "../../types/homeTypes.ts";
+import { usePreloadImages } from "../../hooks/preloadImages";
+import { workItemDetailTypes } from "../../types/homeTypes";
 import { CaretDownIcon } from "@radix-ui/react-icons";
 import { useState } from "react";
 
@@ -18,7 +18,7 @@ export function WorkItem({
   images = [],
   isOpen,
   onClick,
-}: WorkItemDetailData) {
+}: workItemDetailTypes) {
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
 
   usePreloadImages(images);

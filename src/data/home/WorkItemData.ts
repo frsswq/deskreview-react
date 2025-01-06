@@ -1,6 +1,6 @@
-import { WorkItemData } from "../../types/homeTypes";
+import { workItemTypes } from "../../types/homeTypes";
 
-export const workItemData: WorkItemData[] = [
+export const workItemData: workItemTypes[] = [
   {
     companyName: "Astra Honda",
     servicesItems: ["Content Research & Analytic", "Digital Trend Analytic"],

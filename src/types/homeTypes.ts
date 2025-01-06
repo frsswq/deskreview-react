@@ -1,4 +1,4 @@
-export interface WorkItemData {
+export interface workItemTypes {
   companyName: string;
   servicesItems: string[];
   year: string;
@@ -7,12 +7,12 @@ export interface WorkItemData {
   images?: string[];
 }
 
-export interface WorkItemDetailData extends WorkItemData {
+export interface workItemDetailTypes extends workItemTypes {
   isOpen: boolean;
   onClick: () => void;
 }
 
-export interface ServicesData {
+export interface servicesTypes {
   type: string;
   service: string[];
 }
