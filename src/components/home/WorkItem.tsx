@@ -3,7 +3,7 @@ import { HomeItemText } from "../common/styles/CommonStyled.tsx";
 import { workItemButtonTypes } from "../../types/homeTypes";
 import { CaretDownIcon } from "@radix-ui/react-icons";
 
-export function WorkItem({
+export default function WorkItem({
   companyName,
   isOpen,
   onClick,

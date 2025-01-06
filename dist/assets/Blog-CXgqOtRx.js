@@ -1,1 +1,0 @@
-import{j as r}from"./main-oa4INqr8.js";import{N as o}from"./Navbar-CJP_yzB2.js";import{F as t}from"./Footer-Po3I_Rjo.js";function e(){return r.jsxs(r.Fragment,{children:[r.jsx(o,{}),r.jsx(t,{})]})}export{e as default};

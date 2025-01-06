@@ -1,13 +1,13 @@
+import { useState } from "react";
 import {
   SectionContainer,
   HomeTitle,
   Divider,
   HomeItemTitle,
 } from "../common/styles/CommonStyled.tsx";
+import WorkItem from "./WorkItem.tsx";
+import WorkItemDetail from "./WorkItemDetail.tsx";
 import { workItemData } from "../../data/home/workItemData";
-import { WorkItem } from "./WorkItem.tsx";
-import { WorkItemDetail } from "./WorkItemDetail.tsx";
-import { useState } from "react";
 import { workItemTypes } from "../../types/homeTypes";
 
 export default function Work() {
@@ -38,7 +38,6 @@ export default function Work() {
             images={workItem.images}
             isOpen={openItemIndex === index}
           />
-
           <Divider />
         </>
       ))}

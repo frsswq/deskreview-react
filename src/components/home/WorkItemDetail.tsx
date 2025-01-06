@@ -6,7 +6,7 @@ import { workItemDetailTypes } from "../../types/homeTypes";
 import { usePreloadImages } from "../../hooks/preloadImages";
 import { useState } from "react";
 
-export function WorkItemDetail({
+export default function WorkItemDetail({
   servicesItems = [],
   year,
   industry,
