@@ -4,19 +4,10 @@ import {
   WorkItemGrid,
 } from "./styles/WorkItemDetailStyled.tsx";
 import { HomeItemText } from "../common/styles/CommonStyled.tsx";
+import { usePreloadImages } from "../../hooks/preloadImages.ts";
+import { WorkItemDetailData } from "../../types/homeTypes.ts";
 import { CaretDownIcon } from "@radix-ui/react-icons";
-import { useState, useEffect } from "react";
-
-interface WorkProps {
-  companyName: string;
-  servicesItems: string[];
-  year: string;
-  industry: string;
-  detail: string;
-  images?: string[];
-  isOpen: boolean;
-  onClick: () => void;
-}
+import { useState } from "react";
 
 export function WorkItem({
   companyName,
@@ -27,15 +18,10 @@ export function WorkItem({
   images = [],
   isOpen,
   onClick,
-}: WorkProps) {
+}: WorkItemDetailData) {
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
 
-  useEffect(() => {
-    images.forEach((src) => {
-      const img = new Image();
-      img.src = src;
-    });
-  }, [images]);
+  usePreloadImages(images);
 
   const handleImageClick = (): void => {
     if (images.length > 0) {

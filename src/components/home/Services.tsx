@@ -6,6 +6,7 @@ import {
   HomeItemText,
 } from "../common/styles/CommonStyled.tsx";
 import { servicesData } from "../../data/home/servicesData.ts";
+import { ServicesData } from "../../types/homeTypes.ts";
 import { Divider } from "../common/styles/CommonStyled.tsx";
 
 export default function Services() {
@@ -13,15 +14,15 @@ export default function Services() {
     <SectionContainer>
       <HomeTitle>Services</HomeTitle>
       <ServicesItemContainer>
-        {servicesData.map((item) => (
-          <div>
-            <HomeItemTitle>{item.type}</HomeItemTitle>
+        {servicesData.map((servicesCategory: ServicesData) => (
+          <div key={servicesCategory.type}>
+            <HomeItemTitle>{servicesCategory.type}</HomeItemTitle>
             <Divider />
-            {item.services.map((i) => (
-              <>
-                <HomeItemText>{i}</HomeItemText>
+            {servicesCategory.service.map((serviceName) => (
+              <div key={`${servicesCategory.type}-${serviceName}`}>
+                <HomeItemText>{serviceName}</HomeItemText>
                 <Divider />
-              </>
+              </div>
             ))}
           </div>
         ))}

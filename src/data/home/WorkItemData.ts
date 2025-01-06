@@ -1,11 +1,4 @@
-type WorkItemData = {
-  companyName: string;
-  servicesItems: string[];
-  year: string;
-  industry: string;
-  detail: string;
-  images?: string[];
-};
+import { WorkItemData } from "../../types/homeTypes";
 
 export const workItemData: WorkItemData[] = [
   {

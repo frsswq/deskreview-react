@@ -7,6 +7,7 @@ import {
 import { workItemData } from "../../data/home/workItemData.ts";
 import { WorkItem } from "./WorkItem.tsx";
 import { useState } from "react";
+import { WorkItemData } from "../../types/homeTypes.ts";
 
 export default function Work() {
   const [openItemIndex, setOpenItemIndex] = useState<number | null>(null);
@@ -20,13 +21,13 @@ export default function Work() {
       <HomeTitle style={{ textIndent: "-0.15em" }}>Works</HomeTitle>
       <HomeItemTitle>Company</HomeItemTitle>
       <Divider />
-      {workItemData.map((item, index) => (
+      {workItemData.map((workItemData: WorkItemData, index: number) => (
         <>
           <WorkItem
             key={index}
             isOpen={openItemIndex === index}
             onClick={() => toggleItem(index)}
-            {...item}
+            {...workItemData}
           />
           <Divider />
         </>

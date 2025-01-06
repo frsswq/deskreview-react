@@ -1,12 +1,9 @@
-type ServicesData = {
-  type: string;
-  services: string[];
-};
+import { ServicesData } from "../../types/homeTypes";
 
 export const servicesData: ServicesData[] = [
   {
     type: "Digital Campaign",
-    services: [
+    service: [
       "Social Media Handling",
       "Digital Campaign Set-up",
       "Digital Ads Handling",
@@ -15,7 +12,7 @@ export const servicesData: ServicesData[] = [
   },
   {
     type: "Brand Strategy",
-    services: [
+    service: [
       "Visual Identity Development",
       "Branding Communication Set-up",
       "Branding Implementation Set-up",
