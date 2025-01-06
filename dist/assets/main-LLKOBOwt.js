@@ -182,7 +182,29 @@ Please change the parent <Route path="${q}"> to <Route path="${q==="/"?"*":`${q}
       font-weight: 500;
     }
   }
-`;function Pf(){return N.jsx(ip,{children:N.jsxs(cp,{children:[N.jsx(Df,{to:"/",children:N.jsx(rp,{src:"svg/logo_full_navbar.svg",alt:"Navbar_Logo",width:"120",height:"30"})}),N.jsx(fp,{children:N.jsx(Df,{to:"/study",children:"Blog"})})]})})}const op=Dt.footer``;function Ih(){return N.jsx(op,{})}const sp=Dt.main`
+`;function Pf(){return N.jsx(ip,{children:N.jsxs(cp,{children:[N.jsx(Df,{to:"/",children:N.jsx(rp,{src:"svg/logo_full_navbar.svg",alt:"Navbar_Logo",width:"120",height:"30"})}),N.jsx(fp,{children:N.jsx(Df,{to:"/study",children:"Blog"})})]})})}const op=Dt.footer`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 48px auto;
+
+  p {
+    font-family: "DM Sans", sans-serif;
+    font-size: var(--text-base);
+    color: rgba(var(--desk-gray-700));
+    text-align: center;
+    line-height: 1;
+  }
+
+  @media (width <= 768px) {
+    margin: 32px auto;
+
+    p {
+      font-size: var(--text-sm);
+    }
+  }
+`;function Ih(){const c=new Date().toLocaleTimeString([],{hour:"2-digit",minute:"2-digit",hourCycle:"h23"});return N.jsx(op,{children:N.jsxs("p",{children:["© 2025, Deskreview - ",c]})})}const sp=Dt.main`
   padding: 32px 16px;
 `;Dt.div`
   max-width: var(--max-w);
@@ -378,7 +400,7 @@ Please change the parent <Route path="${q}"> to <Route path="${q==="/"?"*":`${q}
   display: flex;
   flex-direction: column;
   gap: 20px 0;
-`,Op=[{type:"Digital Campaign",services:["Social Media Handling","Digital Campaign Set-up","Digital Ads Handling","Digital Trend Analysis & Research"]},{type:"Brand Strategy",services:["Visual Identity Development","Branding Communication Set-up","Branding Implementation Set-up"]}];function _p(){return N.jsxs(lc,{children:[N.jsx(ac,{children:"Services"}),N.jsx(Cp,{children:Op.map(u=>N.jsxs("div",{children:[N.jsx(t1,{children:u.type}),N.jsx(ki,{}),u.services.map(c=>N.jsxs(N.Fragment,{children:[N.jsx(e1,{children:c}),N.jsx(ki,{})]}))]}))})]})}function Dp(){return N.jsxs(lc,{children:[N.jsx(ac,{children:"Get in touch"}),N.jsxs(Mp,{children:[N.jsxs(Cf,{href:"mailto:zaidandzaki@gmail.com",target:"_blank",children:[N.jsx("p",{children:"Email us"}),N.jsx(Sp,{})]}),N.jsxs(Cf,{href:"https://wa.me/+6285159177206",target:"_blank",children:[N.jsx("p",{children:"Chat with us"}),N.jsx(pp,{})]}),N.jsxs(Cf,{href:"https://www.instagram.com/deskreview/",target:"_blank",children:[N.jsx("p",{children:"Follow us"}),N.jsx(xp,{})]})]})]})}const Cf=Dt.a`
+`,Op=[{type:"Digital Campaign",services:["Social Media Handling","Digital Campaign Set-up","Digital Ads Handling","Digital Trend Analysis & Research"]},{type:"Brand Strategy",services:["Visual Identity Development","Branding Communication Set-up","Branding Implementation Set-up"]}];function _p(){return N.jsxs(lc,{children:[N.jsx(ac,{children:"Services"}),N.jsx(Cp,{children:Op.map(u=>N.jsxs("div",{children:[N.jsx(t1,{children:u.type}),N.jsx(ki,{}),u.services.map(c=>N.jsxs(N.Fragment,{children:[N.jsx(e1,{children:c}),N.jsx(ki,{})]}))]}))})]})}const Cf=Dt.a`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -433,7 +455,7 @@ Please change the parent <Route path="${q}"> to <Route path="${q==="/"?"*":`${q}
       transform: translate(-25%, 0);
     }
   }
-`,Mp=Dt.div`
+`,Dp=Dt.div`
   display: flex;
   flex-direction: column;
   gap: 16px 0;
@@ -442,7 +464,7 @@ Please change the parent <Route path="${q}"> to <Route path="${q==="/"?"*":`${q}
   @media (width <= 768px) {
     gap: 12px 0;
   }
-`;function wp(){return N.jsxs(sp,{children:[N.jsx(zp,{}),N.jsx(Tp,{}),N.jsx(_p,{}),N.jsx(Dp,{})]})}function Up(){return N.jsxs(N.Fragment,{children:[N.jsx(Pf,{}),N.jsx(wp,{}),N.jsx(Ih,{})]})}function Np(){return N.jsxs(N.Fragment,{children:[N.jsx(Pf,{}),N.jsx(Ih,{})]})}function Hp(){return N.jsxs(N.Fragment,{children:[N.jsx(jp,{children:N.jsx(Pf,{})}),N.jsxs(Bp,{children:[N.jsx("p",{children:"404"}),N.jsx("p",{children:"Not Found"})]})]})}const jp=Dt.div`
+`;function Mp(){return N.jsxs(lc,{children:[N.jsx(ac,{children:"Get in touch"}),N.jsxs(Dp,{children:[N.jsxs(Cf,{href:"mailto:zaidandzaki@gmail.com",target:"_blank",children:[N.jsx("p",{children:"Email us"}),N.jsx(Sp,{})]}),N.jsxs(Cf,{href:"https://wa.me/+6285159177206",target:"_blank",children:[N.jsx("p",{children:"Chat with us"}),N.jsx(pp,{})]}),N.jsxs(Cf,{href:"https://www.instagram.com/deskreview/",target:"_blank",children:[N.jsx("p",{children:"Follow us"}),N.jsx(xp,{})]})]})]})}function wp(){return N.jsxs(sp,{children:[N.jsx(zp,{}),N.jsx(Tp,{}),N.jsx(_p,{}),N.jsx(Mp,{})]})}function Up(){return N.jsxs(N.Fragment,{children:[N.jsx(Pf,{}),N.jsx(wp,{}),N.jsx(Ih,{})]})}function Np(){return N.jsxs(N.Fragment,{children:[N.jsx(Pf,{}),N.jsx(Ih,{})]})}function Hp(){return N.jsxs(N.Fragment,{children:[N.jsx(jp,{children:N.jsx(Pf,{})}),N.jsxs(Bp,{children:[N.jsx("p",{children:"404"}),N.jsx("p",{children:"Not Found"})]})]})}const jp=Dt.div`
   nav {
     position: fixed;
   }
