@@ -16,13 +16,13 @@ export const HomeTitle = styled.h1`
   font-family: "EB Garamond", serif;
   font-weight: 400;
   font-style: oblique;
-  font-size: 80px;
+  font-size: 70px;
   letter-spacing: -0.05em;
-  padding: 0;
-  margin: 0 auto 15px;
+  margin-bottom: 16px;
 
   @media (width <= 768px) {
     font-size: 50px;
+    margin-bottom: 8px;
   }
 `;
 

@@ -19,8 +19,7 @@ export default function Navbar() {
           />
         </NavLink>
         <NavbarMenu>
-          <NavLink to="/study">Study</NavLink>
-          <a href="mailto:zaidandzaki@gmail.com">Contact</a>
+          <NavLink to="/study">Blog</NavLink>
         </NavbarMenu>
       </NavbarContainer>
     </NavbarStyled>

@@ -15,8 +15,13 @@ export const NavbarContainer = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
-  max-width: 1440px;
+  max-width: 600px;
   margin: 0 auto;
+  padding: 0 8px;
+
+  @media (width <= 768px) {
+    padding: 0px;
+  }
 `;
 
 export const NavbarLogo = styled.img`
@@ -25,7 +30,7 @@ export const NavbarLogo = styled.img`
   display: block;
 `;
 
-export const NavbarMenu = styled.div`
+export const NavbarMenu = styled.menu`
   display: flex;
   flex-direction: row;
   align-items: center;
