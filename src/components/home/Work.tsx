@@ -6,6 +6,7 @@ import {
 } from "../common/styles/CommonStyled.tsx";
 import { workItemData } from "../../data/home/workItemData";
 import { WorkItem } from "./WorkItem.tsx";
+import { WorkItemDetail } from "./WorkItemDetail.tsx";
 import { useState } from "react";
 import { workItemTypes } from "../../types/homeTypes";
 
@@ -27,8 +28,17 @@ export default function Work() {
             key={index}
             isOpen={openItemIndex === index}
             onClick={() => toggleItem(index)}
-            {...workItem}
+            companyName={workItem.companyName}
           />
+          <WorkItemDetail
+            servicesItems={workItem.servicesItems}
+            year={workItem.year}
+            industry={workItem.industry}
+            detail={workItem.detail}
+            images={workItem.images}
+            isOpen={openItemIndex === index}
+          />
+
           <Divider />
         </>
       ))}

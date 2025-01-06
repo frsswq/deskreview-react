@@ -1,4 +1,4 @@
-import{d as i,j as t}from"./main-s3WgPMsc.js";const o=i.footer`
+import{d as i,j as t}from"./main-oa4INqr8.js";const o=i.footer`
   display: flex;
   flex-direction: row;
   justify-content: center;

@@ -1,4 +1,4 @@
-import{j as e,d as t}from"./main-s3WgPMsc.js";import{N as i}from"./Navbar-BfVqFuhc.js";function f(){return e.jsxs(e.Fragment,{children:[e.jsx(n,{children:e.jsx(i,{})}),e.jsxs(r,{children:[e.jsx("p",{children:"404"}),e.jsx("p",{children:"Not Found"})]})]})}const n=t.div`
+import{j as e,d as t}from"./main-oa4INqr8.js";import{N as i}from"./Navbar-CJP_yzB2.js";function f(){return e.jsxs(e.Fragment,{children:[e.jsx(n,{children:e.jsx(i,{})}),e.jsxs(r,{children:[e.jsx("p",{children:"404"}),e.jsx("p",{children:"Not Found"})]})]})}const n=t.div`
   nav {
     position: fixed;
   }
