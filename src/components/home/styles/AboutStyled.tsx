@@ -8,14 +8,15 @@ export const ManifestoText = styled.p`
   span {
     font-family: "EB Garamond", serif;
     font-style: oblique;
-    font-size: var(--text-2xl);
+    font-size: var(--text-xl);
+    line-height: 1;
   }
 
   @media (width <= 768px) {
     font-size: var(--text-base);
 
     span {
-      font-size: var(--text-lg);
+      font-size: var(--text-base);
     }
   }
 `;

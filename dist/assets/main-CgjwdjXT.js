@@ -364,14 +364,15 @@ Please change the parent <Route path="${q}"> to <Route path="${q==="/"?"*":`${q}
   span {
     font-family: "EB Garamond", serif;
     font-style: oblique;
-    font-size: var(--text-2xl);
+    font-size: var(--text-xl);
+    line-height: 1;
   }
 
   @media (width <= 768px) {
     font-size: var(--text-base);
 
     span {
-      font-size: var(--text-lg);
+      font-size: var(--text-base);
     }
   }
 `,zp=Dt.blockquote`
