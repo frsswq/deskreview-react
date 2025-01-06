@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ManifestoText = styled.p`
   font-size: var(--text-xl);
   overflow-wrap: break-word;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 
   span {
     font-family: "EB Garamond", serif;

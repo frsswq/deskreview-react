@@ -10,6 +10,10 @@ export const SectionContainer = styled.section`
   max-width: var(--max-w);
   width: 100%;
   margin: 0px auto 40px;
+
+  @media (width <= 768px) {
+    margin: 0px auto 30px;
+  }
 `;
 
 export const HomeTitle = styled.h1`
