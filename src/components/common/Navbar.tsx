@@ -19,7 +19,7 @@ export default function Navbar() {
           />
         </NavLink>
         <NavbarMenu>
-          <NavLink to="/study">Blog</NavLink>
+          <NavLink to="/blog">Blog</NavLink>
         </NavbarMenu>
       </NavbarContainer>
     </NavbarStyled>
