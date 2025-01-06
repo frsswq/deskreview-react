@@ -14,10 +14,10 @@ export const SectionContainer = styled.section`
 
 export const HomeTitle = styled.h1`
   font-family: "EB Garamond", serif;
-  font-weight: 400;
+  font-weight: 500;
   font-style: oblique;
   font-size: 70px;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.06em;
   margin-bottom: 16px;
 
   @media (width <= 768px) {

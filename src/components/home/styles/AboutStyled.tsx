@@ -25,7 +25,6 @@ export const ManifestoQuote = styled.blockquote`
 
   p {
     font-family: "EB Garamond", serif;
-    font-weight: 300;
     line-height: 1.2;
     text-align: left;
     max-width: 100%;
