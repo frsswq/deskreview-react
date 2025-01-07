@@ -1,4 +1,4 @@
-export interface workItemTypes {
+export interface workItemDataTypes {
   companyName: string;
   servicesItems: string[];
   year: string;
@@ -7,13 +7,13 @@ export interface workItemTypes {
   images?: string[];
 }
 
-export interface workItemButtonTypes {
+export interface workItemButtonProps {
   companyName: string;
   isOpen: boolean;
   onClick: () => void;
 }
 
-export interface workItemDetailTypes {
+export interface workItemDetailProps {
   servicesItems: string[];
   year: string;
   industry: string;
@@ -22,7 +22,7 @@ export interface workItemDetailTypes {
   isOpen: boolean;
 }
 
-export interface servicesTypes {
+export interface servicesDataTypes {
   type: string;
   service: string[];
 }

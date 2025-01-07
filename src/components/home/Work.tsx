@@ -5,10 +5,10 @@ import {
   Divider,
   HomeItemTitle,
 } from "../common/styles/CommonStyled.tsx";
-import WorkItem from "./WorkItem.tsx";
+import WorkItem from "./WorkItemButton.tsx";
 import WorkItemDetail from "./WorkItemDetail.tsx";
 import { workItemData } from "../../data/home/workItemData";
-import { workItemTypes } from "../../types/homeTypes";
+import { workItemDataTypes } from "../../types/homeTypes";
 
 export default function Work() {
   const [openItemIndex, setOpenItemIndex] = useState<number | null>(null);
@@ -22,7 +22,7 @@ export default function Work() {
       <HomeTitle style={{ textIndent: "-0.15em" }}>Works</HomeTitle>
       <HomeItemTitle>Company</HomeItemTitle>
       <Divider />
-      {workItemData.map((workItem: workItemTypes, index: number) => (
+      {workItemData.map((workItem: workItemDataTypes, index: number) => (
         <>
           <WorkItem
             key={index}

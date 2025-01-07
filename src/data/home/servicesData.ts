@@ -1,6 +1,6 @@
-import { servicesTypes } from "../../types/homeTypes";
+import { servicesDataTypes } from "../../types/homeTypes";
 
-export const servicesData: servicesTypes[] = [
+export const servicesData: servicesDataTypes[] = [
   {
     type: "Digital Campaign",
     service: [

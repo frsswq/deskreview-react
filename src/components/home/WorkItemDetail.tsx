@@ -2,7 +2,7 @@ import {
   WorkItemDetailStyled,
   WorkItemGrid,
 } from "./styles/WorkItemDetailStyled.tsx";
-import { workItemDetailTypes } from "../../types/homeTypes";
+import { workItemDetailProps } from "../../types/homeTypes";
 import { usePreloadImages } from "../../hooks/preloadImages";
 import { useState } from "react";
 
@@ -13,7 +13,7 @@ export default function WorkItemDetail({
   detail,
   images = [],
   isOpen,
-}: workItemDetailTypes) {
+}: workItemDetailProps) {
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
 
   usePreloadImages(images);
