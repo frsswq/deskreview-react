@@ -27,6 +27,11 @@ export const NavbarLogo = styled.img`
   width: 120px;
   height: auto;
   display: block;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
 `;
 
 export const NavbarMenu = styled.menu`
@@ -38,16 +43,16 @@ export const NavbarMenu = styled.menu`
   a {
     display: flex;
     font-family: "DM Sans", sans-serif;
+    font-weight: 400;
     font-size: var(--text-base);
-    color: rgb(var(--desk-gray-700));
+    color: rgba(var(--desk-gray-700), 0.8);
     line-height: 1;
     text-decoration-line: none;
     padding-left: 12px;
     letter-spacing: -0.025em;
 
     &:hover {
-      color: rgb(var(--desk-black));
-      font-weight: 500;
+      color: rgba(var(--desk-black));
     }
   }
 `;
