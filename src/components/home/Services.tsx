@@ -1,7 +1,7 @@
 import { ServicesItemContainer } from "./styles/ServicesStyled.tsx";
 import {
   SectionContainer,
-  HomeTitle,
+  DefaultTitle,
   HomeItemTitle,
   HomeItemText,
 } from "../common/styles/CommonStyled.tsx";
@@ -12,7 +12,7 @@ import { Divider } from "../common/styles/CommonStyled.tsx";
 export default function Services() {
   return (
     <SectionContainer>
-      <HomeTitle>Services</HomeTitle>
+      <DefaultTitle>Services</DefaultTitle>
       <ServicesItemContainer>
         {servicesData.map((servicesCategory: servicesDataTypes) => (
           <div key={servicesCategory.type}>

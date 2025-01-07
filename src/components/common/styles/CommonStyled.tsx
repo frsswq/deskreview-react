@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const MainStyled = styled.main`
+  padding: 32px 16px;
+`;
+
 export const Container = styled.div`
   max-width: var(--max-w);
   width: 100%;
@@ -16,7 +20,7 @@ export const SectionContainer = styled.section`
   }
 `;
 
-export const HomeTitle = styled.h1`
+export const DefaultTitle = styled.h1`
   font-family: "EB Garamond", serif;
   font-weight: 500;
   font-style: oblique;

@@ -15,6 +15,15 @@ export const WorkItemDetailStyled = styled.div<WorkItemDetailProps>`
   flex-direction: column;
   gap: 12px 0;
 
+  @media (width <= 768px) {
+    gap: 8px 0;
+  }
+`;
+
+export const WorkItemGrid = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
   img {
     object-fit: contain;
     cursor: pointer;
@@ -25,19 +34,6 @@ export const WorkItemDetailStyled = styled.div<WorkItemDetailProps>`
     border: 1.5px solid rgb(var(--desk-gray-700));
     border-radius: 8px;
   }
-
-  @media (width <= 768px) {
-    gap: 8px 0;
-
-    img {
-      max-width: 95%;
-    }
-  }
-`;
-
-export const WorkItemGrid = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 2fr;
 
   ul {
     display: grid;
@@ -71,6 +67,10 @@ export const WorkItemGrid = styled.div`
   }
 
   @media (width <= 768px) {
+    img {
+      max-width: 95%;
+    }
+
     ul {
       gap: 2px 0;
     }

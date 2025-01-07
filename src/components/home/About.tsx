@@ -1,10 +1,13 @@
-import { SectionContainer, HomeTitle } from "../common/styles/CommonStyled.tsx";
+import {
+  SectionContainer,
+  DefaultTitle,
+} from "../common/styles/CommonStyled.tsx";
 import { ManifestoText, ManifestoQuote } from "./styles/AboutStyled.tsx";
 
 export default function About() {
   return (
     <SectionContainer>
-      <HomeTitle>Manifesto</HomeTitle>
+      <DefaultTitle>Manifesto</DefaultTitle>
       <ManifestoText>
         <span>To Seek for The Sun</span>–A commitment to constantly exploring
         innovative and emerging sciences in marketing and branding. We focus on

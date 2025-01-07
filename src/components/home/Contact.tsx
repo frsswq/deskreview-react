@@ -1,4 +1,4 @@
-import { SectionContainer, HomeTitle } from "../common/styles/CommonStyled";
+import { SectionContainer, DefaultTitle } from "../common/styles/CommonStyled";
 import { ContactContainer, ContactButton } from "./styles/ContactStyled";
 import {
   EnvelopeClosedIcon,
@@ -9,7 +9,7 @@ import {
 export default function Contact() {
   return (
     <SectionContainer>
-      <HomeTitle>Get in touch</HomeTitle>
+      <DefaultTitle>Get in touch</DefaultTitle>
       <ContactContainer>
         <ContactButton href="mailto:zaidandzaki@gmail.com" target="_blank">
           <p>Email us</p>

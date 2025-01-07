@@ -1,7 +1,7 @@
 import { useState } from "react";
 import {
   SectionContainer,
-  HomeTitle,
+  DefaultTitle,
   Divider,
   HomeItemTitle,
 } from "../common/styles/CommonStyled.tsx";
@@ -19,7 +19,7 @@ export default function Work() {
 
   return (
     <SectionContainer>
-      <HomeTitle style={{ textIndent: "-0.15em" }}>Works</HomeTitle>
+      <DefaultTitle style={{ textIndent: "-0.15em" }}>Works</DefaultTitle>
       <HomeItemTitle>Company</HomeItemTitle>
       <Divider />
       {workItemData.map((workItem: workItemDataTypes, index: number) => (
