@@ -16,4 +16,5 @@ const BlogButtonImage = styled.img`
   max-height: 80%;
   object-fit: contain;
   border-radius: 8px;
+  border: 2px solid rgba(var(--desk-gray-300));
 `;

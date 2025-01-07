@@ -26,3 +26,9 @@ export interface servicesDataTypes {
   type: string;
   service: string[];
 }
+
+export interface blogPageDataTypes {
+  tittle: string;
+  category: string;
+  images?: string[];
+}
