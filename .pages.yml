@@ -3,4 +3,6 @@ content:
   - name: posts
     label: Posts
     type: collection
-    path: src/contents
+    path: 'src/contents'
+    view:
+      fields: [title]
