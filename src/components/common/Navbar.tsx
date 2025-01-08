@@ -5,6 +5,7 @@ import {
   NavbarMenu,
 } from "./styles/NavbarStyled.tsx";
 import navbarNavigation from "../../hooks/navbarNavigation.ts";
+import logoSvg from "/svg/logo_full_navbar.svg";
 
 export default function Navbar() {
   const { handleClick } = navbarNavigation();
@@ -20,12 +21,7 @@ export default function Navbar() {
     <NavbarStyled>
       <NavbarContainer>
         <a href="/" onClick={(e) => handleClick(e, "/")}>
-          <NavbarLogo
-            src="svg/logo_full_navbar.svg"
-            alt="Navbar_Logo"
-            width="120"
-            height="30"
-          />
+          <NavbarLogo src={logoSvg} alt="Navbar_Logo" width="120" height="30" />
         </a>
         <NavbarMenu>
           {menuItems.map((item) => (

@@ -3,14 +3,19 @@ import GlobalStyles from "./components/common/styles/GlobalStyles.tsx";
 import Home from "./pages/Home.tsx";
 import Blog from "./pages/Blog.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import { createPageRoutes } from "./utils/createPageRoutes.tsx";
 
 export default function App() {
+  const MdxRoutes = createPageRoutes();
   return (
     <>
       <GlobalStyles />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog">
+          <Route index element={<Blog />} />
+          {MdxRoutes}
+        </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
