@@ -1,1 +1,6 @@
-media: public/blog
+media: public/img/blog
+content:
+  - name: posts
+    label: Posts
+    type: collection
+    path: src/contents
