@@ -2,25 +2,25 @@ import styled from "styled-components";
 
 export const NavbarStyled = styled.nav`
   background-color: rgb(var(--desk-white));
-  padding: 16px 16px;
+  padding: 16px 20px;
   border-bottom: 1px solid rgb(var(--desk-gray-300));
   position: sticky;
   top: 0;
   width: 100%;
   height: auto;
   z-index: 1000;
+
+  @media (width <= 768px) {
+    padding: 16px;
+  }
 `;
 
 export const NavbarContainer = styled.div`
   display: flex;
   flex-direction: row;
+  max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 4px;
-
-  @media (width <= 768px) {
-    padding: 0px;
-  }
 `;
 
 export const NavbarLogo = styled.img`
