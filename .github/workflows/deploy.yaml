@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: write # Required to push to the gh-pages branch
 
 jobs:
   deploy:
@@ -28,6 +28,11 @@ jobs:
 
       - name: Run predeploy script
         run: npm run predeploy
+
+      - name: Configure Git user
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
 
       - name: Deploy to GitHub Pages
         run: npm run deploy
