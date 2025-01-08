@@ -43,7 +43,7 @@ export default function About() {
           A brand is not what you say it is; <br />
           It's what they say it is
         </p>
-        <p>- Marty Neumeier</p>
+        <p id="work">- Marty Neumeier</p>
       </ManifestoQuote>
     </SectionContainer>
   );

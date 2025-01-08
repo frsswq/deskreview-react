@@ -16,6 +16,7 @@ export const NavbarContainer = styled.div`
   flex-direction: row;
   width: 100%;
   margin: 0 auto;
+  padding: 0 4px;
 
   @media (width <= 768px) {
     padding: 0px;
@@ -52,6 +53,12 @@ export const NavbarMenu = styled.menu`
 
     &:hover {
       color: rgba(var(--desk-black));
+    }
+
+    &:not(:nth-child(3)) {
+      @media (width <= 768px) {
+        display: none;
+      }
     }
   }
 `;

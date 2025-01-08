@@ -2,6 +2,7 @@ import {
   DefaultTitle,
   MainStyled,
   SectionContainer,
+  Divider,
 } from "../common/styles/CommonStyled";
 import { BlogButtonContainer } from "./styles/BlogButtonStyled";
 import { blogPageData } from "../../data/blog/blogPage";
@@ -14,6 +15,7 @@ export default function BlogMain() {
       <SectionContainer>
         <DefaultTitle>Study</DefaultTitle>
         <BlogButtonContainer>
+          <Divider />
           {blogPageData.map((pageData: blogPageDataTypes, index: number) => (
             <BlogButton key={index} {...pageData} />
           ))}
