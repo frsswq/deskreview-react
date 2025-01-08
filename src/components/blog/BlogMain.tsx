@@ -1,18 +1,24 @@
-import { DefaultTitle, MainStyled } from "../common/styles/CommonStyled";
+import {
+  DefaultTitle,
+  MainStyled,
+  SectionContainer,
+} from "../common/styles/CommonStyled";
 import { BlogButtonContainer } from "./styles/BlogButtonStyled";
-import { BlogListContainer } from "./styles/BlogMainStyled";
+import { blogPageData } from "../../data/blog/blogPage";
+import { blogPageDataTypes } from "../../types/homeTypes";
 import BlogButton from "./BlogButton";
 
 export default function BlogMain() {
   return (
     <MainStyled>
-      <BlogListContainer>
+      <SectionContainer>
         <DefaultTitle>Study</DefaultTitle>
         <BlogButtonContainer>
-          <BlogButton></BlogButton>
-          <BlogButton></BlogButton>
+          {blogPageData.map((pageData: blogPageDataTypes, index: number) => (
+            <BlogButton key={index} {...pageData} />
+          ))}
         </BlogButtonContainer>
-      </BlogListContainer>
+      </SectionContainer>
     </MainStyled>
   );
 }

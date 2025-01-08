@@ -1,20 +1,24 @@
-import { BlogButtonStyled } from "./styles/BlogButtonStyled";
-import styled from "styled-components";
+import {
+  BlogButtonStyled,
+  BlogButtonImage,
+  BlogButtonDetailContainer,
+} from "./styles/BlogButtonStyled";
+import { blogPageDataTypes } from "../../types/homeTypes";
 
-export default function BlogButton() {
+export default function BlogButton({
+  pageImage,
+  title,
+  category,
+}: blogPageDataTypes) {
   return (
-    <BlogButtonStyled>
-      <BlogButtonImage src="blog/method_review/01/oatside_4.png" />
-    </BlogButtonStyled>
+    <div>
+      <BlogButtonStyled>
+        <BlogButtonImage src={pageImage} />
+      </BlogButtonStyled>
+      <BlogButtonDetailContainer>
+        <p>{title}</p>
+        <p>{category}</p>
+      </BlogButtonDetailContainer>
+    </div>
   );
 }
-
-const BlogButtonImage = styled.img`
-  margin: auto;
-  height: auto;
-  max-width: 80%;
-  max-height: 80%;
-  object-fit: contain;
-  border-radius: 8px;
-  border: 2px solid rgba(var(--desk-gray-300));
-`;

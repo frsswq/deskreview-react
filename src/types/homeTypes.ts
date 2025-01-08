@@ -28,7 +28,7 @@ export interface servicesDataTypes {
 }
 
 export interface blogPageDataTypes {
-  tittle: string;
+  title: string;
   category: string;
-  images?: string[];
+  pageImage: string;
 }
