@@ -1,11 +1,14 @@
 # Deskreview (still in development)
 
-Site for deskreview creative agency. Built using [Astro](https://astro.build/).
+Static site for deskreview creative agency. Built with love using [React](https://react.dev/).
 
 ## Tech Stack
 
-- [Astro](https://astro.build)
-- [TailwindCSS](https://tailwindcss.com/)
+- [React](https://react.dev/) [ Development ]
+- [React Router](https://reactrouter.com/) [ Routing ]
+- [Styled Component](https://styled-components.com/) [ Styling]
+- [Pages CMS](https://pagescms.org/) [ CMS ]
+- [Fontsource](https://fontsource.org/) [ Self-host Fonts ]
 
 ## Steps
 
