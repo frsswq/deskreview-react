@@ -34,6 +34,10 @@ jobs:
           git config --global user.name "frsswq"
           git config --global user.email "farissaifuddin.work@gmail.com"
 
+      - name: Update Git remote URL
+        run: |
+          git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+
       - name: Deploy to GitHub Pages
         run: npm run deploy
         env:

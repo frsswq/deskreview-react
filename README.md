@@ -19,19 +19,19 @@ $ git clone https://github.com/frsswq/deskreview-react
 
 ```bash
 # Go into the repository
-$ cd deskreview
+$ cd deskreview-react
 ```
 
 ```bash
 # Install dependencies
-$ pnpm install
-or
 $ npm install
+or
+$ pnpm install
 ```
 
 ```bash
 # Start the project in development
-$ pnpm run dev
-or
 $ npm run dev
+or
+$ pnpm run dev
 ```
