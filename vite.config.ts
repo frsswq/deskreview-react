@@ -9,9 +9,17 @@ function renderChunks(deps: Record<string, string>) {
   let chunks: Record<string, string[]> = {};
   Object.keys(deps).forEach((key) => {
     if (
-      ["react", "react-router", "react-dom", "path", "fs", "fs-extra"].includes(
-        key
-      )
+      [
+        "react",
+        "react-router",
+        "react-dom",
+        "path",
+        "fs",
+        "fs-extra",
+        "sharp",
+        "@fontsource/eb-garamond",
+        "@fontsource/dm-sans",
+      ].includes(key)
     )
       return;
     chunks[key] = [key];
@@ -34,6 +42,7 @@ export default defineConfig({
       },
     },
   ],
+
   build: {
     rollupOptions: {
       input: {
