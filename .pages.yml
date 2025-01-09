@@ -6,3 +6,11 @@ content:
     path: 'src/contents'
     view:
       fields: [title]
+    fields:
+      - { name: title, type: string}
+      - { name: description, type: string}
+      - { name: date, type: string}
+      - { name: tags, type: string, list: true}
+      - { name: category, type: string}
+      - { name: author, type: string}
+      - { name: body, type: rich-text}
