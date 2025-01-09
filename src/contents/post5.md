@@ -1,7 +1,7 @@
 ---
 title: "The Future of Renewable Energy"
 description: "How renewable energy is shaping the future of our planet."
-date: 2023-10-20
+date: 20-10-2023
 tags:
   - renewable-energy
   - sustainability

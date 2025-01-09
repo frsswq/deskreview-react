@@ -1,7 +1,7 @@
 ---
 title: "Introduction to Machine Learning"
 description: "A beginner's guide to understanding the basics of machine learning."
-date: 2023-10-01
+date: 01-10-2023
 tags:
   - machine-learning
   - artificial-intelligence

@@ -1,7 +1,7 @@
 ---
 title: "The Art of Gardening"
 description: "Learn how to create and maintain a beautiful garden."
-date: 2023-10-05
+date: 05-10-2023
 tags:
   - gardening
   - plants

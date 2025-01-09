@@ -1,7 +1,7 @@
 ---
 title: "Healthy Eating Habits"
 description: "Tips and tricks for maintaining a balanced diet."
-date: 2023-10-15
+date: 15-10-2023
 tags:
   - nutrition
   - health
