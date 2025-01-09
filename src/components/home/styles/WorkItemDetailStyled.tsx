@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 interface WorkItemDetailProps {
-  isOpen: boolean;
+  $isOpen: boolean;
 }
 
 export const WorkItemDetailStyled = styled.div<WorkItemDetailProps>`
-  max-height: ${({ isOpen }) => (isOpen ? "3000px" : "0")};
-  visibility: ${({ isOpen }) => (isOpen ? "visible" : "hidden")};
+  max-height: ${({ $isOpen }) => ($isOpen ? "3000px" : "0")};
+  visibility: ${({ $isOpen }) => ($isOpen ? "visible" : "hidden")};
   overflow: hidden;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.87, 0, 0.13, 1);

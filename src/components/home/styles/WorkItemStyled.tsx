@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 interface WorkItemProps {
-  isOpen: boolean;
+  $isOpen: boolean;
 }
 
 export const WorkItemStyled = styled.button<WorkItemProps>`
@@ -17,7 +17,8 @@ export const WorkItemStyled = styled.button<WorkItemProps>`
 
   svg {
     margin-left: auto;
-    transform: ${({ isOpen }) => (isOpen ? "rotate(180deg)" : "rotate(0deg)")};
+    transform: ${({ $isOpen }) =>
+      $isOpen ? "rotate(180deg)" : "rotate(0deg)"};
     transition-property: transform;
     transition-timing-function: cubic-bezier(0.87, 0, 0.13, 1);
     transition-duration: 300ms;

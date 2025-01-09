@@ -1,25 +1,26 @@
 import { Route } from "react-router";
 import BlogPost from "../pages/BlogPost";
-
-interface MDXModule {
-  default: React.ComponentType;
-}
+import ReactMarkdown from "react-markdown";
 
 export function createPageRoutes() {
-  const mdxFiles = import.meta.glob<MDXModule>("../contents/*.mdx", {
+  const markdownFiles = import.meta.glob<{
+    frontmatter: any;
+    content: string;
+  }>("../contents/*.md", {
     eager: true,
   });
 
-  return Object.entries(mdxFiles).map(([path, module]) => {
-    const fileName = path.match(/\/([^/]+)\.mdx$/)?.[1] || "";
+  return Object.entries(markdownFiles).map(([path, module]) => {
+    const fileName = path.match(/\/([^/]+)\.md$/)?.[1] || "";
+    const { frontmatter, content } = module;
 
     return (
       <Route
         key={fileName}
         path={fileName}
         element={
-          <BlogPost>
-            <module.default />
+          <BlogPost frontmatter={frontmatter}>
+            <ReactMarkdown children={content} />
           </BlogPost>
         }
       />

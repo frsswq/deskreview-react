@@ -1,10 +1,22 @@
 import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-import mdx from "@mdx-js/rollup";
 import { resolve } from "path";
+import react from "@vitejs/plugin-react";
+import matter from "gray-matter";
 
 export default defineConfig({
-  plugins: [react(), mdx()],
+  plugins: [
+    react(),
+    {
+      name: "markdown-loader",
+      transform(code, id) {
+        if (id.slice(-3) === ".md") {
+          const { data: frontmatter, content } = matter(code);
+          return `export const frontmatter = ${JSON.stringify(frontmatter)};
+                  export const content = ${JSON.stringify(content)};`;
+        }
+      },
+    },
+  ],
   build: {
     rollupOptions: {
       input: {

@@ -25,12 +25,14 @@ export default function WorkItemDetail({
   };
 
   return (
-    <WorkItemDetailStyled isOpen={isOpen}>
+    <WorkItemDetailStyled $isOpen={isOpen}>
       <WorkItemGrid>
         <p className="title">Services</p>
         <ul>
-          {servicesItems.map((item) => (
-            <li className="text">{item}</li>
+          {servicesItems.map((item, index) => (
+            <li key={index} className="text">
+              {item}
+            </li>
           ))}
         </ul>
       </WorkItemGrid>

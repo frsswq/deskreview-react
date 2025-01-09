@@ -9,7 +9,7 @@ export default function WorkItem({
   onClick,
 }: workItemButtonProps) {
   return (
-    <WorkItemStyled onClick={onClick} isOpen={isOpen}>
+    <WorkItemStyled onClick={onClick} $isOpen={isOpen}>
       <HomeItemText>{companyName}</HomeItemText>
       <CaretDownIcon />
     </WorkItemStyled>

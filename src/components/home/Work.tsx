@@ -23,9 +23,8 @@ export default function Work() {
       <HomeItemTitle>Company</HomeItemTitle>
       <Divider />
       {workItemData.map((workItem: workItemDataTypes, index: number) => (
-        <>
+        <div key={index}>
           <WorkItem
-            key={index}
             isOpen={openItemIndex === index}
             onClick={() => toggleItem(index)}
             companyName={workItem.companyName}
@@ -39,7 +38,7 @@ export default function Work() {
             isOpen={openItemIndex === index}
           />
           <Divider />
-        </>
+        </div>
       ))}
     </SectionContainer>
   );

@@ -6,7 +6,8 @@ import NotFound from "./pages/NotFound.tsx";
 import { createPageRoutes } from "./utils/createPageRoutes.tsx";
 
 export default function App() {
-  const MdxRoutes = createPageRoutes();
+  const mdRoutes = createPageRoutes();
+
   return (
     <>
       <GlobalStyles />
@@ -14,7 +15,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/blog">
           <Route index element={<Blog />} />
-          {MdxRoutes}
+          {mdRoutes}
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
