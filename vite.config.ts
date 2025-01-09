@@ -1,7 +1,6 @@
 import { dependencies } from "./package.json";
 import { defineConfig } from "vite";
 import { resolve } from "path";
-import { visualizer } from "rollup-plugin-visualizer";
 import react from "@vitejs/plugin-react";
 import matter from "gray-matter";
 
@@ -30,7 +29,6 @@ function renderChunks(deps: Record<string, string>) {
 export default defineConfig({
   plugins: [
     react(),
-    visualizer(),
     {
       name: "markdown-loader",
       transform(code, id) {

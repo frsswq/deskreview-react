@@ -6,7 +6,7 @@ Static site for deskreview creative agency. Built with love using [React](https:
 
 - [React](https://react.dev/) [ Development ]
 - [React Router](https://reactrouter.com/) [ Routing ]
-- [Styled Component](https://styled-components.com/) [ Styling]
+- [Styled Component](https://styled-components.com/) [ Styling ]
 - [Pages CMS](https://pagescms.org/) [ CMS ]
 - [Fontsource](https://fontsource.org/) [ Self-host Fonts ]
 - [Tailwind](https://tailwindcss.com/) [ Tailwind Prose Plugin ]

@@ -16,7 +16,7 @@ export interface MarkdownFile {
 
 export interface BlogPostProps {
   frontmatter: {
-    title?: string;
+    title: string;
     description?: string;
     date?: string;
     tags?: string[];

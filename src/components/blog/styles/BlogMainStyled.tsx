@@ -9,3 +9,8 @@ export const BlogListContainer = styled.section`
     margin: 0px auto 30px;
   }
 `;
+
+export const BlogButtonContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
