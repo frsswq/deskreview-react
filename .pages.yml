@@ -1,4 +1,6 @@
-media: public/img/blog
+media: 
+  input: public/img/blog
+  output: img/blog
 content:
   - name: posts
     label: Posts
@@ -7,9 +9,9 @@ content:
     view:
       fields: [title]
     fields:
-      - { name: title, type: string}
+      - { name: title, type: string, required: true}
       - { name: description, type: string}
-      - { name: date, type: string}
+      - { name: date, type: string, required: true}
       - { name: tags, type: string, list: true}
       - { name: category, type: string}
       - { name: author, type: string}
