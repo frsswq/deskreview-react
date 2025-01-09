@@ -1,11 +1,28 @@
+import { dependencies } from "./package.json";
 import { defineConfig } from "vite";
 import { resolve } from "path";
+import { visualizer } from "rollup-plugin-visualizer";
 import react from "@vitejs/plugin-react";
 import matter from "gray-matter";
+
+function renderChunks(deps: Record<string, string>) {
+  let chunks: Record<string, string[]> = {};
+  Object.keys(deps).forEach((key) => {
+    if (
+      ["react", "react-router", "react-dom", "path", "fs", "fs-extra"].includes(
+        key
+      )
+    )
+      return;
+    chunks[key] = [key];
+  });
+  return chunks;
+}
 
 export default defineConfig({
   plugins: [
     react(),
+    visualizer(),
     {
       name: "markdown-loader",
       transform(code, id) {
@@ -22,6 +39,13 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, "index.html"),
         404: resolve(__dirname, "404.html"),
+      },
+
+      output: {
+        manualChunks: {
+          vendor: ["react", "react-dom", "react-router"],
+          ...renderChunks(dependencies),
+        },
       },
     },
   },

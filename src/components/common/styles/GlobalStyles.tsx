@@ -55,10 +55,6 @@ const GlobalStyles = createGlobalStyle`
     }
   }
 
-  li {
-    list-style-type: none;
-  }
-
   main {
     padding: 0 16px;
   }

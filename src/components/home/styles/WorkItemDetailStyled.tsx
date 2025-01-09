@@ -40,6 +40,10 @@ export const WorkItemGrid = styled.div`
     gap: 4px 0;
   }
 
+  li {
+    list-style-type: none;
+  }
+
   &:first-of-type {
     margin-top: 16px;
   }

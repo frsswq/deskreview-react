@@ -1,15 +1,10 @@
 import { Route } from "react-router";
-import BlogPost from "../pages/BlogPost";
+import { lazy } from "react";
 import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import { Frontmatter } from "../types/blogTypes";
 
-interface Frontmatter {
-  title?: string;
-  description?: string;
-  date?: string;
-  tags?: string[];
-  category?: string;
-  author?: string;
-}
+const BlogPost = lazy(() => import("../pages/BlogPost"));
 
 export function createPageRoutes() {
   const markdownFiles = import.meta.glob<{
@@ -29,7 +24,7 @@ export function createPageRoutes() {
         path={fileName}
         element={
           <BlogPost frontmatter={frontmatter}>
-            <ReactMarkdown children={content} />
+            <ReactMarkdown children={content} remarkPlugins={[remarkGfm]} />
           </BlogPost>
         }
       />
