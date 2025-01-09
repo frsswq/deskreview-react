@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 
 export interface Frontmatter {
-  title?: string;
+  title: string;
   description?: string;
   date?: string;
   tags?: string[];
