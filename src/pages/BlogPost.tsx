@@ -21,7 +21,7 @@ interface BlogPostProps {
 
 export default function BlogPost({ frontmatter, children }: BlogPostProps) {
   const formattedDate = frontmatter.date
-    ? format(new Date(frontmatter.date), "dd/MM/yy")
+    ? format(new Date(frontmatter.date), "dd/MM/yyyy")
     : null;
 
   return (

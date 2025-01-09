@@ -2,9 +2,18 @@ import { Route } from "react-router";
 import BlogPost from "../pages/BlogPost";
 import ReactMarkdown from "react-markdown";
 
+interface Frontmatter {
+  title?: string;
+  description?: string;
+  date?: string;
+  tags?: string[];
+  category?: string;
+  author?: string;
+}
+
 export function createPageRoutes() {
   const markdownFiles = import.meta.glob<{
-    frontmatter: any;
+    frontmatter: Frontmatter;
     content: string;
   }>("../contents/*.md", {
     eager: true,
