@@ -1,6 +1,6 @@
 ---
 title: "Media Review: Monster (2023) and Human Instinct"
-linkname: media-review-monster
+linkname: monster-and-human-instinct
 date: 01-02-2024
 tag: Method Review
 author: Dzaki Zaidan
