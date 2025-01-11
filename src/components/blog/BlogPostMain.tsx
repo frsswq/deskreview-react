@@ -88,12 +88,14 @@ const BlogPostHeaderDetail = styled.div`
 
 const BlogPostContent = styled.article`
   margin-top: 2rem;
+  min-width: 100%;
 
   p,
   li {
     font-family: "DM Sans", sans-serif;
     font-size: var(--text-lg);
     color: black;
+    max-width: 95%;
   }
 
   h1,

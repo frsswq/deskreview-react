@@ -1,4 +1,4 @@
-import{p as t}from"./react-markdown-DL4AOBV-.js";import{f,M as p,S as x,N as c,F as h}from"./main-ByM-64pN.js";import{d as i}from"./styled-components-CgetkSgC.js";import"./vendor-C-q9OyUs.js";import"./@radix-ui/react-icons-88m-rOiV.js";import"./date-fns-B4QYC8g5.js";import"./remark-gfm-ClnCoDhK.js";function d({frontmatter:e,children:a}){const{title:s,date:o,tag:n,author:r,description:l}=e,m=o?f(o):null;return t.jsx(p,{children:t.jsxs(x,{children:[t.jsxs(g,{children:[s&&t.jsx("h1",{children:s}),l&&t.jsx("p",{className:"desc",children:l}),t.jsxs(j,{children:[n&&t.jsx("p",{className:"tag",children:n}),r&&t.jsx("p",{className:"capitalize author",children:r}),m&&t.jsx("p",{className:"date",children:m})]})]}),t.jsx(u,{className:"prose",children:a})]})})}const g=i.article`
+import{p as t}from"./react-markdown-DL4AOBV-.js";import{f,M as p,S as x,N as h,F as c}from"./main-z4btMu56.js";import{d as i}from"./styled-components-CgetkSgC.js";import"./vendor-C-q9OyUs.js";import"./@radix-ui/react-icons-88m-rOiV.js";import"./date-fns-B4QYC8g5.js";import"./remark-gfm-ClnCoDhK.js";function d({frontmatter:e,children:a}){const{title:s,date:o,tag:n,author:r,description:l}=e,m=o?f(o):null;return t.jsx(p,{children:t.jsxs(x,{children:[t.jsxs(g,{children:[s&&t.jsx("h1",{children:s}),l&&t.jsx("p",{className:"desc",children:l}),t.jsxs(j,{children:[n&&t.jsx("p",{className:"tag",children:n}),r&&t.jsx("p",{className:"capitalize author",children:r}),m&&t.jsx("p",{className:"date",children:m})]})]}),t.jsx(u,{className:"prose",children:a})]})})}const g=i.article`
   display: flex;
   flex-direction: column;
   margin-top: 20px;
@@ -54,12 +54,14 @@ import{p as t}from"./react-markdown-DL4AOBV-.js";import{f,M as p,S as x,N as c,F
   }
 `,u=i.article`
   margin-top: 2rem;
+  min-width: 100%;
 
   p,
   li {
     font-family: "DM Sans", sans-serif;
     font-size: var(--text-lg);
     color: black;
+    max-width: 95%;
   }
 
   h1,
@@ -105,4 +107,4 @@ import{p as t}from"./react-markdown-DL4AOBV-.js";import{f,M as p,S as x,N as c,F
       font-size: 30px;
     }
   }
-`;function D({frontmatter:e,children:a}){return t.jsxs(t.Fragment,{children:[t.jsx(c,{}),t.jsx(d,{frontmatter:e,children:a}),t.jsx(h,{})]})}export{D as default};
+`;function D({frontmatter:e,children:a}){return t.jsxs(t.Fragment,{children:[t.jsx(h,{}),t.jsx(d,{frontmatter:e,children:a}),t.jsx(c,{})]})}export{D as default};
