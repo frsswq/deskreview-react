@@ -8,3 +8,7 @@ export const parseDateUtil = (dateString: string): Date => {
 export const formatDateUtil = (dateString: string): string => {
   return format(parseDateUtil(dateString), "dd/MM/yyyy");
 };
+
+export const formatDateBlogUtil = (dateString: string): string => {
+  return format(parseDateUtil(dateString), "MMMM dd, yyyy");
+};

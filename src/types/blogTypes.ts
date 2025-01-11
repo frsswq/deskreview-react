@@ -2,11 +2,10 @@ import { ReactNode } from "react";
 
 export interface Frontmatter {
   title: string;
+  date: string;
+  tag: string;
+  author: string;
   description?: string;
-  date?: string;
-  tags?: string[];
-  category?: string;
-  author?: string;
 }
 
 export interface MarkdownFile {
@@ -17,11 +16,10 @@ export interface MarkdownFile {
 export interface BlogPostProps {
   frontmatter: {
     title: string;
+    date: string;
+    tag: string;
+    author: string;
     description?: string;
-    date?: string;
-    tags?: string[];
-    category?: string;
-    author?: string;
   };
   children: ReactNode;
 }

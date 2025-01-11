@@ -1,13 +1,8 @@
 ---
 title: "Mengatur Custom Domain .tech di Github Pages"
 description: "Mengatur custom domain .tech di Github Pages secara gampang"
-category: "Blog"
-tags:
-  - Tutorial
-  - Custom Domain
-  - Github
-status: "Finished"
-date: "2021-01-03"
+tag: "On-Review"
+date: "03-01-2023"
 author: Abdullah Ammar
 ---
 

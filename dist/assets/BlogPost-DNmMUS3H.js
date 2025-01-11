@@ -1,34 +1,4 @@
-import {
-  MainStyled,
-  SectionContainer,
-} from "../../components/common/styles/CommonStyled.tsx";
-import { BlogPostProps } from "../../types/blogTypes.ts";
-import { formatDateBlogUtil } from "../../utils/dateUtil.ts";
-import styled from "styled-components";
-
-export default function BlogPostMain({ frontmatter, children }: BlogPostProps) {
-  const { title, date, tag, author, description } = frontmatter;
-  const formattedDate = date ? formatDateBlogUtil(date) : null;
-
-  return (
-    <MainStyled>
-      <SectionContainer>
-        <BlogPostHeader>
-          {title && <h1>{title}</h1>}
-          {description && <p className="desc">{description}</p>}
-          <BlogPostHeaderDetail>
-            {tag && <p className="tag">{tag}</p>}
-            {author && <p className="capitalize author">{author}</p>}
-            {formattedDate && <p className="date">{formattedDate}</p>}
-          </BlogPostHeaderDetail>
-        </BlogPostHeader>
-        <BlogPostContent className="prose">{children}</BlogPostContent>
-      </SectionContainer>
-    </MainStyled>
-  );
-}
-
-const BlogPostHeader = styled.article`
+import{p as t}from"./react-markdown-DL4AOBV-.js";import{f,M as p,S as c,N as x,F as h}from"./main-C-Ov9T7k.js";import{d as s}from"./styled-components-CgetkSgC.js";import"./vendor-C-q9OyUs.js";import"./@radix-ui/react-icons-88m-rOiV.js";import"./date-fns-B4QYC8g5.js";import"./remark-gfm-ClnCoDhK.js";function d({frontmatter:e,children:a}){const{title:o,date:i,tag:n,author:r,description:l}=e,m=i?f(i):null;return t.jsx(p,{children:t.jsxs(c,{children:[t.jsxs(g,{children:[o&&t.jsx("h1",{children:o}),l&&t.jsx("p",{className:"desc",children:l}),t.jsxs(j,{children:[n&&t.jsx("p",{className:"tag",children:n}),r&&t.jsx("p",{className:"capitalize author",children:r}),m&&t.jsx("p",{className:"date",children:m})]})]}),t.jsx(u,{className:"prose",children:a})]})})}const g=s.article`
   display: flex;
   flex-direction: column;
   margin-top: 1.25rem;
@@ -60,9 +30,7 @@ const BlogPostHeader = styled.article`
       font-size: var(--text-base);
     }
   }
-`;
-
-const BlogPostHeaderDetail = styled.div`
+`,j=s.div`
   display: flex;
   flex-direction: column;
 
@@ -83,9 +51,7 @@ const BlogPostHeaderDetail = styled.div`
 
   .date {
   }
-`;
-
-const BlogPostContent = styled.article`
+`,u=s.article`
   margin-top: 2rem;
 
   p,
@@ -138,4 +104,4 @@ const BlogPostContent = styled.article`
       font-size: 30px;
     }
   }
-`;
+`;function D({frontmatter:e,children:a}){return t.jsxs(t.Fragment,{children:[t.jsx(x,{}),t.jsx(d,{frontmatter:e,children:a}),t.jsx(h,{})]})}export{D as default};

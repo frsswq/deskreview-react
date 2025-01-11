@@ -24,7 +24,7 @@ export const DefaultTitle = styled.h1`
   font-family: "EB Garamond", serif;
   font-weight: 500;
   font-style: oblique;
-  font-size: 70px;
+  font-size: 4.375rem;
   letter-spacing: -0.06em;
   margin-bottom: 16px;
 
