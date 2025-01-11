@@ -7,12 +7,17 @@ content:
     type: collection
     path: 'src/contents'
     view:
-      fields: [title]
+      fields: [title, date]
+      sort: [date, title]
     fields:
-      - { name: title, type: string, required: true}
-      - { name: description, type: string}
-      - { name: date, type: string, required: true}
-      - { name: tags, type: string, list: true}
-      - { name: category, type: string}
-      - { name: author, type: string}
+      - { name: title, label: Title, type: string, required: true}
+      - { name: date, label: Date (dd-mm-yyyy), type: string, required: true}
+      - name: tag 
+        label: Tag
+        type: select
+        options: 
+          values: [ On-Review, Method Review, Working View, Portfolio Review ]
+        required: true
+      - { name: author, label: Author, type: string, required: true}
+      - { name: description, label: Description, type: string}
       - { name: body, type: rich-text}
