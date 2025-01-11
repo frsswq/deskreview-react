@@ -2,34 +2,38 @@
 title: Membangun Kebun Digital
 description: Membangun sebuah tempat untuk belajar dan menumbuhkan ide-ide baru
   di ruang publik
+date: 06-09-2021
 author: Abdullah Ammar
 ---
-
 Sudah beberapa kali saya mengembangkan website portofolio saya sendiri dengan tujuan untuk menunjukkan hasil implementasi hal-hal yang sedang ataupun sudah saya pelajari dari bangku perkuliahan ataupun _course_ yang saya ambil. Website ini juga sudah beberapa kali saya rombak, mulai dari menggunakan HTML dan CSS, kemudian PHP (mata kuliah pemrograman web), sampai saya ubah lagi menggunakan HTML, CSS, dan JavaScript dengan Web Componentnya.
 
-![A](/public/img/blog/on_review/01/boba_1.png)
+![](/deskreview-react/img/blog/on_review/02/DR%20_%20Social%20Media-24.png)
 
 Tujuan pengembangan website saya yang baru ini sebenarnya sama, dengan beberapa tujuan tambahan, salah satunya adalah agar saya bebas berbagi dan beropini tentang hal-hal yang saya buat dan pelajari saat ini, terutama tentang teknologi. Beberapa hal yang menjadi pertimbangan saya ketika mengembangkan website ini, yaitu:
 
 1.  _Performance_ - Lighthouse score ≥ 90
+    
 2.  _Accessible_ - Sebuah website memang sudah seharusnya mudah digunakan oleh semua orang
+    
 3.  _Maintainable_ - Kode yang ada sebisa mungkin dibuat sesederhana mungkin sehingga mudah ditambahkan, sunting, dan hapus.
+    
 
 ## Proses
 
 Dari ketiga hal diatas, saya menentukan beberapa teknologi yang akhirnya saya pakai untuk mengembangkan website ini.
 
 1.  _Performance_
-
+    
     Hal yang pertama saya pikirkan adalah _perfomance_, tujuannya tentu saja agar pengunjung tidak perlu nunggu lama hanya untuk membuka website ini. Pilihan saya jatuh sama Next.js, selain karena saya sudah berniat menggunakan Next.js karena _learning curve_ yang cukup landai (dokumentasi dan tutorialnya mantap) dan kemudahan buat make MDX sebagai _content management system_\-nya, Next.js juga punya fitur-fitur bawaan yang mendukung optimisasi seperti Automatic Image Optimization dan Font Optimization
-
+    
 2.  _Accessible_
-
+    
     Dari komponen yang ada, beberapa komponen saya memilih untuk pakai Reach UI karena jika saya membuatnya sendiri, belum tentu saya bisa memastikan komponen tersebut memiliki aksesibilitas yang baik, contohnya komponen Modal dan Menu, selain itu karena setiap komponen yang ada di Reach UI udah diuji menggunakan berbagai macam peramban beserta _screen reader_\-nya seperti Safari dengan VoiceOver, Firefox dengan NVDA, dan Edge dengan JAWS.
-
+    
 3.  _Maintainable_
-
+    
     Jujur sampai saat ini saya masih belum tau untuk membangun sebuah struktur folder dan mengatur aplikasi skala produksi yang _scalable_ dan _maintanable_, yang menjadi patokan saya saat ini untuk membangun struktur folder adalah artikel yang ditulis oleh Tania Rascia yaitu [React Architecture: How to Structure and Organize a React Application](https://www.taniarascia.com/react-architecture-directory-structure/). Untuk mengatur kodenya saya dibantu oleh ESLint bawaan Next.js sebagai _static code analysis_ dengan sedikit _rules_ tambahan dan Prettier sebagai _code formatter._
+    
 
 ### Antarmuka Pengguna
 
@@ -64,28 +68,42 @@ Dalam mengembangkan website ini, saya memilih Next.js, SCSS Modules, MDX, dan Ve
 #### Web Technologies
 
 1.  [Web Share API](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share)
+    
 2.  [Font Loading API](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Font_Loading_API)
+    
 3.  [CSS Custom Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
+    
 4.  [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
+    
 
 #### Syntax Highlighting
 
 1.  [rehype-prism-plus](https://github.com/timlrx/rehype-prism-plus)
+    
 2.  [rehype-autolink-headings](https://github.com/rehypejs/rehype-autolink-headings)
+    
 3.  [rehype-code-titles](https://github.com/josestg/rehype-code-title)
+    
 4.  [rehype-slug](https://github.com/rehypejs/rehype-slug)
+    
 
 #### UI Component
 
 1.  [@reach/dialog](https://reach.tech/dialog)
+    
 2.  [@reach/menu-button](https://reach.tech/menu-button)
+    
 
 #### Utility
 
 1.  [classnames](https://www.npmjs.com/package/classnames)
+    
 2.  [reading-time](https://www.npmjs.com/package/reading-time)
+    
 3.  [sharp](https://www.npmjs.com/package/sharp)
+    
 4.  [copy-to-clipboard](https://www.npmjs.com/package/copy-to-clipboard)
+    
 
 ## Bantuan
 
@@ -94,49 +112,67 @@ Beberapa artikel/issues/code snippet/website yang sangat membantu saya dalam men
 #### Markdown
 
 1.  [MDX Bundler with Next.JS](https://www.arcath.net/2021/03/mdx-bundler) by Adam Laycock
+    
 2.  [MDX in Next.js using mdx-bundler](https://dipeshwagle.com/blog/use-mdx-bundler-next-js) by Dipesh Wagle
+    
 
 #### Dark Mode
 
 1.  [Dark Mode on the Web](https://fatihkalifa.com/dark-mode-web) by Fatih Kalifa
+    
 2.  [A Complete Guide to Dark Mode on the Web](https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/) by Adhuham
+    
 3.  [Emulate dark or light schemes in the rendered page](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/accessibility/preferred-color-scheme-simulation)
+    
 4.  [Disable theme transitions on theme toggle](https://paco.sh/blog/disable-theme-transitions) by Paco Coursey
+    
 
 #### Syntax Highlighting
 
 1.  [Code blocks, but better](https://ped.ro/blog/code-blocks-but-better) by Pedro Duarte
+    
 
 #### Web Share
 
 1.  [How to Use the Web Share API](https://css-tricks.com/how-to-use-the-web-share-api/) by Ayooluwa Isaiah
+    
 2.  [The Simplest (and Most Performant) Way to Offer Sharing Links for Social Media](https://css-tricks.com/simple-social-sharing-links/) by Adam Coti
+    
 
 #### Open Graph
 
 1.  [Open Graph Meta Tags: Everything You Need to Know](https://ahrefs.com/blog/open-graph-meta-tags/) by Michal Pecánek
+    
 
 #### Favicon
 
 1.  [Favicon Generator](https://realfavicongenerator.net/)
+    
 2.  [SVG, Favicons, and All the Fun Things We Can Do With Them](https://css-tricks.com/svg-favicons-and-all-the-fun-things-we-can-do-with-them/) by Eric Bailey
+    
 
 #### Typography
 
 1.  [Type Scale - A Visual Calculator](https://type-scale.com/)
+    
 2.  [Fluid typography](https://fluid-typography.netlify.app/)
+    
 
 #### Webmention
 
 1.  [Webmention](https://indieweb.org/Webmention)
+    
 2.  [Into Webmentions With NextJS (or Not)](https://css-tricks.com/jumping-into-webmentions-with-nextjs-or-not/) by Atila Fassina
+    
 3.  [Using Webmentions in Eleventy](https://mxb.dev/blog/using-webmentions-on-static-sites/) by Max Böck
+    
 4.  [A Short History of Bi-Directional Links](https://maggieappleton.com/bidirectionals) by Maggie Appleton
+    
 
 #### Code Snippet
 
 1.  Outline focus by Adam Argyle (@argyleink)
-
+    
     ```css
     @media (prefers-reduced-motion: no-preference) {
       :focus {
@@ -144,14 +180,15 @@ Beberapa artikel/issues/code snippet/website yang sangat membantu saya dalam men
         outline-offset: 3px;
         outline-color: var(--accent-color-1);
       }
-
+    
       html {
         scroll-behavior: smooth;
       }
     }
     ```
-
+    
 2.  [Mouse in-out transition](https://codepen.io/argyleink/pen/poEjvpd) by Adam Argyle
+    
 
 saya ucapkan terima kasih untuk semua _author_ yang sangat baik hati karena sudah mau berbagi ilmunya secara cuma-cuma :)
 
@@ -159,16 +196,26 @@ saya ucapkan terima kasih untuk semua _author_ yang sangat baik hati karena suda
 
 Beberapa website yang menjadi inspirasi desain website ini:
 
-- [Home](https://eyeondesign.aiga.org/)
-- [It's Nice That](https://www.itsnicethat.com/)
-- [Thinking\*Room](https://www.thinkingroominc.com/)
-- [Fatih Kalifa | Interface Engineer](http://fatihkalifa.com/)
-- [We are COLLINS](https://www.wearecollins.com/)
-- [archives.design](https://archives.design/)
-- [Experiments with Google](https://experiments.withgoogle.com/)
-- [Dwinawan - User Interface Designer](http://dwinawan.com/)
-- [Maggie Appleton](https://maggieappleton.com/)
-- [Talia Cotton, designer & coder](https://taliacotton.com/)
+*   [Home](https://eyeondesign.aiga.org/)
+    
+*   [It's Nice That](https://www.itsnicethat.com/)
+    
+*   [Thinking\*Room](https://www.thinkingroominc.com/)
+    
+*   [Fatih Kalifa | Interface Engineer](http://fatihkalifa.com/)
+    
+*   [We are COLLINS](https://www.wearecollins.com/)
+    
+*   [archives.design](https://archives.design/)
+    
+*   [Experiments with Google](https://experiments.withgoogle.com/)
+    
+*   [Dwinawan - User Interface Designer](http://dwinawan.com/)
+    
+*   [Maggie Appleton](https://maggieappleton.com/)
+    
+*   [Talia Cotton, designer & coder](https://taliacotton.com/)
+    
 
 ## Hasil
 
