@@ -6,7 +6,7 @@ content:
     label: Posts
     type: collection
     path: 'src/contents'
-    filename: field.linkname.md
+    filename: '{fields.linkname}.md'
     view:
       fields: [title, date]
       sort: [date, title]
