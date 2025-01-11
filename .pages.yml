@@ -11,6 +11,7 @@ content:
       sort: [date, title]
     fields:
       - { name: title, label: Title, type: string, required: true}
+      - { name: filename, label: Filename (your-title-shortened), type: string, required: true}
       - { name: date, label: Date (dd-mm-yyyy), type: string, required: true}
       - name: tag 
         label: Tag
