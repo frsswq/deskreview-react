@@ -31,14 +31,14 @@ export default function BlogPostMain({ frontmatter, children }: BlogPostProps) {
 const BlogPostHeader = styled.article`
   display: flex;
   flex-direction: column;
-  margin-top: 1.25rem;
-  gap: 1rem 0;
+  margin-top: 20px;
+  gap: 16px 0;
 
   h1 {
     font-family: "EB Garamond", sans-serif;
     font-style: italic;
     font-weight: 500;
-    font-size: 3rem;
+    font-size: 3.125rem;
     letter-spacing: -0.04em;
     overflow-wrap: break-word;
     line-height: 1.2;
@@ -50,10 +50,11 @@ const BlogPostHeader = styled.article`
   }
 
   @media (width <= 768px) {
-    margin-top: 0.625rem;
+    margin-top: 10px;
 
     h1 {
-      font-size: 2rem;
+      font-size: 2.25rem;
+      line-height: 1;
     }
 
     p {
@@ -74,7 +75,7 @@ const BlogPostHeaderDetail = styled.div`
     font-family: "EB Garamond", sans-serif;
     font-weight: 400;
     text-transform: uppercase;
-    margin-bottom: 0.5rem;
+    margin-bottom: 8px;
   }
 
   .author {

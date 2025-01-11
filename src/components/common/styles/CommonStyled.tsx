@@ -29,7 +29,7 @@ export const DefaultTitle = styled.h1`
   margin-bottom: 16px;
 
   @media (width <= 768px) {
-    font-size: 50px;
+    font-size: 3.125rem;
     margin-bottom: 8px;
   }
 `;

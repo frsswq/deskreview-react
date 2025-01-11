@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const NavbarStyled = styled.nav`
   background-color: rgb(var(--desk-white));
-  padding: 16px 20px;
+  padding: 1rem 1.25rem;
   border-bottom: 1px solid rgb(var(--desk-gray-300));
   position: sticky;
   top: 0;
@@ -11,7 +11,7 @@ export const NavbarStyled = styled.nav`
   z-index: 1000;
 
   @media (width <= 768px) {
-    padding: 16px;
+    padding: 1rem;
   }
 `;
 
@@ -48,7 +48,7 @@ export const NavbarMenu = styled.menu`
     color: rgba(var(--desk-gray-700), 0.8);
     line-height: 1;
     text-decoration-line: none;
-    padding-left: 12px;
+    padding-left: 0.75rem;
     letter-spacing: -0.025em;
 
     &:hover {
