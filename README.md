@@ -1,6 +1,6 @@
 # Deskreview (still in development)
 
-Static site for deskreview creative agency. Built with love using [React](https://react.dev/).
+Static site for deskreview creative agency. Built with ❤️ using [React](https://react.dev/).
 
 ## Tech Stack
 

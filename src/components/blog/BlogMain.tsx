@@ -6,7 +6,6 @@ import {
 } from "../common/styles/CommonStyled";
 import { BlogButtonContainer } from "./styles/BlogMainStyled";
 import { Link } from "react-router";
-import React from "react";
 import {
   fetchMarkdownFilesUtil,
   sortMarkdownFilesUtil,
@@ -26,13 +25,13 @@ export default function BlogMain() {
         <BlogButtonContainer>
           <Divider />
           {links.map(({ title, path, date }) => (
-            <React.Fragment key={path}>
-              <LinkStyled to={path}>
+            <>
+              <LinkStyled key={path} to={path}>
                 <p>{title}</p>
                 <p>{date && `${date}`}</p>
               </LinkStyled>
               <Divider />
-            </React.Fragment>
+            </>
           ))}
         </BlogButtonContainer>
       </SectionContainer>

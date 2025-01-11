@@ -32,7 +32,7 @@ const BlogPostHeader = styled.article`
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-  gap: 16px 0;
+  gap: 24px 0;
 
   h1 {
     font-family: "EB Garamond", sans-serif;
@@ -44,20 +44,21 @@ const BlogPostHeader = styled.article`
     line-height: 1.2;
   }
 
-  p {
+  .desc {
     font-family: "DM Sans", sans-serif;
     font-size: var(--text-lg);
   }
 
   @media (width <= 768px) {
     margin-top: 10px;
+    gap: 16px 0;
 
     h1 {
       font-size: 2.25rem;
       line-height: 1;
     }
 
-    p {
+    .desc {
       font-size: var(--text-base);
     }
   }
@@ -84,6 +85,12 @@ const BlogPostHeaderDetail = styled.div`
 
   .date {
   }
+
+  @media (width <= 768px) {
+    .tag {
+      margin-bottom: 4px;
+    }
+  }
 `;
 
 const BlogPostContent = styled.article`
@@ -95,7 +102,6 @@ const BlogPostContent = styled.article`
     font-family: "DM Sans", sans-serif;
     font-size: var(--text-lg);
     color: black;
-    max-width: 95%;
   }
 
   h1,
@@ -104,7 +110,7 @@ const BlogPostContent = styled.article`
   h4,
   h5,
   h6 {
-    font-family: "EB Garamond", "DM Sans", sans-serif;
+    font-family: "EB Garamond", serif;
     font-style: italic;
     font-weight: 500;
     letter-spacing: -0.04em;
