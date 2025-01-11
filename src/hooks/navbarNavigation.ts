@@ -12,21 +12,12 @@ export default function useNavbarNavigation() {
 
   const handleClick = (e: React.MouseEvent, target: string) => {
     e.preventDefault();
+    const id = target.slice(1);
 
-    if (target.startsWith("#")) {
-      const id = target.slice(1);
-
-      if (location.pathname !== "/") {
-        navigate("/", { state: { scrollTo: id } });
-      } else {
-        scrollToElement(id);
-      }
+    if (location.pathname !== "/") {
+      navigate("/", { state: { scrollTo: id } });
     } else {
-      if (location.pathname !== target) {
-        navigate(target);
-      } else {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      }
+      scrollToElement(id);
     }
   };
 
