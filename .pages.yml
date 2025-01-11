@@ -20,4 +20,4 @@ content:
         required: true
       - { name: author, label: Author, type: string, required: true}
       - { name: description, label: Description, type: string}
-      - { name: body, type: rich-text}
+      - { name: body, label: Body, type: rich-text}
