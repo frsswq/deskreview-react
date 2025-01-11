@@ -8,8 +8,8 @@ content:
     path: 'src/contents'
     filename: '{field.linkname}.md'
     view:
-      fields: [filename, date]
-      sort: [date, filename]
+      fields: [title, date]
+      sort: [date, title]
     fields:
       - { name: title, label: Title, type: string, required: true}
       - { name: linkname, label: Linkname (your-title-shortened-with-hyphen), type: string, required: true}
