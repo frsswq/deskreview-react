@@ -1,4 +1,4 @@
-import{p as t}from"./react-markdown-CR5Xb4Lj.js";import{f as p,M as f,S as x,N as c,F as h}from"./main-CdOf36Pe.js";import{d as a}from"./styled-components-BOF5XIQs.js";import"./vendor-CvfCuUZz.js";import"./@radix-ui/react-icons-T6wVLuVb.js";import"./date-fns-B4QYC8g5.js";import"./remark-gfm-DhOrmXei.js";function d({frontmatter:e,children:i}){const{title:o,date:s,tag:n,author:r,description:l}=e,m=s?p(s):null;return t.jsx(f,{children:t.jsxs(x,{children:[t.jsxs(g,{children:[o&&t.jsx("h1",{children:o}),l&&t.jsx("p",{className:"desc",children:l}),t.jsxs(j,{children:[n&&t.jsx("p",{className:"tag",children:n}),r&&t.jsx("p",{className:"capitalize author",children:r}),m&&t.jsx("p",{className:"date",children:m})]})]}),t.jsx(u,{className:"prose",children:i})]})})}const g=a.article`
+import{p as t}from"./react-markdown-CR5Xb4Lj.js";import{f as m,M as h,S as p,N as d,F as c}from"./main-B9xdGSKE.js";import{r as g}from"./vendor-CvfCuUZz.js";import{d as s}from"./styled-components-BOF5XIQs.js";import"./@radix-ui/react-icons-T6wVLuVb.js";import"./date-fns-B4QYC8g5.js";import"./remark-gfm-DhOrmXei.js";function u({frontmatter:n,children:i}){const{title:o,date:a,tag:r,author:l,description:f}=n,x=a?m(a):null;return g.useEffect(()=>{document.querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(e=>{(e.textContent&&e.textContent.startsWith("W")||e.textContent&&e.textContent.startsWith("T"))&&e.classList.add("indent-fix")})},[i]),t.jsx(h,{children:t.jsxs(p,{children:[t.jsxs(j,{children:[o&&t.jsx("h1",{children:o}),f&&t.jsx("p",{className:"desc",children:f}),t.jsxs(z,{children:[r&&t.jsx("p",{className:"tag",children:r}),l&&t.jsx("p",{className:"capitalize author",children:l}),x&&t.jsx("p",{className:"date",children:x})]})]}),t.jsx(b,{className:"prose",children:i})]})})}const j=s.article`
   display: flex;
   flex-direction: column;
   margin-top: 20px;
@@ -32,7 +32,7 @@ import{p as t}from"./react-markdown-CR5Xb4Lj.js";import{f as p,M as f,S as x,N a
       font-size: var(--text-base);
     }
   }
-`,j=a.div`
+`,z=s.div`
   display: flex;
   flex-direction: column;
 
@@ -59,7 +59,7 @@ import{p as t}from"./react-markdown-CR5Xb4Lj.js";import{f as p,M as f,S as x,N a
       margin-bottom: 4px;
     }
   }
-`,u=a.article`
+`,b=s.article`
   margin-top: 2rem;
   min-width: 100%;
 
@@ -103,6 +103,18 @@ import{p as t}from"./react-markdown-CR5Xb4Lj.js";import{f as p,M as f,S as x,N a
     margin-bottom: 20px;
   }
 
+  h1.indent-fix,
+  h2.indent-fix {
+    text-indent: -0.15em;
+  }
+
+  h3.indent-fix,
+  h4.indent-fix,
+  h5.indent-fix,
+  h6.indent-fix {
+    text-indent: -0.1em;
+  }
+
   @media (width <= 768px) {
     p,
     li {
@@ -113,4 +125,4 @@ import{p as t}from"./react-markdown-CR5Xb4Lj.js";import{f as p,M as f,S as x,N a
       font-size: 30px;
     }
   }
-`;function D({frontmatter:e,children:i}){return t.jsxs(t.Fragment,{children:[t.jsx(c,{}),t.jsx(d,{frontmatter:e,children:i}),t.jsx(h,{})]})}export{D as default};
+`;function D({frontmatter:n,children:i}){return t.jsxs(t.Fragment,{children:[t.jsx(d,{}),t.jsx(u,{frontmatter:n,children:i}),t.jsx(c,{})]})}export{D as default};

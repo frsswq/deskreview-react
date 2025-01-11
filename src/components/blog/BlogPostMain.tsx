@@ -4,11 +4,24 @@ import {
 } from "../../components/common/styles/CommonStyled.tsx";
 import { BlogPostProps } from "../../types/blogTypes.ts";
 import { formatDateBlogUtil } from "../../utils/dateUtil.ts";
+import { useEffect } from "react";
 import styled from "styled-components";
 
 export default function BlogPostMain({ frontmatter, children }: BlogPostProps) {
   const { title, date, tag, author, description } = frontmatter;
   const formattedDate = date ? formatDateBlogUtil(date) : null;
+
+  useEffect(() => {
+    const headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+    headings.forEach((heading) => {
+      if (
+        (heading.textContent && heading.textContent.startsWith("W")) ||
+        (heading.textContent && heading.textContent.startsWith("T"))
+      ) {
+        heading.classList.add("indent-fix");
+      }
+    });
+  }, [children]);
 
   return (
     <MainStyled>
@@ -135,6 +148,18 @@ const BlogPostContent = styled.article`
   h4 {
     font-size: 30px;
     margin-bottom: 20px;
+  }
+
+  h1.indent-fix,
+  h2.indent-fix {
+    text-indent: -0.15em;
+  }
+
+  h3.indent-fix,
+  h4.indent-fix,
+  h5.indent-fix,
+  h6.indent-fix {
+    text-indent: -0.1em;
   }
 
   @media (width <= 768px) {
