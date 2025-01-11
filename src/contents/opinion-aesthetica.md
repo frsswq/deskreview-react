@@ -1,6 +1,6 @@
 ---
 title: "Opinion: Aesthetica of (my) Human Experience at Kongsi 8"
-filename: opinion-aesthetica
+linkname: opinion-aesthetica
 date: 10-07-2024
 tag: On-Review
 author: Dzaki Zaidan
