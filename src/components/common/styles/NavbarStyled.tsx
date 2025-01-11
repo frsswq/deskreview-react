@@ -18,7 +18,7 @@ export const NavbarStyled = styled.nav`
 export const NavbarContainer = styled.div`
   display: flex;
   flex-direction: row;
-  max-width: 1440px;
+  max-width: 1280px;
   width: 100%;
   margin: 0 auto;
 `;
