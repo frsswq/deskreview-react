@@ -1,6 +1,6 @@
 media: 
   input: public/img/blog
-  output: img/blog
+  output: /deskreview-react/img/blog
 content:
   - name: posts
     label: Posts

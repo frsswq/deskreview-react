@@ -2,12 +2,13 @@
 title: Membangun Kebun Digital
 description: Membangun sebuah tempat untuk belajar dan menumbuhkan ide-ide baru
   di ruang publik
+date: 06-09-2021
 author: Abdullah Ammar
 ---
 
 Sudah beberapa kali saya mengembangkan website portofolio saya sendiri dengan tujuan untuk menunjukkan hasil implementasi hal-hal yang sedang ataupun sudah saya pelajari dari bangku perkuliahan ataupun _course_ yang saya ambil. Website ini juga sudah beberapa kali saya rombak, mulai dari menggunakan HTML dan CSS, kemudian PHP (mata kuliah pemrograman web), sampai saya ubah lagi menggunakan HTML, CSS, dan JavaScript dengan Web Componentnya.
 
-![Test](/deskreview-react/img/blog/on_review/01/boba_1.png)
+![](/deskreview-react/img/blog/on_review/02/DR%20_%20Social%20Media-24.png)
 
 Tujuan pengembangan website saya yang baru ini sebenarnya sama, dengan beberapa tujuan tambahan, salah satunya adalah agar saya bebas berbagi dan beropini tentang hal-hal yang saya buat dan pelajari saat ini, terutama tentang teknologi. Beberapa hal yang menjadi pertimbangan saya ketika mengembangkan website ini, yaitu:
 
