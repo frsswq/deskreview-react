@@ -5,6 +5,7 @@ import {
   NavbarMenu,
 } from "./styles/NavbarStyled.tsx";
 import navbarNavigation from "../../hooks/navbarNavigation.ts";
+import { Link } from "react-router";
 import logoSvg from "/svg/logo_full_navbar.svg";
 
 export default function Navbar() {
@@ -20,18 +21,22 @@ export default function Navbar() {
   return (
     <NavbarStyled>
       <NavbarContainer>
-        <a href="/" onClick={(e) => handleClick(e, "/")}>
-          <NavbarLogo src={logoSvg} alt="Navbar_Logo" width="120" height="30" />
-        </a>
+        <NavbarLogo
+          src={logoSvg}
+          alt="Navbar_Logo"
+          width="120"
+          height="22"
+          onClick={(e) => handleClick(e, "/")}
+        />
         <NavbarMenu>
           {menuItems.map((item) => (
-            <a
+            <Link
               key={item.href}
-              href={item.href}
+              to={item.href}
               onClick={(e) => handleClick(e, item.href)}
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </NavbarMenu>
       </NavbarContainer>

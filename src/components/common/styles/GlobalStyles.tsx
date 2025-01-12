@@ -17,7 +17,7 @@ const GlobalStyles = createGlobalStyle`
   :root {
     --text-xs: 0.75rem;
     --text-sm: 0.875rem;
-    --text-base: 1.0625rem;
+    --text-base: 1rem;
     --text-lg: 1.125rem;
     --text-xl: 1.25rem;
     --text-2xl: 1.375rem;

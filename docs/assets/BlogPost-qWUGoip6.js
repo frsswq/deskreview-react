@@ -1,4 +1,4 @@
-import{G as t}from"./react-markdown-CdbJyoHg.js";import{f as g,M as p,S as u,N as y,F as b}from"./main-BNJI9LSq.js";import{r as h}from"./vendor-CvfCuUZz.js";import{d as i}from"./styled-components-BOF5XIQs.js";import"./@radix-ui/react-icons-T6wVLuVb.js";import"./date-fns-B4QYC8g5.js";import"./remark-gfm-RXI-vKoo.js";import"./rehype-raw-B3D9AqIt.js";function j({frontmatter:o,children:n}){const{title:r,date:s,tag:l,author:c}=o,m=s?g(s):null,[f,a]=h.useState(null);h.useEffect(()=>{document.querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(e=>{(e.textContent&&e.textContent.startsWith("W")||e.textContent&&e.textContent.startsWith("T"))&&e.classList.add("indent-fix")}),document.querySelectorAll("p").forEach(e=>{e.style.textAlign==="center"&&e.classList.add("text-center")});const d=document.querySelectorAll("img");return d.forEach(e=>{e.addEventListener("click",()=>{a(e.src)})}),()=>{d.forEach(e=>{e.removeEventListener("click",()=>{a(e.src)})})}},[n]);const x=()=>{a(null)};return t.jsxs(p,{children:[t.jsxs(u,{children:[t.jsxs(v,{children:[r&&t.jsx("h1",{children:r}),t.jsxs(z,{children:[l&&t.jsx("p",{className:"tag",children:l}),c&&t.jsx("p",{className:"capitalize author",children:c}),m&&t.jsx("p",{className:"date",children:m})]})]}),t.jsx(w,{className:"prose",children:n})]}),f&&t.jsx(E,{onClick:x,children:t.jsx("img",{src:f,alt:"Full sized image"})})]})}const v=i.article`
+import{G as e}from"./react-markdown-CdbJyoHg.js";import{f as d,M as h,S as x,a as g}from"./main-BEfqIl2S.js";import{d as s}from"./styled-components-BOF5XIQs.js";import{r as m}from"./vendor-CvfCuUZz.js";import"./@radix-ui/react-icons-T6wVLuVb.js";import"./date-fns-B4QYC8g5.js";import"./remark-gfm-RXI-vKoo.js";import"./rehype-raw-B3D9AqIt.js";const p=s.article`
   display: flex;
   flex-direction: column;
   margin-top: 20px;
@@ -22,7 +22,7 @@ import{G as t}from"./react-markdown-CdbJyoHg.js";import{f as g,M as p,S as u,N a
       line-height: 1;
     }
   }
-`,z=i.div`
+`,u=s.div`
   display: flex;
   flex-direction: column;
 
@@ -46,7 +46,7 @@ import{G as t}from"./react-markdown-CdbJyoHg.js";import{f as g,M as p,S as u,N a
 
   @media (width <= 768px) {
   }
-`,w=i.article`
+`,y=s.article`
   margin-top: 2rem;
   min-width: 100%;
 
@@ -152,7 +152,7 @@ import{G as t}from"./react-markdown-CdbJyoHg.js";import{f as g,M as p,S as u,N a
       margin-right: auto;
     }
   }
-`,E=i.div`
+`,b=s.div`
   position: fixed;
   top: 0;
   left: 0;
@@ -169,4 +169,4 @@ import{G as t}from"./react-markdown-CdbJyoHg.js";import{f as g,M as p,S as u,N a
     max-width: 90%;
     max-height: 90%;
   }
-`;function A({frontmatter:o,children:n}){return t.jsxs(t.Fragment,{children:[t.jsx(y,{}),t.jsx(j,{frontmatter:o,children:n}),t.jsx(b,{})]})}export{A as default};
+`,z=i=>{const[o,n]=m.useState(null);return m.useEffect(()=>{document.querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(t=>{(t.textContent&&t.textContent.startsWith("W")||t.textContent&&t.textContent.startsWith("T"))&&t.classList.add("indent-fix")}),document.querySelectorAll("p").forEach(t=>{t.style.textAlign==="center"&&t.classList.add("text-center")});const a=document.querySelectorAll("img");return a.forEach(t=>{t.addEventListener("click",()=>{n(t.src)})}),()=>{a.forEach(t=>{t.removeEventListener("click",()=>{n(t.src)})})}},[i]),{selectedImage:o,closeModal:()=>{n(null)}}};function j({frontmatter:i,children:o}){const{title:n,date:r,tag:l,author:c}=i,a=r?d(r):null,{selectedImage:t,closeModal:f}=z(o);return e.jsxs(h,{children:[e.jsxs(x,{children:[e.jsxs(p,{children:[n&&e.jsx("h1",{children:n}),e.jsxs(u,{children:[l&&e.jsx("p",{className:"tag",children:l}),c&&e.jsx("p",{className:"capitalize author",children:c}),a&&e.jsx("p",{className:"date",children:a})]})]}),e.jsx(y,{className:"prose",children:o})]}),t&&e.jsx(b,{onClick:f,children:e.jsx("img",{src:t,alt:"Full sized image"})})]})}function P({frontmatter:i,children:o}){return e.jsx(g,{children:e.jsx(j,{frontmatter:i,children:o})})}export{P as default};

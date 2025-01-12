@@ -25,7 +25,7 @@ export const NavbarContainer = styled.div`
 
 export const NavbarLogo = styled.img`
   width: 120px;
-  height: auto;
+  height: 22px;
   display: block;
   cursor: pointer;
 
