@@ -5,6 +5,7 @@ date: 10-07-2024
 tag: On-Review
 author: Dzaki Zaidan
 ---
+
 ![](https://miro.medium.com/v2/resize:fit:1050/1*pAzBw_LDYxRENlhXAMy0zg.jpeg)
 
 <p style="text-align: center">Bottlesmokers performed their plant-sourced synth set at Irama Sunyi by Kongsi 8.</p>
@@ -19,4 +20,4 @@ Human culture, in general, is a very complicated topic. It is unfair to even sta
 
 The aesthetic experience I had back at Kongsi 8 was highly triggered by the music, the method, the place, and the people I met there. It was hardly explainable and undeniably will never happen again in the exact same form. That’s the sort of beauty of Aesthetica, I suppose: every sensation is a complex stimulant produced by millions of almost-random stimulus variables miraculously happening at that very moment. It was purely a gift from God, which we have to embrace and celebrate as part of the daily chores of being a mortal human.
 
-> _Every sensation is a complex stimulant produced by millions of almost-random stimulus variables miraculously happening at that very moment._
+> Every sensation is a complex stimulant produced by millions of almost-random stimulus variables miraculously happening at that very moment

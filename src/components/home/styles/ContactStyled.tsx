@@ -47,7 +47,7 @@ export const ContactButton = styled.a`
     padding: 16px 16px;
 
     p {
-      font-size: var(--text-sm);
+      font-size: var(--text-base);
     }
 
     svg {

@@ -45,7 +45,7 @@ export const HomeItemTitle = styled.h2`
   padding: 4px 0;
 
   @media (width <= 768px) {
-    font-size: var(--text-xs);
+    font-size: var(--text-sm);
   }
 `;
 
@@ -58,6 +58,6 @@ export const HomeItemText = styled.p`
 
   @media (width <= 768px) {
     padding: 4px 0;
-    font-size: var(--text-base);
+    font-size: var(--text-lg);
   }
 `;

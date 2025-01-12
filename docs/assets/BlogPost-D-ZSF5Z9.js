@@ -1,80 +1,4 @@
-import {
-  MainStyled,
-  SectionContainer,
-} from "../../components/common/styles/CommonStyled.tsx";
-import { BlogPostProps } from "../../types/blogTypes.ts";
-import { formatDateBlogUtil } from "../../utils/dateUtil.ts";
-import { useEffect, useState } from "react";
-import styled from "styled-components";
-
-export default function BlogPostMain({ frontmatter, children }: BlogPostProps) {
-  const { title, date, tag, author, description } = frontmatter;
-  const formattedDate = date ? formatDateBlogUtil(date) : null;
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
-
-  useEffect(() => {
-    const headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
-    headings.forEach((heading) => {
-      if (
-        (heading.textContent && heading.textContent.startsWith("W")) ||
-        (heading.textContent && heading.textContent.startsWith("T"))
-      ) {
-        heading.classList.add("indent-fix");
-      }
-    });
-
-    const paragraphs = document.querySelectorAll("p");
-    paragraphs.forEach((paragraph) => {
-      if (paragraph.style.textAlign === "center") {
-        paragraph.classList.add("text-center");
-      }
-    });
-
-    const images = document.querySelectorAll("img");
-    images.forEach((image) => {
-      image.addEventListener("click", () => {
-        setSelectedImage(image.src);
-      });
-    });
-
-    return () => {
-      images.forEach((image) => {
-        image.removeEventListener("click", () => {
-          setSelectedImage(image.src);
-        });
-      });
-    };
-  }, [children]);
-
-  const closeModal = () => {
-    setSelectedImage(null);
-  };
-
-  return (
-    <MainStyled>
-      <SectionContainer>
-        <BlogPostHeader>
-          {title && <h1>{title}</h1>}
-          {description && <p className="desc">{description}</p>}
-          <BlogPostHeaderDetail>
-            {tag && <p className="tag">{tag}</p>}
-            {author && <p className="capitalize author">{author}</p>}
-            {formattedDate && <p className="date">{formattedDate}</p>}
-          </BlogPostHeaderDetail>
-        </BlogPostHeader>
-        <BlogPostContent className="prose">{children}</BlogPostContent>
-      </SectionContainer>
-
-      {selectedImage && (
-        <ImageModal onClick={closeModal}>
-          <img src={selectedImage} alt="Full sized image" />
-        </ImageModal>
-      )}
-    </MainStyled>
-  );
-}
-
-const BlogPostHeader = styled.article`
+import{G as t}from"./react-markdown-CdbJyoHg.js";import{f as g,M as u,S as y,N as b,F as j}from"./main-EGF2dRGG.js";import{r as h}from"./vendor-CvfCuUZz.js";import{d as o}from"./styled-components-BOF5XIQs.js";import"./@radix-ui/react-icons-T6wVLuVb.js";import"./date-fns-B4QYC8g5.js";import"./remark-gfm-RXI-vKoo.js";import"./rehype-raw-B3D9AqIt.js";function v({frontmatter:i,children:n}){const{title:s,date:r,tag:l,author:c,description:m}=i,d=r?g(r):null,[x,a]=h.useState(null);h.useEffect(()=>{document.querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(e=>{(e.textContent&&e.textContent.startsWith("W")||e.textContent&&e.textContent.startsWith("T"))&&e.classList.add("indent-fix")}),document.querySelectorAll("p").forEach(e=>{e.style.textAlign==="center"&&e.classList.add("text-center")});const f=document.querySelectorAll("img");return f.forEach(e=>{e.addEventListener("click",()=>{a(e.src)})}),()=>{f.forEach(e=>{e.removeEventListener("click",()=>{a(e.src)})})}},[n]);const p=()=>{a(null)};return t.jsxs(u,{children:[t.jsxs(y,{children:[t.jsxs(z,{children:[s&&t.jsx("h1",{children:s}),m&&t.jsx("p",{className:"desc",children:m}),t.jsxs(w,{children:[l&&t.jsx("p",{className:"tag",children:l}),c&&t.jsx("p",{className:"capitalize author",children:c}),d&&t.jsx("p",{className:"date",children:d})]})]}),t.jsx(k,{className:"prose",children:n})]}),x&&t.jsx(E,{onClick:p,children:t.jsx("img",{src:x,alt:"Full sized image"})})]})}const z=o.article`
   display: flex;
   flex-direction: column;
   margin-top: 20px;
@@ -108,9 +32,7 @@ const BlogPostHeader = styled.article`
       font-size: var(--text-base);
     }
   }
-`;
-
-const BlogPostHeaderDetail = styled.div`
+`,w=o.div`
   display: flex;
   flex-direction: column;
 
@@ -137,9 +59,7 @@ const BlogPostHeaderDetail = styled.div`
       margin-bottom: 4px;
     }
   }
-`;
-
-const BlogPostContent = styled.article`
+`,k=o.article`
   margin-top: 2rem;
   min-width: 100%;
 
@@ -236,9 +156,7 @@ const BlogPostContent = styled.article`
       margin: 0 auto;
     }
   }
-`;
-
-const ImageModal = styled.div`
+`,E=o.div`
   position: fixed;
   top: 0;
   left: 0;
@@ -255,4 +173,4 @@ const ImageModal = styled.div`
     max-width: 90%;
     max-height: 90%;
   }
-`;
+`;function G({frontmatter:i,children:n}){return t.jsxs(t.Fragment,{children:[t.jsx(b,{}),t.jsx(v,{frontmatter:i,children:n}),t.jsx(j,{})]})}export{G as default};
