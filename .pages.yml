@@ -1,25 +1,29 @@
-media: 
+media:
   input: public/img/blog
   output: /deskreview-react/img/blog
 content:
   - name: posts
     label: Posts
     type: collection
-    path: 'src/contents'
-    filename: '{fields.linkname}.md'
+    path: "src/contents"
+    filename: "{fields.linkname}.md"
     view:
       fields: [title, date]
       sort: [date, title]
     fields:
-      - { name: title, label: Title, type: string, required: true}
-      - { name: linkname, label: Linkname (your-title-shortened-with-hyphen), type: string, required: true}
-      - { name: date, label: Date (dd-mm-yyyy), type: string, required: true}
-      - name: tag 
+      - { name: title, label: Title, type: string, required: true }
+      - {
+          name: linkname,
+          label: Linkname (your-title-shortened-with-hyphen),
+          type: string,
+          required: true,
+        }
+      - { name: date, label: Date (dd-mm-yyyy), type: string, required: true }
+      - name: tag
         label: Tag
         type: select
-        options: 
-          values: [ On-Review, Method Review, Working View, Portfolio Review ]
+        options:
+          values: [On-Review, Method Review, Working View, Portfolio Review]
         required: true
-      - { name: author, label: Author, type: string, required: true}
-      - { name: description, label: Description, type: string}
-      - { name: body, label: Body, type: rich-text}
+      - { name: author, label: Author, type: string, required: true }
+      - { name: body, label: Body, type: rich-text }

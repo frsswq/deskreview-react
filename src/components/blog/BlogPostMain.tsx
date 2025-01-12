@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 import styled from "styled-components";
 
 export default function BlogPostMain({ frontmatter, children }: BlogPostProps) {
-  const { title, date, tag, author, description } = frontmatter;
+  const { title, date, tag, author } = frontmatter;
   const formattedDate = date ? formatDateBlogUtil(date) : null;
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
@@ -55,7 +55,6 @@ export default function BlogPostMain({ frontmatter, children }: BlogPostProps) {
       <SectionContainer>
         <BlogPostHeader>
           {title && <h1>{title}</h1>}
-          {description && <p className="desc">{description}</p>}
           <BlogPostHeaderDetail>
             {tag && <p className="tag">{tag}</p>}
             {author && <p className="capitalize author">{author}</p>}
@@ -90,22 +89,12 @@ const BlogPostHeader = styled.article`
     line-height: 1.2;
   }
 
-  .desc {
-    font-family: "DM Sans", sans-serif;
-    font-size: var(--text-lg);
-  }
-
   @media (width <= 768px) {
     margin-top: 10px;
-    gap: 16px 0;
 
     h1 {
       font-size: 2.25rem;
       line-height: 1;
-    }
-
-    .desc {
-      font-size: var(--text-base);
     }
   }
 `;
@@ -133,9 +122,6 @@ const BlogPostHeaderDetail = styled.div`
   }
 
   @media (width <= 768px) {
-    .tag {
-      margin-bottom: 4px;
-    }
   }
 `;
 
@@ -145,8 +131,11 @@ const BlogPostContent = styled.article`
 
   p,
   li {
-    font-family: "DM Sans", sans-serif;
-    font-size: var(--text-lg);
+    font-family: "EB Garamond", sans-serif;
+    font-size: var(--text-xl);
+    font-weight: 400;
+    letter-spacing: 0em;
+    line-height: 1.6;
     color: black;
   }
 
@@ -185,14 +174,19 @@ const BlogPostContent = styled.article`
 
   blockquote {
     quotes: none;
-    font-style: normal;
+    font-style: italic;
   }
 
   img {
     cursor: zoom-in;
   }
 
+  table {
+    font-family: "DM Sans", sans-serif;
+  }
+
   .text-center {
+    font-family: "DM Sans", sans-serif;
     text-align: center;
     font-size: var(--text-sm);
     color: rgba(var(--desk-gray-700), 0.8);
@@ -231,9 +225,10 @@ const BlogPostContent = styled.article`
     }
 
     .text-center {
-      transform: translateY(-75%);
+      transform: translateY(-50%);
       width: 90%;
-      margin: 0 auto;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 `;

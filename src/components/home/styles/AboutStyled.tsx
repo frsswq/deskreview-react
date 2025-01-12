@@ -13,10 +13,10 @@ export const ManifestoText = styled.p`
   }
 
   @media (width <= 768px) {
-    font-size: var(--text-lg);
+    font-size: var(--text-base);
 
     span {
-      font-size: var(--text-lg);
+      font-size: var(--text-base);
     }
   }
 `;

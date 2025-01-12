@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const MainStyled = styled.main`
-  padding: 16px 16px 32px;
+  padding: 16px 24px 32px;
 `;
 
 export const Container = styled.div`
@@ -45,7 +45,7 @@ export const HomeItemTitle = styled.h2`
   padding: 4px 0;
 
   @media (width <= 768px) {
-    font-size: var(--text-sm);
+    font-size: var(--text-xs);
   }
 `;
 
@@ -58,6 +58,6 @@ export const HomeItemText = styled.p`
 
   @media (width <= 768px) {
     padding: 4px 0;
-    font-size: var(--text-lg);
+    font-size: var(--text-base);
   }
 `;

@@ -1,4 +1,4 @@
-import{G as t}from"./react-markdown-CdbJyoHg.js";import{f as g,M as u,S as y,N as b,F as j}from"./main-EGF2dRGG.js";import{r as h}from"./vendor-CvfCuUZz.js";import{d as o}from"./styled-components-BOF5XIQs.js";import"./@radix-ui/react-icons-T6wVLuVb.js";import"./date-fns-B4QYC8g5.js";import"./remark-gfm-RXI-vKoo.js";import"./rehype-raw-B3D9AqIt.js";function v({frontmatter:i,children:n}){const{title:s,date:r,tag:l,author:c,description:m}=i,d=r?g(r):null,[x,a]=h.useState(null);h.useEffect(()=>{document.querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(e=>{(e.textContent&&e.textContent.startsWith("W")||e.textContent&&e.textContent.startsWith("T"))&&e.classList.add("indent-fix")}),document.querySelectorAll("p").forEach(e=>{e.style.textAlign==="center"&&e.classList.add("text-center")});const f=document.querySelectorAll("img");return f.forEach(e=>{e.addEventListener("click",()=>{a(e.src)})}),()=>{f.forEach(e=>{e.removeEventListener("click",()=>{a(e.src)})})}},[n]);const p=()=>{a(null)};return t.jsxs(u,{children:[t.jsxs(y,{children:[t.jsxs(z,{children:[s&&t.jsx("h1",{children:s}),m&&t.jsx("p",{className:"desc",children:m}),t.jsxs(w,{children:[l&&t.jsx("p",{className:"tag",children:l}),c&&t.jsx("p",{className:"capitalize author",children:c}),d&&t.jsx("p",{className:"date",children:d})]})]}),t.jsx(k,{className:"prose",children:n})]}),x&&t.jsx(E,{onClick:p,children:t.jsx("img",{src:x,alt:"Full sized image"})})]})}const z=o.article`
+import{G as t}from"./react-markdown-CdbJyoHg.js";import{f as g,M as p,S as u,N as y,F as b}from"./main-BNJI9LSq.js";import{r as h}from"./vendor-CvfCuUZz.js";import{d as i}from"./styled-components-BOF5XIQs.js";import"./@radix-ui/react-icons-T6wVLuVb.js";import"./date-fns-B4QYC8g5.js";import"./remark-gfm-RXI-vKoo.js";import"./rehype-raw-B3D9AqIt.js";function j({frontmatter:o,children:n}){const{title:r,date:s,tag:l,author:c}=o,m=s?g(s):null,[f,a]=h.useState(null);h.useEffect(()=>{document.querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(e=>{(e.textContent&&e.textContent.startsWith("W")||e.textContent&&e.textContent.startsWith("T"))&&e.classList.add("indent-fix")}),document.querySelectorAll("p").forEach(e=>{e.style.textAlign==="center"&&e.classList.add("text-center")});const d=document.querySelectorAll("img");return d.forEach(e=>{e.addEventListener("click",()=>{a(e.src)})}),()=>{d.forEach(e=>{e.removeEventListener("click",()=>{a(e.src)})})}},[n]);const x=()=>{a(null)};return t.jsxs(p,{children:[t.jsxs(u,{children:[t.jsxs(v,{children:[r&&t.jsx("h1",{children:r}),t.jsxs(z,{children:[l&&t.jsx("p",{className:"tag",children:l}),c&&t.jsx("p",{className:"capitalize author",children:c}),m&&t.jsx("p",{className:"date",children:m})]})]}),t.jsx(w,{className:"prose",children:n})]}),f&&t.jsx(E,{onClick:x,children:t.jsx("img",{src:f,alt:"Full sized image"})})]})}const v=i.article`
   display: flex;
   flex-direction: column;
   margin-top: 20px;
@@ -14,25 +14,15 @@ import{G as t}from"./react-markdown-CdbJyoHg.js";import{f as g,M as u,S as y,N a
     line-height: 1.2;
   }
 
-  .desc {
-    font-family: "DM Sans", sans-serif;
-    font-size: var(--text-lg);
-  }
-
   @media (width <= 768px) {
     margin-top: 10px;
-    gap: 16px 0;
 
     h1 {
       font-size: 2.25rem;
       line-height: 1;
     }
-
-    .desc {
-      font-size: var(--text-base);
-    }
   }
-`,w=o.div`
+`,z=i.div`
   display: flex;
   flex-direction: column;
 
@@ -55,18 +45,18 @@ import{G as t}from"./react-markdown-CdbJyoHg.js";import{f as g,M as u,S as y,N a
   }
 
   @media (width <= 768px) {
-    .tag {
-      margin-bottom: 4px;
-    }
   }
-`,k=o.article`
+`,w=i.article`
   margin-top: 2rem;
   min-width: 100%;
 
   p,
   li {
-    font-family: "DM Sans", sans-serif;
-    font-size: var(--text-lg);
+    font-family: "EB Garamond", sans-serif;
+    font-size: var(--text-xl);
+    font-weight: 400;
+    letter-spacing: 0em;
+    line-height: 1.6;
     color: black;
   }
 
@@ -105,14 +95,19 @@ import{G as t}from"./react-markdown-CdbJyoHg.js";import{f as g,M as u,S as y,N a
 
   blockquote {
     quotes: none;
-    font-style: normal;
+    font-style: italic;
   }
 
   img {
     cursor: zoom-in;
   }
 
+  table {
+    font-family: "DM Sans", sans-serif;
+  }
+
   .text-center {
+    font-family: "DM Sans", sans-serif;
     text-align: center;
     font-size: var(--text-sm);
     color: rgba(var(--desk-gray-700), 0.8);
@@ -151,12 +146,13 @@ import{G as t}from"./react-markdown-CdbJyoHg.js";import{f as g,M as u,S as y,N a
     }
 
     .text-center {
-      transform: translateY(-75%);
+      transform: translateY(-50%);
       width: 90%;
-      margin: 0 auto;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
-`,E=o.div`
+`,E=i.div`
   position: fixed;
   top: 0;
   left: 0;
@@ -173,4 +169,4 @@ import{G as t}from"./react-markdown-CdbJyoHg.js";import{f as g,M as u,S as y,N a
     max-width: 90%;
     max-height: 90%;
   }
-`;function G({frontmatter:i,children:n}){return t.jsxs(t.Fragment,{children:[t.jsx(b,{}),t.jsx(v,{frontmatter:i,children:n}),t.jsx(j,{})]})}export{G as default};
+`;function A({frontmatter:o,children:n}){return t.jsxs(t.Fragment,{children:[t.jsx(y,{}),t.jsx(j,{frontmatter:o,children:n}),t.jsx(b,{})]})}export{A as default};
