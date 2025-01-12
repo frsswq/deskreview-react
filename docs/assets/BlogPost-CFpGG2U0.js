@@ -1,4 +1,4 @@
-import{G as e}from"./react-markdown-CdbJyoHg.js";import{f as d,M as h,S as x,a as g}from"./main-BEfqIl2S.js";import{d as s}from"./styled-components-BOF5XIQs.js";import{r as m}from"./vendor-CvfCuUZz.js";import"./@radix-ui/react-icons-T6wVLuVb.js";import"./date-fns-B4QYC8g5.js";import"./remark-gfm-RXI-vKoo.js";import"./rehype-raw-B3D9AqIt.js";const p=s.article`
+import{G as t}from"./react-markdown-CdbJyoHg.js";import{f as h,M as x,S as g,a as p}from"./main-D3pis6bM.js";import{d as m}from"./styled-components-BOF5XIQs.js";import{r as c}from"./vendor-CvfCuUZz.js";import"./@radix-ui/react-icons-T6wVLuVb.js";import"./date-fns-B4QYC8g5.js";import"./remark-gfm-RXI-vKoo.js";import"./rehype-raw-B3D9AqIt.js";const u=m.article`
   display: flex;
   flex-direction: column;
   margin-top: 20px;
@@ -22,7 +22,7 @@ import{G as e}from"./react-markdown-CdbJyoHg.js";import{f as d,M as h,S as x,a a
       line-height: 1;
     }
   }
-`,u=s.div`
+`,y=m.div`
   display: flex;
   flex-direction: column;
 
@@ -46,7 +46,7 @@ import{G as e}from"./react-markdown-CdbJyoHg.js";import{f as d,M as h,S as x,a a
 
   @media (width <= 768px) {
   }
-`,y=s.article`
+`,b=m.article`
   margin-top: 2rem;
   min-width: 100%;
 
@@ -152,7 +152,7 @@ import{G as e}from"./react-markdown-CdbJyoHg.js";import{f as d,M as h,S as x,a a
       margin-right: auto;
     }
   }
-`,b=s.div`
+`,z=m.div`
   position: fixed;
   top: 0;
   left: 0;
@@ -169,4 +169,4 @@ import{G as e}from"./react-markdown-CdbJyoHg.js";import{f as d,M as h,S as x,a a
     max-width: 90%;
     max-height: 90%;
   }
-`,z=i=>{const[o,n]=m.useState(null);return m.useEffect(()=>{document.querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(t=>{(t.textContent&&t.textContent.startsWith("W")||t.textContent&&t.textContent.startsWith("T"))&&t.classList.add("indent-fix")}),document.querySelectorAll("p").forEach(t=>{t.style.textAlign==="center"&&t.classList.add("text-center")});const a=document.querySelectorAll("img");return a.forEach(t=>{t.addEventListener("click",()=>{n(t.src)})}),()=>{a.forEach(t=>{t.removeEventListener("click",()=>{n(t.src)})})}},[i]),{selectedImage:o,closeModal:()=>{n(null)}}};function j({frontmatter:i,children:o}){const{title:n,date:r,tag:l,author:c}=i,a=r?d(r):null,{selectedImage:t,closeModal:f}=z(o);return e.jsxs(h,{children:[e.jsxs(x,{children:[e.jsxs(p,{children:[n&&e.jsx("h1",{children:n}),e.jsxs(u,{children:[l&&e.jsx("p",{className:"tag",children:l}),c&&e.jsx("p",{className:"capitalize author",children:c}),a&&e.jsx("p",{className:"date",children:a})]})]}),e.jsx(y,{className:"prose",children:o})]}),t&&e.jsx(b,{onClick:f,children:e.jsx("img",{src:t,alt:"Full sized image"})})]})}function P({frontmatter:i,children:o}){return e.jsx(g,{children:e.jsx(j,{frontmatter:i,children:o})})}export{P as default};
+`,j=n=>{const[a,e]=c.useState(null);return c.useEffect(()=>{if(!n.current)return;const o=i=>{const l=i.target;e(l.src)},r=n.current.querySelectorAll("img");return r.forEach(i=>{i.addEventListener("click",o)}),()=>{r.forEach(i=>{i.removeEventListener("click",o)})}},[n]),{selectedImage:a,closeModal:()=>{e(null)}}},v=()=>{c.useEffect(()=>{document.querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(e=>{var s,o;((s=e.textContent)!=null&&s.startsWith("W")||(o=e.textContent)!=null&&o.startsWith("T"))&&e.classList.add("indent-fix")}),document.querySelectorAll("p").forEach(e=>{e.style.textAlign==="center"&&e.classList.add("text-center")})},[])};function w({frontmatter:n,children:a}){const{title:e,date:s,tag:o,author:r}=n,i=s?h(s):null,l=c.useRef(null),{selectedImage:f,closeModal:d}=j(l);return v(),t.jsxs(x,{children:[t.jsxs(g,{children:[t.jsxs(u,{children:[e&&t.jsx("h1",{children:e}),t.jsxs(y,{children:[o&&t.jsx("p",{className:"tag",children:o}),r&&t.jsx("p",{className:"capitalize author",children:r}),i&&t.jsx("p",{className:"date",children:i})]})]}),t.jsx(b,{ref:l,className:"prose",children:a})]}),f&&t.jsx(z,{onClick:d,children:t.jsx("img",{src:f,alt:"Full sized image"})})]})}function q({frontmatter:n,children:a}){return t.jsx(p,{children:t.jsx(w,{frontmatter:n,children:a})})}export{q as default};

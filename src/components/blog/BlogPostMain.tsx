@@ -11,13 +11,19 @@ import {
   BlogPostContentImageModal,
 } from "./styles/BlogPostContentStyled.tsx";
 import { BlogPostProps } from "../../types/blogTypes.ts";
-import { useImageModal } from "../../hooks/blogPostImageModal.ts";
+import {
+  useBlogPostImageModal,
+  useBlogPostFixIndent,
+} from "../../hooks/blogPostHooks.ts";
+import { useRef } from "react";
 import { formatDateBlogUtil } from "../../utils/dateUtil.ts";
 
 export default function BlogPostMain({ frontmatter, children }: BlogPostProps) {
   const { title, date, tag, author } = frontmatter;
   const formattedDate = date ? formatDateBlogUtil(date) : null;
-  const { selectedImage, closeModal } = useImageModal(children);
+  const contentRef = useRef<HTMLDivElement>(null as unknown as HTMLDivElement);
+  const { selectedImage, closeModal } = useBlogPostImageModal(contentRef);
+  useBlogPostFixIndent();
 
   return (
     <MainStyled>
@@ -30,7 +36,9 @@ export default function BlogPostMain({ frontmatter, children }: BlogPostProps) {
             {formattedDate && <p className="date">{formattedDate}</p>}
           </BlogPostHeaderDetail>
         </BlogPostHeader>
-        <BlogPostContent className="prose">{children}</BlogPostContent>
+        <BlogPostContent ref={contentRef} className="prose">
+          {children}
+        </BlogPostContent>
       </SectionContainer>
 
       {selectedImage && (
