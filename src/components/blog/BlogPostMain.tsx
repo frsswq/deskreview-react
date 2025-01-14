@@ -14,6 +14,7 @@ import { BlogPostProps } from "../../types/blogTypes.ts";
 import {
   useBlogPostImageModal,
   useBlogPostFixIndent,
+  useTextCenterFix,
 } from "../../hooks/blogPostHooks.ts";
 import { useRef } from "react";
 import { formatDateBlogUtil } from "../../utils/dateUtil.ts";
@@ -24,6 +25,7 @@ export default function BlogPostMain({ frontmatter, children }: BlogPostProps) {
   const contentRef = useRef<HTMLElement>(null as unknown as HTMLElement);
   const { selectedImage, closeModal } = useBlogPostImageModal(contentRef);
   useBlogPostFixIndent(contentRef);
+  useTextCenterFix();
 
   return (
     <MainStyled>

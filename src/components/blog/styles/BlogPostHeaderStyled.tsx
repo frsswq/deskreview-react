@@ -28,6 +28,7 @@ export const BlogPostHeader = styled.article`
 
 export const BlogPostHeaderDetail = styled.div`
   display: flex;
+  margin-bottom: 40px;
   flex-direction: column;
 
   p {

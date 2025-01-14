@@ -36,6 +36,12 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
   }
 
+  *:focus-visible {
+    outline: 2px solid rgba(var(--desk-gray-500));
+    outline-offset: 4px;
+    border-radius: 1px;
+  }
+
   body {
     background-color: #ffffff;
     overflow-y: scroll;

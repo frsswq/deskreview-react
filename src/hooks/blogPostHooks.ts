@@ -41,12 +41,16 @@ export const useBlogPostFixIndent = (contentRef: RefObject<HTMLElement>) => {
         heading.classList.add("indent-fix");
       }
     });
+  }, [contentRef]);
+};
 
+export const useTextCenterFix = () => {
+  useEffect(() => {
     const paragraphs = document.querySelectorAll("p");
     paragraphs.forEach((paragraph) => {
       if ((paragraph as HTMLElement).style.textAlign === "center") {
         paragraph.classList.add("text-center");
       }
     });
-  }, [contentRef]);
+  });
 };

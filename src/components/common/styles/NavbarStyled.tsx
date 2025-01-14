@@ -48,7 +48,7 @@ export const NavbarMenu = styled.menu`
     color: rgba(var(--desk-gray-700), 0.8);
     line-height: 1;
     text-decoration-line: none;
-    padding-left: 0.75rem;
+    margin-left: 0.75rem;
     letter-spacing: -0.025em;
 
     &:hover {
