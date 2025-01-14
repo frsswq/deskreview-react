@@ -30,7 +30,7 @@ export const DefaultTitle = styled.h1`
 
   @media (width <= 768px) {
     font-size: 3.125rem;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
   }
 `;
 
@@ -58,6 +58,6 @@ export const HomeItemText = styled.p`
 
   @media (width <= 768px) {
     padding: 4px 0;
-    font-size: var(--text-base);
+    font-size: var(--text-lg);
   }
 `;

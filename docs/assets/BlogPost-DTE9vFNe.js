@@ -1,4 +1,4 @@
-import{G as t}from"./react-markdown-CdbJyoHg.js";import{f as x,M as f,S as h,a as p}from"./main-DAQ3CAte.js";import{d as c}from"./styled-components-BOF5XIQs.js";import{r as s}from"./vendor-CvfCuUZz.js";import"./@radix-ui/react-icons-T6wVLuVb.js";import"./date-fns-B4QYC8g5.js";import"./remark-gfm-RXI-vKoo.js";import"./rehype-raw-B3D9AqIt.js";const u=c.article`
+import{G as t}from"./react-markdown-CdbJyoHg.js";import{f,M as x,S as h,a as p}from"./main-dLBwNNZs.js";import{d as c}from"./styled-components-BOF5XIQs.js";import{r as s}from"./vendor-CvfCuUZz.js";import"./@radix-ui/react-icons-T6wVLuVb.js";import"./date-fns-B4QYC8g5.js";import"./remark-gfm-RXI-vKoo.js";import"./rehype-raw-B3D9AqIt.js";const u=c.article`
   display: flex;
   flex-direction: column;
   margin-top: 20px;
@@ -156,6 +156,10 @@ import{G as t}from"./react-markdown-CdbJyoHg.js";import{f as x,M as f,S as h,a a
     margin-top: 40px;
     margin-bottom: 24px;
     letter-spacing: -0.025em;
+
+    code {
+      font-size: 24px;
+    }
   }
 
   h1 {
@@ -191,7 +195,7 @@ import{G as t}from"./react-markdown-CdbJyoHg.js";import{f as x,M as f,S as h,a a
     p {
       font-size: var(--text-2xl);
       margin-left: 16px;
-      line-height: 2;
+      line-height: 1.6;
     }
   }
 
@@ -209,6 +213,10 @@ import{G as t}from"./react-markdown-CdbJyoHg.js";import{f as x,M as f,S as h,a a
     border-bottom: 1px solid rgba(var(--desk-gray-500));
     padding: 12px 0;
     text-align: left;
+  }
+
+  th {
+    font-weight: 600;
   }
 
   img {
@@ -304,4 +312,4 @@ import{G as t}from"./react-markdown-CdbJyoHg.js";import{f as x,M as f,S as h,a a
     max-width: 90%;
     max-height: 90%;
   }
-`,v=e=>{const[r,a]=s.useState(null),i=s.useCallback(()=>{a(null)},[]);return s.useEffect(()=>{if(!e.current)return;const o=d=>{const n=d.target;n.tagName.toLowerCase()==="img"&&a(n.src)},l=e.current;return l.addEventListener("click",o),()=>{l.removeEventListener("click",o)}},[e]),{selectedImage:r,closeModal:i}},w=e=>{s.useEffect(()=>{if(!e.current)return;document.querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(a=>{var i,o;((i=a.textContent)!=null&&i.startsWith("W")||(o=a.textContent)!=null&&o.startsWith("T"))&&a.classList.add("indent-fix")})},[e])},z=()=>{s.useEffect(()=>{document.querySelectorAll("p").forEach(r=>{r.style.textAlign==="center"&&r.classList.add("text-center")})})};function j({frontmatter:e,children:r}){const{title:a,date:i,tag:o,author:l}=e,d=i?x(i):null,n=s.useRef(null),{selectedImage:g,closeModal:m}=v(n);return w(n),z(),t.jsxs(f,{children:[t.jsxs(h,{children:[t.jsxs(u,{children:[a&&t.jsx("h1",{children:a}),t.jsxs(b,{children:[o&&t.jsx("p",{className:"tag",children:o}),l&&t.jsx("p",{className:"author",children:l}),d&&t.jsx("p",{className:"date",children:d})]})]}),t.jsx(k,{ref:n,children:r})]}),g&&t.jsx(y,{onClick:m,children:t.jsx("img",{src:g,alt:"Full sized image"})})]})}function D({frontmatter:e,children:r}){return t.jsx(p,{children:t.jsx(j,{frontmatter:e,children:r})})}export{D as default};
+`,v=e=>{const[r,a]=s.useState(null),i=s.useCallback(()=>{a(null)},[]);return s.useEffect(()=>{if(!e.current)return;const o=d=>{const n=d.target;n.tagName.toLowerCase()==="img"&&a(n.src)},l=e.current;return l.addEventListener("click",o),()=>{l.removeEventListener("click",o)}},[e]),{selectedImage:r,closeModal:i}},w=e=>{s.useEffect(()=>{if(!e.current)return;document.querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(a=>{var i,o;((i=a.textContent)!=null&&i.startsWith("W")||(o=a.textContent)!=null&&o.startsWith("T"))&&a.classList.add("indent-fix")})},[e])},z=()=>{s.useEffect(()=>{document.querySelectorAll("p").forEach(r=>{r.style.textAlign==="center"&&r.classList.add("text-center")})})};function j({frontmatter:e,children:r}){const{title:a,date:i,tag:o,author:l}=e,d=i?f(i):null,n=s.useRef(null),{selectedImage:g,closeModal:m}=v(n);return w(n),z(),t.jsxs(x,{children:[t.jsxs(h,{children:[t.jsxs(u,{children:[a&&t.jsx("h1",{children:a}),t.jsxs(b,{children:[o&&t.jsx("p",{className:"tag",children:o}),l&&t.jsx("p",{className:"author",children:l}),d&&t.jsx("p",{className:"date",children:d})]})]}),t.jsx(k,{ref:n,children:r})]}),g&&t.jsx(y,{onClick:m,children:t.jsx("img",{src:g,alt:"Full sized image"})})]})}function D({frontmatter:e,children:r}){return t.jsx(p,{children:t.jsx(j,{frontmatter:e,children:r})})}export{D as default};

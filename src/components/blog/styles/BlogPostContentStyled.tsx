@@ -108,6 +108,10 @@ export const BlogPostContent = styled.article`
     margin-top: 40px;
     margin-bottom: 24px;
     letter-spacing: -0.025em;
+
+    code {
+      font-size: 24px;
+    }
   }
 
   h1 {
@@ -143,7 +147,7 @@ export const BlogPostContent = styled.article`
     p {
       font-size: var(--text-2xl);
       margin-left: 16px;
-      line-height: 2;
+      line-height: 1.6;
     }
   }
 
@@ -161,6 +165,10 @@ export const BlogPostContent = styled.article`
     border-bottom: 1px solid rgba(var(--desk-gray-500));
     padding: 12px 0;
     text-align: left;
+  }
+
+  th {
+    font-weight: 600;
   }
 
   img {
