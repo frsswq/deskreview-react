@@ -9,7 +9,6 @@ Static site for deskreview creative agency. Built with ❤️ using [React](http
 - [Styled Component](https://styled-components.com/) [ Styling ]
 - [Pages CMS](https://pagescms.org/) [ CMS ]
 - [Fontsource](https://fontsource.org/) [ Self-host Fonts ]
-- [Tailwind](https://tailwindcss.com/) [ Tailwind Prose Plugin ]
 
 ## Steps
 

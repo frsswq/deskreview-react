@@ -1,6 +1,53 @@
-import styled from "styled-components";
+import{G as t}from"./react-markdown-CdbJyoHg.js";import{f,M as h,S as x,a as p}from"./main-Bq1MqGA3.js";import{d}from"./styled-components-BOF5XIQs.js";import{r as l}from"./vendor-CvfCuUZz.js";import"./@radix-ui/react-icons-T6wVLuVb.js";import"./date-fns-B4QYC8g5.js";import"./remark-gfm-RXI-vKoo.js";import"./rehype-raw-B3D9AqIt.js";const u=d.article`
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 24px 0;
 
-export const BlogPostContent = styled.article`
+  h1 {
+    font-family: "EB Garamond", sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 3.125rem;
+    letter-spacing: -0.04em;
+    overflow-wrap: break-word;
+    line-height: 1.2;
+  }
+
+  @media (width <= 768px) {
+    margin-top: 10px;
+
+    h1 {
+      font-size: 2.25rem;
+      line-height: 1;
+    }
+  }
+`,b=d.div`
+  display: flex;
+  flex-direction: column;
+
+  p {
+    font-size: var(--text-base);
+  }
+
+  .tag {
+    font-family: "EB Garamond", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  .author {
+    text-transform: capitalize;
+    font-weight: 500;
+  }
+
+  .date {
+  }
+
+  @media (width <= 768px) {
+  }
+`,y=d.article`
   margin-top: 2rem;
   min-width: 100%;
 
@@ -88,8 +135,8 @@ export const BlogPostContent = styled.article`
   h4,
   h5,
   h6 {
-    font-family: "EB Garamond", serif;
-    font-style: italic;
+    font-family: "DM Sans", serif;
+    font-style: normal;
     font-weight: 600;
     letter-spacing: 0em;
     margin-top: 40px;
@@ -184,9 +231,7 @@ export const BlogPostContent = styled.article`
       margin-right: auto;
     }
   }
-`;
-
-export const BlogPostContentImageModal = styled.div`
+`,k=d.div`
   position: fixed;
   top: 0;
   left: 0;
@@ -203,4 +248,4 @@ export const BlogPostContentImageModal = styled.div`
     max-width: 90%;
     max-height: 90%;
   }
-`;
+`,v=r=>{const[i,n]=l.useState(null),e=l.useCallback(()=>{n(null)},[]);return l.useEffect(()=>{if(!r.current)return;const a=c=>{const s=c.target;s.tagName.toLowerCase()==="img"&&n(s.src)},o=r.current;return o.addEventListener("click",a),()=>{o.removeEventListener("click",a)}},[r]),{selectedImage:i,closeModal:e}},w=r=>{l.useEffect(()=>{if(!r.current)return;document.querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(e=>{var a,o;((a=e.textContent)!=null&&a.startsWith("W")||(o=e.textContent)!=null&&o.startsWith("T"))&&e.classList.add("indent-fix")}),document.querySelectorAll("p").forEach(e=>{e.style.textAlign==="center"&&e.classList.add("text-center")})},[r])};function z({frontmatter:r,children:i}){const{title:n,date:e,tag:a,author:o}=r,c=e?f(e):null,s=l.useRef(null),{selectedImage:m,closeModal:g}=v(s);return w(s),t.jsxs(h,{children:[t.jsxs(x,{children:[t.jsxs(u,{children:[n&&t.jsx("h1",{children:n}),t.jsxs(b,{children:[a&&t.jsx("p",{className:"tag",children:a}),o&&t.jsx("p",{className:"author",children:o}),c&&t.jsx("p",{className:"date",children:c})]})]}),t.jsx(y,{ref:s,children:i})]}),m&&t.jsx(k,{onClick:g,children:t.jsx("img",{src:m,alt:"Full sized image"})})]})}function I({frontmatter:r,children:i}){return t.jsx(p,{children:t.jsx(z,{frontmatter:r,children:i})})}export{I as default};

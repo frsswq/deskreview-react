@@ -42,6 +42,10 @@ const GlobalStyles = createGlobalStyle`
     scrollbar-gutter: stable;
   }
 
+  a {
+    color: black;
+  }
+
   p,
   li {
     font-family: "DM Sans", sans-serif;

@@ -1,37 +1,37 @@
-import { useEffect, useState, RefObject } from "react";
+import { useEffect, useState, useCallback, RefObject } from "react";
 
 export const useBlogPostImageModal = (contentRef: RefObject<HTMLElement>) => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+  const closeModal = useCallback(() => {
+    setSelectedImage(null);
+  }, []);
 
   useEffect(() => {
     if (!contentRef.current) return;
 
     const handleImageClick = (event: Event) => {
       const target = event.target as HTMLImageElement;
-      setSelectedImage(target.src);
+      if (target.tagName.toLowerCase() === "img") {
+        setSelectedImage(target.src);
+      }
     };
 
-    const images = contentRef.current.querySelectorAll("img");
-    images.forEach((image) => {
-      image.addEventListener("click", handleImageClick);
-    });
+    const contentElement = contentRef.current;
+    contentElement.addEventListener("click", handleImageClick);
 
     return () => {
-      images.forEach((image) => {
-        image.removeEventListener("click", handleImageClick);
-      });
+      contentElement.removeEventListener("click", handleImageClick);
     };
   }, [contentRef]);
-
-  const closeModal = () => {
-    setSelectedImage(null);
-  };
 
   return { selectedImage, closeModal };
 };
 
-export const useBlogPostFixIndent = () => {
+export const useBlogPostFixIndent = (contentRef: RefObject<HTMLElement>) => {
   useEffect(() => {
+    if (!contentRef.current) return;
+
     const headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
     headings.forEach((heading) => {
       if (
@@ -48,5 +48,5 @@ export const useBlogPostFixIndent = () => {
         paragraph.classList.add("text-center");
       }
     });
-  }, []);
+  }, [contentRef]);
 };

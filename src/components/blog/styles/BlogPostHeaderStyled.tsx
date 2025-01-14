@@ -42,6 +42,7 @@ export const BlogPostHeaderDetail = styled.div`
   }
 
   .author {
+    text-transform: capitalize;
     font-weight: 500;
   }
 

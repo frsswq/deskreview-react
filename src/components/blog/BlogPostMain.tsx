@@ -21,9 +21,9 @@ import { formatDateBlogUtil } from "../../utils/dateUtil.ts";
 export default function BlogPostMain({ frontmatter, children }: BlogPostProps) {
   const { title, date, tag, author } = frontmatter;
   const formattedDate = date ? formatDateBlogUtil(date) : null;
-  const contentRef = useRef<HTMLDivElement>(null as unknown as HTMLDivElement);
+  const contentRef = useRef<HTMLElement>(null as unknown as HTMLElement);
   const { selectedImage, closeModal } = useBlogPostImageModal(contentRef);
-  useBlogPostFixIndent();
+  useBlogPostFixIndent(contentRef);
 
   return (
     <MainStyled>
@@ -32,13 +32,11 @@ export default function BlogPostMain({ frontmatter, children }: BlogPostProps) {
           {title && <h1>{title}</h1>}
           <BlogPostHeaderDetail>
             {tag && <p className="tag">{tag}</p>}
-            {author && <p className="capitalize author">{author}</p>}
+            {author && <p className="author">{author}</p>}
             {formattedDate && <p className="date">{formattedDate}</p>}
           </BlogPostHeaderDetail>
         </BlogPostHeader>
-        <BlogPostContent ref={contentRef} className="prose">
-          {children}
-        </BlogPostContent>
+        <BlogPostContent ref={contentRef}>{children}</BlogPostContent>
       </SectionContainer>
 
       {selectedImage && (
