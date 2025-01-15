@@ -13,8 +13,8 @@ export const BlogButtonContainer = styled.div`
 `;
 
 export const LinkStyled = styled(Link)`
-  display: grid;
-  grid-template-columns: 1.4fr 8.6fr;
+  display: flex;
+  justify-content: space-between;
   text-decoration: none;
   align-items: center;
 
@@ -29,6 +29,8 @@ export const LinkStyled = styled(Link)`
   .blog-date {
     color: rgba(var(--desk-gray-700));
     font-size: var(--text-base);
+    white-space: nowrap;
+    margin-right: 12px;
   }
 
   .blog-title {
@@ -46,11 +48,11 @@ export const LinkStyled = styled(Link)`
   }
 
   @media (width <= 768px) {
-    grid-template-columns: 2fr 8fr;
     padding: 0px 0;
 
     .blog-date {
       font-size: var(--text-base);
+      margin-right: 8px;
     }
   }
 `;

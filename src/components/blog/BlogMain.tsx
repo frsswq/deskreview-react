@@ -20,18 +20,20 @@ export default function BlogMain() {
     <MainStyled>
       <SectionContainer>
         <DefaultTitle>Study</DefaultTitle>
-        <BlogButtonContainer>
-          <Divider />
-          {links.map(({ title, path, date }) => (
-            <>
-              <LinkStyled key={path} to={path}>
-                <p className="blog-date">{date && `${date}`}</p>
-                <p className="blog-title">{title}</p>
-              </LinkStyled>
-              <Divider />
-            </>
-          ))}
-        </BlogButtonContainer>
+        {links.length > 0 && (
+          <BlogButtonContainer>
+            <Divider />
+            {links.map(({ title, path, date }) => (
+              <>
+                <LinkStyled key={path} to={path}>
+                  {date && <p className="blog-date">{date}</p>}
+                  <p className="blog-title">{title}</p>
+                </LinkStyled>
+                <Divider />
+              </>
+            ))}
+          </BlogButtonContainer>
+        )}
       </SectionContainer>
     </MainStyled>
   );
