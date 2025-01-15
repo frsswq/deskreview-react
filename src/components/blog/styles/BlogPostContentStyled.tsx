@@ -291,6 +291,14 @@ export const BlogPostContent = styled.article`
       &:hover {
         color: rgba(var(--desk-gray-700), 1);
       }
+
+      u {
+        text-decoration-color: rgba(var(--desk-gray-500), 0.8);
+
+        &:hover {
+          text-decoration-color: rgba(var(--desk-gray-700), 1);
+        }
+      }
     }
 
     & + * {

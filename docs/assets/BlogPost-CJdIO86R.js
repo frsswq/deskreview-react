@@ -1,4 +1,4 @@
-import{G as e}from"./react-markdown-maCznKtX.js";import{f as p,M as f,S as h,a as u}from"./main-C0_7thDp.js";import{d as x}from"./styled-components-CgetkSgC.js";import{r as d}from"./vendor-C-q9OyUs.js";import"./@radix-ui/react-icons-88m-rOiV.js";import"./date-fns-B4QYC8g5.js";import"./remark-gfm-BYX8R0Us.js";import"./rehype-raw-CHXFhoZm.js";const b=x.article`
+import{G as e}from"./react-markdown-maCznKtX.js";import{f as p,M as f,S as h,a as u}from"./main-C1xlAVwR.js";import{d as x}from"./styled-components-CgetkSgC.js";import{r as d}from"./vendor-C-q9OyUs.js";import"./@radix-ui/react-icons-88m-rOiV.js";import"./date-fns-B4QYC8g5.js";import"./remark-gfm-BYX8R0Us.js";import"./rehype-raw-CHXFhoZm.js";const b=x.article`
   display: flex;
   flex-direction: column;
   margin-top: 16px;
@@ -345,6 +345,14 @@ import{G as e}from"./react-markdown-maCznKtX.js";import{f as p,M as f,S as h,a a
 
       &:hover {
         color: rgba(var(--desk-gray-700), 1);
+      }
+
+      u {
+        text-decoration-color: rgba(var(--desk-gray-500), 0.8);
+
+        &:hover {
+          text-decoration-color: rgba(var(--desk-gray-700), 1);
+        }
       }
     }
 

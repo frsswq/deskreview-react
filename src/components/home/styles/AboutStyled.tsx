@@ -9,6 +9,7 @@ export const ManifestoText = styled.p`
     font-family: "EB Garamond", serif;
     font-style: oblique;
     font-size: var(--text-xl);
+    font-weight: 500;
     line-height: 1;
   }
 
