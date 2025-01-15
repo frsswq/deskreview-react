@@ -96,7 +96,7 @@ export const BlogPostContent = styled.article`
   }
 
   ul {
-    list-style-type: disc;
+    list-style-type: none;
   }
 
   ol {
@@ -104,6 +104,7 @@ export const BlogPostContent = styled.article`
   }
 
   ul > li::marker {
+    content: "–";
     color: rgb(var(--desk-gray-700));
   }
 
