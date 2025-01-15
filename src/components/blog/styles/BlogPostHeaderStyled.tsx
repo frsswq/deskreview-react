@@ -47,7 +47,7 @@ export const BlogPostHeaderDetail = styled.div`
 
   .author {
     text-transform: capitalize;
-    font-weight: 600;
+    font-weight: 500;
   }
 
   .date {

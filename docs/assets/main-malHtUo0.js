@@ -1,4 +1,4 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/BlogPost-pSDWJVj2.js","assets/react-markdown-maCznKtX.js","assets/vendor-C-q9OyUs.js","assets/styled-components-CgetkSgC.js","assets/@radix-ui/react-icons-88m-rOiV.js","assets/date-fns-B4QYC8g5.js","assets/remark-gfm-BYX8R0Us.js","assets/rehype-raw-CHXFhoZm.js"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/BlogPost-C6Qb-I78.js","assets/react-markdown-maCznKtX.js","assets/vendor-C-q9OyUs.js","assets/styled-components-CgetkSgC.js","assets/@radix-ui/react-icons-88m-rOiV.js","assets/date-fns-B4QYC8g5.js","assets/remark-gfm-BYX8R0Us.js","assets/rehype-raw-CHXFhoZm.js"])))=>i.map(i=>d[i]);
 import{G as y,M as Mh}from"./react-markdown-maCznKtX.js";import{a as Oh,b as Bh,u as Xd,r as Me,c as Hh,R as Uh,L as Qd,d as wl,e as Rh,B as Nh}from"./vendor-C-q9OyUs.js";import{f as qh,d as I}from"./styled-components-CgetkSgC.js";import{C as Ch,E as Gh,a as Lh,I as Yh}from"./@radix-ui/react-icons-88m-rOiV.js";import{f as Zd,c as Vh}from"./date-fns-B4QYC8g5.js";import{r as Xh}from"./remark-gfm-BYX8R0Us.js";import{r as Qh}from"./rehype-raw-CHXFhoZm.js";(function(){const z=document.createElement("link").relList;if(z&&z.supports&&z.supports("modulepreload"))return;for(const A of document.querySelectorAll('link[rel="modulepreload"]'))h(A);new MutationObserver(A=>{for(const R of A)if(R.type==="childList")for(const O of R.addedNodes)O.tagName==="LINK"&&O.rel==="modulepreload"&&h(O)}).observe(document,{childList:!0,subtree:!0});function E(A){const R={};return A.integrity&&(R.integrity=A.integrity),A.referrerPolicy&&(R.referrerPolicy=A.referrerPolicy),A.crossOrigin==="use-credentials"?R.credentials="include":A.crossOrigin==="anonymous"?R.credentials="omit":R.credentials="same-origin",R}function h(A){if(A.ep)return;A.ep=!0;const R=E(A);fetch(A.href,R)}})();var Ir={exports:{}},kl={},Pr={exports:{}},as={};/**
  * @license React
  * scheduler.production.js
@@ -221,7 +221,7 @@ Error generating stack: `+e.message+`
   padding: 4px 0;
 
   @media (width <= 768px) {
-    font-size: var(--text-xs);
+    font-size: var(--text-sm);
   }
 `,Fd=I.p`
   font-size: var(--text-2xl);
@@ -232,7 +232,7 @@ Error generating stack: `+e.message+`
 
   @media (width <= 768px) {
     padding: 4px 0;
-    font-size: var(--text-lg);
+    font-size: var(--text-xl);
   }
 `,sg=I.button`
   display: grid;
@@ -462,33 +462,43 @@ Error generating stack: `+e.message+`
   }
 `,Ag=I(Qd)`
   display: grid;
-  grid-template-columns: 8fr 2fr;
+  grid-template-columns: 1.4fr 8.6fr;
   text-decoration: none;
   align-items: center;
 
   p {
+    width: fit-content;
     font-family: "EB Garamond", sans-serif;
     font-size: var(--text-xl);
+    text-align: left;
+    line-height: 1.6;
+  }
 
-    &:first-of-type {
-      line-height: 1.6;
-    }
+  .blog-date {
+    color: rgba(var(--desk-gray-700));
+    font-size: var(--text-base);
+  }
 
-    &:last-of-type {
-      text-align: right;
+  .blog-title {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &:hover {
+    .blog-title {
+      font-weight: 500;
+      font-style: italic;
     }
   }
 
   @media (width <= 768px) {
+    grid-template-columns: 2fr 8fr;
     padding: 0px 0;
-    grid-template-columns: 1fr;
 
-    p {
-      font-size: var(--text-lg);
-
-      &:last-of-type {
-        display: none;
-      }
+    .blog-date {
+      font-size: var(--text-base);
     }
   }
 `,zg={title:"Mengatur Custom Domain .tech di Github Pages",filename:"membangun-custom-domain",date:"03-01-2023",tag:"On-Review",author:"Abdullah Ammar",description:"Mengatur custom domain .tech di Github Pages secara gampang"},Eg=`Sebelumnya pastikan kamu sudah mempunyai domain .tech, domain .tech sendiri bisa didapatkan gratis selama 1 tahun jika kamu sudah mendaftar Github Student Pack. Jika kamu sudah mendaftar Github Student Pack, langsung saja kunjungi [https://get.tech/github-student-developer-pack](https://get.tech/github-student-developer-pack) untuk mendapatkan domain yang kamu inginkan. Setelah mendapatkan domain yang kamu inginkan, selanjutnya langkah-langkah yang dilakukan yaitu:\r
@@ -1932,7 +1942,7 @@ Jika teman-teman mempunyai kritik dan saran bisa kirimkan issue di\r
 8. [Arrange-Act-Assert: A Pattern for Blog Good Tests](https://automationpanda.com/2020/07/07/arrange-act-assert-a-pattern-for-writing-good-tests/)\r
 9. [How to Write Tests with React Testing Library and TypeScript](https://javascript.plainenglish.io/how-to-write-the-basic-aaa-pattern-tests-with-react-testing-library-and-typescript-6836173d656b)\r
 10. [Kupas Tuntas Binary Search Tree dengan Test-Driven Development](https://www.youtube.com/watch?v=4tZDfvfXBb4)\r
-`,sf=Object.freeze(Object.defineProperty({__proto__:null,content:Qg,frontmatter:Xg},Symbol.toStringTag,{value:"Module"})),Li=v=>{const[z,E,h]=v.split("-");return new Date(`${h}-${E}-${z}`)},Zg=v=>Zd(Li(v),"dd/MM/yyyy"),pp=v=>Zd(Li(v),"MMMM dd, yyyy"),Kg=v=>{var z;return((z=v.match(/\/([^/]+)\.md$/))==null?void 0:z[1])||""},Jg=()=>Object.assign({"../contents/custom-domain-tech.md":Id,"../contents/integration-test-in-react.md":Pd,"../contents/kau-aku-jazz.md":af,"../contents/membangun-kebun-digital.md":tf,"../contents/monster-and-human.md":ef,"../contents/opinion-aesthetica.md":nf,"../contents/organizing-react-code.md":lf,"../contents/pengujian-ce.md":uf,"../contents/tailwind-prose.md":rf,"../contents/testing-dan-tdd.md":sf}),Wg=v=>Object.entries(v).sort(([,z],[,E])=>{const h=z.frontmatter.date?Li(z.frontmatter.date):new Date(0),A=E.frontmatter.date?Li(E.frontmatter.date):new Date(0);return Vh(h,A)}),$g=v=>v.map(([z,E])=>{const h=Kg(z),{frontmatter:A}=E,R=A.title||"Untitled",O=A.date?Zg(A.date):null;return{title:R,path:`/blog/${h}`,date:O}});function Fg(){const v=Jg(),z=Wg(v),E=$g(z);return y.jsx(Wd,{children:y.jsxs(xl,{children:[y.jsx(Tl,{children:"Study"}),y.jsxs(Tg,{children:[y.jsx(kn,{}),E.map(({title:h,path:A,date:R})=>y.jsxs(y.Fragment,{children:[y.jsxs(Ag,{to:A,children:[y.jsx("p",{children:h}),y.jsx("p",{children:R&&`${R}`})]},A),y.jsx(kn,{})]}))]})]})})}function Ig(){return y.jsx(Jd,{children:y.jsx(Fg,{})})}function Pg(){return y.jsxs(y.Fragment,{children:[y.jsx(ap,{children:y.jsx(Kd,{})}),y.jsxs(tp,{children:[y.jsx("p",{children:"404"}),y.jsx("p",{children:"Not Found"})]})]})}const ap=I.div`
+`,sf=Object.freeze(Object.defineProperty({__proto__:null,content:Qg,frontmatter:Xg},Symbol.toStringTag,{value:"Module"})),Li=v=>{const[z,E,h]=v.split("-");return new Date(`${h}-${E}-${z}`)},Zg=v=>Zd(Li(v),"dd-MM-yyyy"),pp=v=>Zd(Li(v),"MMMM dd, yyyy"),Kg=v=>{var z;return((z=v.match(/\/([^/]+)\.md$/))==null?void 0:z[1])||""},Jg=()=>Object.assign({"../contents/custom-domain-tech.md":Id,"../contents/integration-test-in-react.md":Pd,"../contents/kau-aku-jazz.md":af,"../contents/membangun-kebun-digital.md":tf,"../contents/monster-and-human.md":ef,"../contents/opinion-aesthetica.md":nf,"../contents/organizing-react-code.md":lf,"../contents/pengujian-ce.md":uf,"../contents/tailwind-prose.md":rf,"../contents/testing-dan-tdd.md":sf}),Wg=v=>Object.entries(v).sort(([,z],[,E])=>{const h=z.frontmatter.date?Li(z.frontmatter.date):new Date(0),A=E.frontmatter.date?Li(E.frontmatter.date):new Date(0);return Vh(h,A)}),$g=v=>v.map(([z,E])=>{const h=Kg(z),{frontmatter:A}=E,R=A.title||"Untitled",O=A.date?Zg(A.date):null;return{title:R,path:`/blog/${h}`,date:O}});function Fg(){const v=Jg(),z=Wg(v),E=$g(z);return y.jsx(Wd,{children:y.jsxs(xl,{children:[y.jsx(Tl,{children:"Study"}),y.jsxs(Tg,{children:[y.jsx(kn,{}),E.map(({title:h,path:A,date:R})=>y.jsxs(y.Fragment,{children:[y.jsxs(Ag,{to:A,children:[y.jsx("p",{className:"blog-date",children:R&&`${R}`}),y.jsx("p",{className:"blog-title",children:h})]},A),y.jsx(kn,{})]}))]})]})})}function Ig(){return y.jsx(Jd,{children:y.jsx(Fg,{})})}function Pg(){return y.jsxs(y.Fragment,{children:[y.jsx(ap,{children:y.jsx(Kd,{})}),y.jsxs(tp,{children:[y.jsx("p",{children:"404"}),y.jsx("p",{children:"Not Found"})]})]})}const ap=I.div`
   nav {
     position: fixed;
   }
@@ -1969,4 +1979,4 @@ Jika teman-teman mempunyai kritik dan saran bisa kirimkan issue di\r
       }
     }
   }
-`,ep="modulepreload",np=function(v){return"/deskreview-react/"+v},Vd={},lp=function(z,E,h){let A=Promise.resolve();if(E&&E.length>0){document.getElementsByTagName("link");const O=document.querySelector("meta[property=csp-nonce]"),ea=(O==null?void 0:O.nonce)||(O==null?void 0:O.getAttribute("nonce"));A=Promise.allSettled(E.map(X=>{if(X=np(X),X in Vd)return;Vd[X]=!0;const ca=X.endsWith(".css"),ft=ca?'[rel="stylesheet"]':"";if(document.querySelector(`link[href="${X}"]${ft}`))return;const P=document.createElement("link");if(P.rel=ca?"stylesheet":ep,ca||(P.as="script"),P.crossOrigin="",P.href=X,ea&&P.setAttribute("nonce",ea),document.head.appendChild(P),ca)return new Promise((ua,xa)=>{P.addEventListener("load",ua),P.addEventListener("error",()=>xa(new Error(`Unable to preload CSS for ${X}`)))})}))}function R(O){const ea=new Event("vite:preloadError",{cancelable:!0});if(ea.payload=O,window.dispatchEvent(ea),!ea.defaultPrevented)throw O}return A.then(O=>{for(const ea of O||[])ea.status==="rejected"&&R(ea.reason);return z().catch(R)})};function ip(){return Object.entries(Object.assign({"../contents/custom-domain-tech.md":Id,"../contents/integration-test-in-react.md":Pd,"../contents/kau-aku-jazz.md":af,"../contents/membangun-kebun-digital.md":tf,"../contents/monster-and-human.md":ef,"../contents/opinion-aesthetica.md":nf,"../contents/organizing-react-code.md":lf,"../contents/pengujian-ce.md":uf,"../contents/tailwind-prose.md":rf,"../contents/testing-dan-tdd.md":sf})).map(([z,E])=>{var O;const h=((O=z.match(/\/([^/]+)\.md$/))==null?void 0:O[1])||"",{frontmatter:A,content:R}=E;return{path:h,frontmatter:A,content:R}})}const up=Me.lazy(()=>lp(()=>import("./BlogPost-pSDWJVj2.js"),__vite__mapDeps([0,1,2,3,4,5,6,7])));function rp(){const v=ip();return y.jsx(y.Fragment,{children:v.map(({path:z,frontmatter:E,content:h})=>y.jsx(wl,{path:z,element:y.jsx(up,{frontmatter:E,children:y.jsx(Mh,{children:h,remarkPlugins:[Xh],rehypePlugins:[Qh]})})},z))})}function sp(){const v=rp();return y.jsxs(y.Fragment,{children:[y.jsx(Ih,{}),y.jsxs(Rh,{children:[y.jsx(wl,{path:"/",element:y.jsx(xg,{})}),y.jsxs(wl,{path:"/blog",children:[y.jsx(wl,{index:!0,element:y.jsx(Ig,{})}),v]}),y.jsx(wl,{path:"*",element:y.jsx(Pg,{})})]})]})}$h.createRoot(document.getElementById("root")).render(y.jsx(Me.StrictMode,{children:y.jsxs(Nh,{basename:"/deskreview-react/",children:[y.jsx(Fh,{}),y.jsx(sp,{})]})}));export{Wd as M,xl as S,Jd as a,pp as f};
+`,ep="modulepreload",np=function(v){return"/deskreview-react/"+v},Vd={},lp=function(z,E,h){let A=Promise.resolve();if(E&&E.length>0){document.getElementsByTagName("link");const O=document.querySelector("meta[property=csp-nonce]"),ea=(O==null?void 0:O.nonce)||(O==null?void 0:O.getAttribute("nonce"));A=Promise.allSettled(E.map(X=>{if(X=np(X),X in Vd)return;Vd[X]=!0;const ca=X.endsWith(".css"),ft=ca?'[rel="stylesheet"]':"";if(document.querySelector(`link[href="${X}"]${ft}`))return;const P=document.createElement("link");if(P.rel=ca?"stylesheet":ep,ca||(P.as="script"),P.crossOrigin="",P.href=X,ea&&P.setAttribute("nonce",ea),document.head.appendChild(P),ca)return new Promise((ua,xa)=>{P.addEventListener("load",ua),P.addEventListener("error",()=>xa(new Error(`Unable to preload CSS for ${X}`)))})}))}function R(O){const ea=new Event("vite:preloadError",{cancelable:!0});if(ea.payload=O,window.dispatchEvent(ea),!ea.defaultPrevented)throw O}return A.then(O=>{for(const ea of O||[])ea.status==="rejected"&&R(ea.reason);return z().catch(R)})};function ip(){return Object.entries(Object.assign({"../contents/custom-domain-tech.md":Id,"../contents/integration-test-in-react.md":Pd,"../contents/kau-aku-jazz.md":af,"../contents/membangun-kebun-digital.md":tf,"../contents/monster-and-human.md":ef,"../contents/opinion-aesthetica.md":nf,"../contents/organizing-react-code.md":lf,"../contents/pengujian-ce.md":uf,"../contents/tailwind-prose.md":rf,"../contents/testing-dan-tdd.md":sf})).map(([z,E])=>{var O;const h=((O=z.match(/\/([^/]+)\.md$/))==null?void 0:O[1])||"",{frontmatter:A,content:R}=E;return{path:h,frontmatter:A,content:R}})}const up=Me.lazy(()=>lp(()=>import("./BlogPost-C6Qb-I78.js"),__vite__mapDeps([0,1,2,3,4,5,6,7])));function rp(){const v=ip();return y.jsx(y.Fragment,{children:v.map(({path:z,frontmatter:E,content:h})=>y.jsx(wl,{path:z,element:y.jsx(up,{frontmatter:E,children:y.jsx(Mh,{children:h,remarkPlugins:[Xh],rehypePlugins:[Qh]})})},z))})}function sp(){const v=rp();return y.jsxs(y.Fragment,{children:[y.jsx(Ih,{}),y.jsxs(Rh,{children:[y.jsx(wl,{path:"/",element:y.jsx(xg,{})}),y.jsxs(wl,{path:"/blog",children:[y.jsx(wl,{index:!0,element:y.jsx(Ig,{})}),v]}),y.jsx(wl,{path:"*",element:y.jsx(Pg,{})})]})]})}$h.createRoot(document.getElementById("root")).render(y.jsx(Me.StrictMode,{children:y.jsxs(Nh,{basename:"/deskreview-react/",children:[y.jsx(Fh,{}),y.jsx(sp,{})]})}));export{Wd as M,xl as S,Jd as a,pp as f};

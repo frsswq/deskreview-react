@@ -14,33 +14,43 @@ export const BlogButtonContainer = styled.div`
 
 export const LinkStyled = styled(Link)`
   display: grid;
-  grid-template-columns: 8fr 2fr;
+  grid-template-columns: 1.4fr 8.6fr;
   text-decoration: none;
   align-items: center;
 
   p {
+    width: fit-content;
     font-family: "EB Garamond", sans-serif;
     font-size: var(--text-xl);
+    text-align: left;
+    line-height: 1.6;
+  }
 
-    &:first-of-type {
-      line-height: 1.6;
-    }
+  .blog-date {
+    color: rgba(var(--desk-gray-700));
+    font-size: var(--text-base);
+  }
 
-    &:last-of-type {
-      text-align: right;
+  .blog-title {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &:hover {
+    .blog-title {
+      font-weight: 500;
+      font-style: italic;
     }
   }
 
   @media (width <= 768px) {
+    grid-template-columns: 2fr 8fr;
     padding: 0px 0;
-    grid-template-columns: 1fr;
 
-    p {
-      font-size: var(--text-lg);
-
-      &:last-of-type {
-        display: none;
-      }
+    .blog-date {
+      font-size: var(--text-base);
     }
   }
 `;

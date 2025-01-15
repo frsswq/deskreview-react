@@ -25,8 +25,8 @@ export default function BlogMain() {
           {links.map(({ title, path, date }) => (
             <>
               <LinkStyled key={path} to={path}>
-                <p>{title}</p>
-                <p>{date && `${date}`}</p>
+                <p className="blog-date">{date && `${date}`}</p>
+                <p className="blog-title">{title}</p>
               </LinkStyled>
               <Divider />
             </>
