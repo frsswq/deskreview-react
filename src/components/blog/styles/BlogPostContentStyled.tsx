@@ -16,6 +16,10 @@ export const BlogPostContent = styled.article`
     margin: 16px auto;
   }
 
+  li {
+    margin: 8px auto;
+  }
+
   p:has(img) {
     height: min-content;
     margin: 0 auto;
@@ -23,7 +27,12 @@ export const BlogPostContent = styled.article`
 
   a {
     text-decoration: underline;
+    text-decoration-color: rgba(var(--desk-gray-500));
     font-size: var(--text-xl);
+
+    &:hover {
+      text-decoration-color: rgba(var(--desk-gray-700));
+    }
   }
 
   strong {
@@ -105,7 +114,7 @@ export const BlogPostContent = styled.article`
     color: black;
     background-color: rgba(var(--desk-gray-300));
     padding: 24px;
-    margin: 32px auto;
+    margin: 24px auto;
     border-radius: 8px;
     overflow-x: auto;
 
