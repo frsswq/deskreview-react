@@ -27,16 +27,20 @@ export default function BlogPostMain({ frontmatter, children }: BlogPostProps) {
   useBlogPostFixIndent(contentRef);
   useTextCenterFix();
 
+  const displayHeaderDetail = tag && author && formattedDate;
+
   return (
     <MainStyled>
       <SectionContainer>
         <BlogPostHeader>
           {title && <h1>{title}</h1>}
-          <BlogPostHeaderDetail>
-            {tag && <p className="tag">{tag}</p>}
-            {author && <p className="author">{author}</p>}
-            {formattedDate && <p className="date">{formattedDate}</p>}
-          </BlogPostHeaderDetail>
+          {displayHeaderDetail && (
+            <BlogPostHeaderDetail>
+              {tag && <p className="tag">{tag}</p>}
+              {author && <p className="author">{author}</p>}
+              {formattedDate && <p className="date">{formattedDate}</p>}
+            </BlogPostHeaderDetail>
+          )}
         </BlogPostHeader>
         <BlogPostContent ref={contentRef}>{children}</BlogPostContent>
       </SectionContainer>

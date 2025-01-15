@@ -1,20 +1,17 @@
 import styled from "styled-components";
 
 export const BlogPostContent = styled.article`
-  * {
-    margin: 16px auto;
-  }
-
   p:not(:has(img)),
   li {
     font-family: "EB Garamond", sans-serif;
     font-size: var(--text-xl);
     font-weight: 400;
     letter-spacing: 0em;
-    line-height: 1.6;
+    line-height: 1.5;
     color: black;
     word-break: normal;
     word-wrap: break-word;
+    margin: 16px auto;
   }
 
   p:has(img) {
@@ -36,7 +33,7 @@ export const BlogPostContent = styled.article`
   }
 
   hr {
-    margin: 40px 0;
+    margin: 32px 0;
   }
 
   ol {
@@ -66,14 +63,14 @@ export const BlogPostContent = styled.article`
     color: black;
     background-color: rgba(var(--desk-gray-300));
     padding: 24px;
-    margin: 30px auto;
+    margin: 32px auto;
     border-radius: 8px;
     overflow-x: auto;
 
     /* scrollbar */
     &::-webkit-scrollbar {
-      width: 1vw;
-      height: 1vh;
+      width: 6px;
+      height: 6px;
     }
 
     &::-webkit-scrollbar-track {
@@ -105,8 +102,8 @@ export const BlogPostContent = styled.article`
     font-style: italic;
     font-weight: 500;
     letter-spacing: 0em;
-    margin-top: 40px;
-    margin-bottom: 24px;
+    margin-top: 32px;
+    margin-bottom: 16px;
     letter-spacing: -0.025em;
 
     code {
@@ -115,15 +112,15 @@ export const BlogPostContent = styled.article`
   }
 
   h1 {
-    font-size: 50px;
+    font-size: 52px;
   }
 
   h2 {
-    font-size: 40px;
+    font-size: 44px;
   }
 
   h3 {
-    font-size: 35px;
+    font-size: 36px;
   }
 
   h4 {
@@ -141,11 +138,11 @@ export const BlogPostContent = styled.article`
   blockquote {
     quotes: none;
     border-left: 4px solid rgba(var(--desk-gray-300));
-    font-style: italic;
-    margin: 30px auto;
+    font-style: normal;
+    margin: 24px auto;
 
     p {
-      font-size: var(--text-2xl);
+      font-size: var(--text-xl);
       margin-left: 16px;
       line-height: 1.6;
     }
@@ -155,16 +152,19 @@ export const BlogPostContent = styled.article`
     font-family: "DM Sans", sans-serif;
     font-size: var(--text-base);
     width: 100%;
-    margin: 30px 0;
+    margin: 24px 0;
     border-collapse: collapse;
   }
 
   td,
   th {
-    border-top: 1px solid rgba(var(--desk-gray-500));
     border-bottom: 1px solid rgba(var(--desk-gray-500));
     padding: 12px 0;
     text-align: left;
+  }
+
+  th {
+    border-bottom: 2px solid rgba(var(--desk-gray-700), 0.5);
   }
 
   th {
@@ -174,12 +174,12 @@ export const BlogPostContent = styled.article`
   img {
     width: 100%;
     height: 100%;
-    margin: 40px auto;
+    margin: 24px auto;
     cursor: zoom-in;
   }
 
   strong {
-    font-weight: 500;
+    font-weight: 600;
   }
 
   // After margin fix
@@ -201,8 +201,8 @@ export const BlogPostContent = styled.article`
     text-align: center;
     font-size: var(--text-sm);
     color: rgba(var(--desk-gray-700), 0.8);
-    margin-top: -20px;
-    margin-bottom: 40px;
+    margin: -16px auto 24px;
+    width: 95%;
 
     a {
       font-size: var(--text-sm);
@@ -218,33 +218,84 @@ export const BlogPostContent = styled.article`
     }
   }
 
-  h1.indent-fix,
-  h2.indent-fix {
+  h1.indent-fix-big {
     text-indent: -0.15em;
   }
 
-  h3.indent-fix,
-  h4.indent-fix,
-  h5.indent-fix,
-  h6.indent-fix {
+  h2.indent-fix-big {
     text-indent: -0.1em;
   }
 
+  h3.indent-fix-big {
+    text-indent: -0.05em;
+  }
+
+  h1.indent-fix-small {
+    text-indent: -0.075em;
+  }
+
+  h2.indent-fix-small {
+    text-indent: -0.05em;
+  }
+
+  h3.indent-fix-small {
+    text-indent: -0.025em;
+  }
+
   @media (width <= 768px) {
-    p,
-    li {
-      font-size: var(--text-xl);
+    li,
+    ol {
+      margin: 8px auto;
+
+      p {
+        margin: 8px auto;
+      }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-top: 24px;
+      margin-bottom: 16px;
+
+      code {
+        font-size: 16px;
+      }
     }
 
     h1 {
-      font-size: 30px;
+      font-size: 36px;
+    }
+
+    h2 {
+      font-size: 32px;
+    }
+
+    h3 {
+      font-size: 28px;
+    }
+
+    h4 {
+      font-size: 26px;
+    }
+
+    h5 {
+      font-size: 24px;
+    }
+
+    h6 {
+      font-size: 22px;
+    }
+
+    table {
+      font-size: var(--text-sm);
     }
 
     .text-center {
-      transform: translateY(-50%);
       width: 90%;
-      margin-left: auto;
-      margin-right: auto;
     }
   }
 `;

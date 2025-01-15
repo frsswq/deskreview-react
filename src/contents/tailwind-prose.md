@@ -2,6 +2,11 @@
 title: "Tailwind Prose"
 ---
 
+<p className="lead">
+  Until now, trying to style an article, document, or blog post with Tailwind has been a tedious
+  task that required a keen eye for typography and a lot of complex custom CSS.
+</p>
+
 By default, Tailwind removes all of the default browser styling from paragraphs, headings, lists and more. This ends up being really useful for building application UIs because you spend less time undoing user-agent styles, but when you _really are_ just trying to style some content that came from a rich-text editor in a CMS or a markdown file, it can be surprising and unintuitive.
 
 We get lots of complaints about it actually, with people regularly asking us things like:
@@ -56,6 +61,17 @@ Something a wise person once told me about typography is:
 > Typography is pretty important if you don't want your stuff to look like trash. Make it good then it won't be bad.
 
 It's probably important that images look okay here by default as well:
+
+<figure>
+  <img
+    src="https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
+    alt=""
+  />
+  <figcaption>
+    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+    classical Latin literature from 45 BC, making it over 2000 years old.
+  </figcaption>
+</figure>
 
 Now I'm going to show you an example of an unordered list to make sure that looks good, too:
 
@@ -153,6 +169,25 @@ And finally a sentence to close off this section.
 ## We didn't forget about description lists
 
 Well, that's not exactly true, we first released this plugin back in 2020 and it took three years before we added description lists. But they're here now, so let's just be happy about that&hellip;okay? They can be great for things like FAQs.
+
+<dl>
+  <dt>Why do you never see elephants hiding in trees?</dt>
+  <dd>
+    Because they're so good at it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+    cupiditate laboriosam fugiat.
+  </dd>
+  <dt>What do you call someone with no body and no nose?</dt>
+  <dd>
+    Nobody knows. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, voluptas ipsa quia
+    excepturi, quibusdam natus exercitationem sapiente tempore labore voluptatem.
+  </dd>
+  <dt>Why can't you hear a pterodactyl go to the bathroom?</dt>
+  <dd>
+    Because the pee is silent. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, quas
+    voluptatibus ex culpa ipsum, aspernatur blanditiis fugiat ullam magnam suscipit deserunt illum
+    natus facilis atque vero consequatur! Quisquam, debitis error.
+  </dd>
+</dl>
 
 ## There are other elements we need to style
 

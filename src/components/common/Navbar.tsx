@@ -6,9 +6,10 @@ import {
 } from "./styles/NavbarStyled.tsx";
 import navbarNavigation from "../../hooks/navbarNavigation.ts";
 import { Link } from "react-router";
+import React from "react";
 import logoSvg from "/svg/logo_full_navbar.svg";
 
-export default function Navbar() {
+function Navbar() {
   const { handleClick } = navbarNavigation();
 
   const menuItems = [
@@ -26,6 +27,7 @@ export default function Navbar() {
           alt="Navbar_Logo"
           width="120"
           height="22"
+          aria-label="Home"
           onClick={(e) => handleClick(e, "/")}
         />
         <NavbarMenu>
@@ -43,3 +45,5 @@ export default function Navbar() {
     </NavbarStyled>
   );
 }
+
+export default React.memo(Navbar);

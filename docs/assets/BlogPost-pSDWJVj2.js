@@ -1,30 +1,32 @@
-import{G as t}from"./react-markdown-CdbJyoHg.js";import{f,M as x,S as h,a as p}from"./main-dLBwNNZs.js";import{d as c}from"./styled-components-BOF5XIQs.js";import{r as s}from"./vendor-CvfCuUZz.js";import"./@radix-ui/react-icons-T6wVLuVb.js";import"./date-fns-B4QYC8g5.js";import"./remark-gfm-RXI-vKoo.js";import"./rehype-raw-B3D9AqIt.js";const u=c.article`
+import{G as e}from"./react-markdown-maCznKtX.js";import{f as p,M as f,S as h,a as u}from"./main-CotyxA1E.js";import{d as x}from"./styled-components-CgetkSgC.js";import{r as d}from"./vendor-C-q9OyUs.js";import"./@radix-ui/react-icons-88m-rOiV.js";import"./date-fns-B4QYC8g5.js";import"./remark-gfm-BYX8R0Us.js";import"./rehype-raw-CHXFhoZm.js";const b=x.article`
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  margin-top: 16px;
+  margin-bottom: 32px;
   gap: 24px 0;
 
   h1 {
     font-family: "EB Garamond", sans-serif;
     font-style: italic;
     font-weight: 500;
-    font-size: 3.125rem;
+    font-size: 52px;
     letter-spacing: -0.04em;
     overflow-wrap: break-word;
     line-height: 1.2;
   }
 
   @media (width <= 768px) {
-    margin-top: 10px;
+    gap: 16px 0;
+    margin-top: 8px;
+    margin-bottom: 24px;
 
     h1 {
-      font-size: 2.25rem;
-      line-height: 1;
+      font-size: 36px;
     }
   }
-`,b=c.div`
+`,y=x.div`
   display: flex;
-  margin-bottom: 40px;
+
   flex-direction: column;
 
   p {
@@ -32,6 +34,7 @@ import{G as t}from"./react-markdown-CdbJyoHg.js";import{f,M as x,S as h,a as p}f
   }
 
   .tag {
+    color: rgb(var(--desk-gray-700));
     font-family: "EB Garamond", sans-serif;
     font-weight: 400;
     text-transform: uppercase;
@@ -40,29 +43,30 @@ import{G as t}from"./react-markdown-CdbJyoHg.js";import{f,M as x,S as h,a as p}f
 
   .author {
     text-transform: capitalize;
-    font-weight: 500;
+    font-weight: 600;
   }
 
   .date {
+    font-weight: 400;
   }
 
   @media (width <= 768px) {
+    p {
+      font-size: var(--text-lg);
+    }
   }
-`,k=c.article`
-  * {
-    margin: 16px auto;
-  }
-
+`,k=x.article`
   p:not(:has(img)),
   li {
     font-family: "EB Garamond", sans-serif;
     font-size: var(--text-xl);
     font-weight: 400;
     letter-spacing: 0em;
-    line-height: 1.6;
+    line-height: 1.5;
     color: black;
     word-break: normal;
     word-wrap: break-word;
+    margin: 16px auto;
   }
 
   p:has(img) {
@@ -84,7 +88,7 @@ import{G as t}from"./react-markdown-CdbJyoHg.js";import{f,M as x,S as h,a as p}f
   }
 
   hr {
-    margin: 40px 0;
+    margin: 32px 0;
   }
 
   ol {
@@ -114,14 +118,14 @@ import{G as t}from"./react-markdown-CdbJyoHg.js";import{f,M as x,S as h,a as p}f
     color: black;
     background-color: rgba(var(--desk-gray-300));
     padding: 24px;
-    margin: 30px auto;
+    margin: 32px auto;
     border-radius: 8px;
     overflow-x: auto;
 
     /* scrollbar */
     &::-webkit-scrollbar {
-      width: 1vw;
-      height: 1vh;
+      width: 6px;
+      height: 6px;
     }
 
     &::-webkit-scrollbar-track {
@@ -153,8 +157,8 @@ import{G as t}from"./react-markdown-CdbJyoHg.js";import{f,M as x,S as h,a as p}f
     font-style: italic;
     font-weight: 500;
     letter-spacing: 0em;
-    margin-top: 40px;
-    margin-bottom: 24px;
+    margin-top: 32px;
+    margin-bottom: 16px;
     letter-spacing: -0.025em;
 
     code {
@@ -163,15 +167,15 @@ import{G as t}from"./react-markdown-CdbJyoHg.js";import{f,M as x,S as h,a as p}f
   }
 
   h1 {
-    font-size: 50px;
+    font-size: 52px;
   }
 
   h2 {
-    font-size: 40px;
+    font-size: 44px;
   }
 
   h3 {
-    font-size: 35px;
+    font-size: 36px;
   }
 
   h4 {
@@ -189,11 +193,11 @@ import{G as t}from"./react-markdown-CdbJyoHg.js";import{f,M as x,S as h,a as p}f
   blockquote {
     quotes: none;
     border-left: 4px solid rgba(var(--desk-gray-300));
-    font-style: italic;
-    margin: 30px auto;
+    font-style: normal;
+    margin: 24px auto;
 
     p {
-      font-size: var(--text-2xl);
+      font-size: var(--text-xl);
       margin-left: 16px;
       line-height: 1.6;
     }
@@ -203,16 +207,19 @@ import{G as t}from"./react-markdown-CdbJyoHg.js";import{f,M as x,S as h,a as p}f
     font-family: "DM Sans", sans-serif;
     font-size: var(--text-base);
     width: 100%;
-    margin: 30px 0;
+    margin: 24px 0;
     border-collapse: collapse;
   }
 
   td,
   th {
-    border-top: 1px solid rgba(var(--desk-gray-500));
     border-bottom: 1px solid rgba(var(--desk-gray-500));
     padding: 12px 0;
     text-align: left;
+  }
+
+  th {
+    border-bottom: 2px solid rgba(var(--desk-gray-700), 0.5);
   }
 
   th {
@@ -222,12 +229,12 @@ import{G as t}from"./react-markdown-CdbJyoHg.js";import{f,M as x,S as h,a as p}f
   img {
     width: 100%;
     height: 100%;
-    margin: 40px auto;
+    margin: 24px auto;
     cursor: zoom-in;
   }
 
   strong {
-    font-weight: 500;
+    font-weight: 600;
   }
 
   // After margin fix
@@ -249,8 +256,8 @@ import{G as t}from"./react-markdown-CdbJyoHg.js";import{f,M as x,S as h,a as p}f
     text-align: center;
     font-size: var(--text-sm);
     color: rgba(var(--desk-gray-700), 0.8);
-    margin-top: -20px;
-    margin-bottom: 40px;
+    margin: -16px auto 24px;
+    width: 95%;
 
     a {
       font-size: var(--text-sm);
@@ -266,36 +273,87 @@ import{G as t}from"./react-markdown-CdbJyoHg.js";import{f,M as x,S as h,a as p}f
     }
   }
 
-  h1.indent-fix,
-  h2.indent-fix {
+  h1.indent-fix-big {
     text-indent: -0.15em;
   }
 
-  h3.indent-fix,
-  h4.indent-fix,
-  h5.indent-fix,
-  h6.indent-fix {
+  h2.indent-fix-big {
     text-indent: -0.1em;
   }
 
+  h3.indent-fix-big {
+    text-indent: -0.05em;
+  }
+
+  h1.indent-fix-small {
+    text-indent: -0.075em;
+  }
+
+  h2.indent-fix-small {
+    text-indent: -0.05em;
+  }
+
+  h3.indent-fix-small {
+    text-indent: -0.025em;
+  }
+
   @media (width <= 768px) {
-    p,
-    li {
-      font-size: var(--text-xl);
+    li,
+    ol {
+      margin: 8px auto;
+
+      p {
+        margin: 8px auto;
+      }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-top: 24px;
+      margin-bottom: 16px;
+
+      code {
+        font-size: 16px;
+      }
     }
 
     h1 {
-      font-size: 30px;
+      font-size: 36px;
+    }
+
+    h2 {
+      font-size: 32px;
+    }
+
+    h3 {
+      font-size: 28px;
+    }
+
+    h4 {
+      font-size: 26px;
+    }
+
+    h5 {
+      font-size: 24px;
+    }
+
+    h6 {
+      font-size: 22px;
+    }
+
+    table {
+      font-size: var(--text-sm);
     }
 
     .text-center {
-      transform: translateY(-50%);
       width: 90%;
-      margin-left: auto;
-      margin-right: auto;
     }
   }
-`,y=c.div`
+`,v=x.div`
   position: fixed;
   top: 0;
   left: 0;
@@ -312,4 +370,4 @@ import{G as t}from"./react-markdown-CdbJyoHg.js";import{f,M as x,S as h,a as p}f
     max-width: 90%;
     max-height: 90%;
   }
-`,v=e=>{const[r,a]=s.useState(null),i=s.useCallback(()=>{a(null)},[]);return s.useEffect(()=>{if(!e.current)return;const o=d=>{const n=d.target;n.tagName.toLowerCase()==="img"&&a(n.src)},l=e.current;return l.addEventListener("click",o),()=>{l.removeEventListener("click",o)}},[e]),{selectedImage:r,closeModal:i}},w=e=>{s.useEffect(()=>{if(!e.current)return;document.querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(a=>{var i,o;((i=a.textContent)!=null&&i.startsWith("W")||(o=a.textContent)!=null&&o.startsWith("T"))&&a.classList.add("indent-fix")})},[e])},z=()=>{s.useEffect(()=>{document.querySelectorAll("p").forEach(r=>{r.style.textAlign==="center"&&r.classList.add("text-center")})})};function j({frontmatter:e,children:r}){const{title:a,date:i,tag:o,author:l}=e,d=i?f(i):null,n=s.useRef(null),{selectedImage:g,closeModal:m}=v(n);return w(n),z(),t.jsxs(x,{children:[t.jsxs(h,{children:[t.jsxs(u,{children:[a&&t.jsx("h1",{children:a}),t.jsxs(b,{children:[o&&t.jsx("p",{className:"tag",children:o}),l&&t.jsx("p",{className:"author",children:l}),d&&t.jsx("p",{className:"date",children:d})]})]}),t.jsx(k,{ref:n,children:r})]}),g&&t.jsx(y,{onClick:m,children:t.jsx("img",{src:g,alt:"Full sized image"})})]})}function D({frontmatter:e,children:r}){return t.jsx(p,{children:t.jsx(j,{frontmatter:e,children:r})})}export{D as default};
+`,z=o=>{const[r,t]=d.useState(null),l=d.useCallback(()=>{t(null)},[]);return d.useEffect(()=>{if(!o.current)return;const a=s=>{const n=s.target;n.tagName.toLowerCase()==="img"&&t(n.src)},i=o.current;return i.addEventListener("click",a),()=>{i.removeEventListener("click",a)}},[o]),{selectedImage:r,closeModal:l}},w=o=>{d.useEffect(()=>{if(!o.current)return;document.querySelectorAll("h1, h2, h3").forEach(t=>{var l,a,i,s,n;((l=t.textContent)!=null&&l.startsWith("T")||(a=t.textContent)!=null&&a.startsWith("V")||(i=t.textContent)!=null&&i.startsWith("W"))&&t.classList.add("indent-fix-big"),((s=t.textContent)!=null&&s.startsWith("Y")||(n=t.textContent)!=null&&n.startsWith("U"))&&t.classList.add("indent-fix-small")})},[o])},j=()=>{d.useEffect(()=>{document.querySelectorAll("p").forEach(r=>{r.style.textAlign==="center"&&r.classList.add("text-center")})})};function B({frontmatter:o,children:r}){const{title:t,date:l,tag:a,author:i}=o,s=l?p(l):null,n=d.useRef(null),{selectedImage:c,closeModal:m}=z(n);w(n),j();const g=a&&i&&s;return e.jsxs(f,{children:[e.jsxs(h,{children:[e.jsxs(b,{children:[t&&e.jsx("h1",{children:t}),g&&e.jsxs(y,{children:[a&&e.jsx("p",{className:"tag",children:a}),i&&e.jsx("p",{className:"author",children:i}),s&&e.jsx("p",{className:"date",children:s})]})]}),e.jsx(k,{ref:n,children:r})]}),c&&e.jsx(v,{onClick:m,children:e.jsx("img",{src:c,alt:"Full sized image"})})]})}function W({frontmatter:o,children:r}){return e.jsx(u,{children:e.jsx(B,{frontmatter:o,children:r})})}export{W as default};

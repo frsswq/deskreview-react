@@ -32,13 +32,21 @@ export const useBlogPostFixIndent = (contentRef: RefObject<HTMLElement>) => {
   useEffect(() => {
     if (!contentRef.current) return;
 
-    const headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+    const headings = document.querySelectorAll("h1, h2, h3");
     headings.forEach((heading) => {
       if (
-        heading.textContent?.startsWith("W") ||
-        heading.textContent?.startsWith("T")
+        heading.textContent?.startsWith("T") ||
+        heading.textContent?.startsWith("V") ||
+        heading.textContent?.startsWith("W")
       ) {
-        heading.classList.add("indent-fix");
+        heading.classList.add("indent-fix-big");
+      }
+
+      if (
+        heading.textContent?.startsWith("Y") ||
+        heading.textContent?.startsWith("U")
+      ) {
+        heading.classList.add("indent-fix-small");
       }
     });
   }, [contentRef]);

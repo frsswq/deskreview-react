@@ -3,32 +3,34 @@ import styled from "styled-components";
 export const BlogPostHeader = styled.article`
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  margin-top: 16px;
+  margin-bottom: 32px;
   gap: 24px 0;
 
   h1 {
     font-family: "EB Garamond", sans-serif;
     font-style: italic;
     font-weight: 500;
-    font-size: 3.125rem;
+    font-size: 52px;
     letter-spacing: -0.04em;
     overflow-wrap: break-word;
     line-height: 1.2;
   }
 
   @media (width <= 768px) {
-    margin-top: 10px;
+    gap: 16px 0;
+    margin-top: 8px;
+    margin-bottom: 24px;
 
     h1 {
-      font-size: 2.25rem;
-      line-height: 1;
+      font-size: 36px;
     }
   }
 `;
 
 export const BlogPostHeaderDetail = styled.div`
   display: flex;
-  margin-bottom: 40px;
+
   flex-direction: column;
 
   p {
@@ -36,6 +38,7 @@ export const BlogPostHeaderDetail = styled.div`
   }
 
   .tag {
+    color: rgb(var(--desk-gray-700));
     font-family: "EB Garamond", sans-serif;
     font-weight: 400;
     text-transform: uppercase;
@@ -44,12 +47,16 @@ export const BlogPostHeaderDetail = styled.div`
 
   .author {
     text-transform: capitalize;
-    font-weight: 500;
+    font-weight: 600;
   }
 
   .date {
+    font-weight: 400;
   }
 
   @media (width <= 768px) {
+    p {
+      font-size: var(--text-lg);
+    }
   }
 `;

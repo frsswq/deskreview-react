@@ -4,6 +4,7 @@ import { Link } from "react-router";
 export const BlogButtonContainer = styled.div`
   display: flex;
   flex-direction: column;
+
   gap: 8px 0;
 
   @media (width <= 768px) {
@@ -15,6 +16,7 @@ export const LinkStyled = styled(Link)`
   display: grid;
   grid-template-columns: 8fr 2fr;
   text-decoration: none;
+  align-items: center;
 
   p {
     font-family: "EB Garamond", sans-serif;
@@ -31,10 +33,14 @@ export const LinkStyled = styled(Link)`
 
   @media (width <= 768px) {
     padding: 0px 0;
-    align-items: center;
+    grid-template-columns: 1fr;
 
     p {
       font-size: var(--text-lg);
+
+      &:last-of-type {
+        display: none;
+      }
     }
   }
 `;

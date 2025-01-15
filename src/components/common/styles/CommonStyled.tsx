@@ -7,16 +7,16 @@ export const MainStyled = styled.main`
 export const Container = styled.div`
   max-width: var(--max-w);
   width: 100%;
-  margin: 0px auto 40px;
+  margin: 0px auto 32px;
 `;
 
 export const SectionContainer = styled.section`
   max-width: var(--max-w);
   width: 100%;
-  margin: 0px auto 40px;
+  margin: 0px auto 32px;
 
   @media (width <= 768px) {
-    margin: 0px auto 30px;
+    margin: 0px auto 24px;
   }
 `;
 

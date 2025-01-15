@@ -11,6 +11,7 @@ import "@fontsource/eb-garamond/latin-400.css";
 import "@fontsource/eb-garamond/latin-400-italic.css";
 import "@fontsource/eb-garamond/latin-500.css";
 import "@fontsource/eb-garamond/latin-500-italic.css";
+import "@fontsource/eb-garamond/latin-600.css";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>

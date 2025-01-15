@@ -2,15 +2,7 @@
 title: "Integration Test in React"
 description: "Practical exploration of integration testing in React by learning to simulate user behavior, add mocks, and assert client-side form native validation."
 tag: "Blog"
-keywords:
-  - React
-  - Integration Test
-  - Vitest
-status: "Finished"
-publishedAt: "2024-01-14"
-updatedAt: "2024-01-15"
-image: ../../assets/blog/integration-test-in-react/integration-test-in-react.webp
-imageAlt: "Form with white background and several fields to add collection"
+date: 14-01-2024
 author: Abdullah Ammar
 ---
 
