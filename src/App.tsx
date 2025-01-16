@@ -13,7 +13,7 @@ export default function App() {
       <GlobalStyles />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/blog">
+        <Route path="/study">
           <Route index element={<Blog />} />
           {mdRoutes}
         </Route>

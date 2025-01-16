@@ -15,7 +15,7 @@ function Navbar() {
   const menuItems = [
     { href: "#work", label: "Work" },
     { href: "/", label: "Home" },
-    { href: "/blog", label: "Study" },
+    { href: "/study", label: "Study" },
     { href: "#contact", label: "Contact" },
   ];
 

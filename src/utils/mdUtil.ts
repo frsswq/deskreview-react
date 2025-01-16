@@ -33,6 +33,6 @@ export const generateLinksUtil = (sortedEntries: [string, MarkdownFile][]) => {
       ? formatDateUtil(frontmatter.date)
       : null;
 
-    return { title, path: `/blog/${fileName}`, date: formattedDate };
+    return { title, path: `/study/${fileName}`, date: formattedDate };
   });
 };
