@@ -90,7 +90,7 @@ const GlobalStyles = createGlobalStyle`
     &:hover {
       background-color: rgba(var(--desk-gray-500), 1);
     }
-  } 
+  }
 `;
 
 export default GlobalStyles;
