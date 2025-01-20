@@ -1,6 +1,6 @@
 media:
-  input: public/img/blog
-  output: /deskreview-react/img/blog
+  input: public/img
+  output: /deskreview-react/img
 content:
   - name: posts
     label: Posts
@@ -11,19 +11,30 @@ content:
       fields: [title, date]
       sort: [date, title]
     fields:
-      - { name: title, label: Title, type: string, required: true }
-      - {
-          name: linkname,
-          label: Linkname (your-title-shortened-with-hyphen),
-          type: string,
-          required: true,
-        }
-      - { name: date, label: Date (dd-mm-yyyy), type: string, required: true }
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: linkname
+        label: Linkname (your-title-shortened-with-hyphen)
+        type: string
+        pattern: ^[a-z0-9]+(?:-[a-z0-9]+)*$
+        required: true
+      - name: date
+        label: Date (dd-mm-yyyy)
+        type: string
+        pattern: ^([1-9]|0[1-9]|[12][0-9]|3[01])-([1-9]|0[1-9]|1[0-2])-\d{4}$
+        required: true
       - name: tag
         label: Tag
         type: select
         options:
           values: [On-Review, Method Review, Working View, Portfolio Review]
         required: true
-      - { name: author, label: Author, type: string, required: true }
-      - { name: body, label: Body, type: rich-text }
+      - name: author
+        label: Author
+        type: string
+        required: true
+      - name: body
+        label: Body
+        type: rich-text
