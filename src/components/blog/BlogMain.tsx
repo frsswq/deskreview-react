@@ -10,14 +10,20 @@ import {
   sortMarkdownFilesUtil,
   generateLinksUtil,
 } from "../../utils/mdUtil";
+import { useEffect } from "react";
 
 export default function BlogMain() {
   const markdownFiles = fetchMarkdownFilesUtil();
   const sortedEntries = sortMarkdownFilesUtil(markdownFiles);
   const links = generateLinksUtil(sortedEntries);
 
+  useEffect(() => {
+    document.title = "Study | Deskreview";
+  });
+
   return (
     <MainStyled>
+      <meta name="author" content="Deskreview" />
       <SectionContainer>
         <DefaultTitle>Study</DefaultTitle>
         {links.length > 0 && (

@@ -4,6 +4,8 @@ import Navbar from "../components/common/Navbar.tsx";
 export default function NotFound() {
   return (
     <>
+      <meta name="author" content="Deskreview" />
+      <title>Not Found | Deskreview</title>
       <FixedContainer>
         <Navbar />
       </FixedContainer>

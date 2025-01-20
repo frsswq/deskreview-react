@@ -35,6 +35,8 @@ export default function BlogPostMain({ frontmatter, children }: BlogPostProps) {
 
   return (
     <MainStyled>
+      <meta name="author" content={author} />
+      <meta name="keywords" content={tag} />
       <SectionContainer>
         <BlogPostHeader>
           {title && <h1>{title}</h1>}
