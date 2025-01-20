@@ -42,7 +42,7 @@ content:
   - name: works_portfolio
     label: Works Portfolio
     type: collection
-    path: src/data/home/portofolio
+    path: src/data/home/portfolio
     filename: "{fields.filename}.json"
     view:
       fields: [clientName, date]
