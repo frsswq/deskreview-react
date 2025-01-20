@@ -4,13 +4,13 @@ import { workItemButtonProps } from "../../types/homeTypes.ts";
 import { CaretDownIcon } from "@radix-ui/react-icons";
 
 export default function WorkItem({
-  companyName,
+  clientName,
   isOpen,
   onClick,
 }: workItemButtonProps) {
   return (
     <WorkItemStyled onClick={onClick} $isOpen={isOpen}>
-      <HomeItemText>{companyName}</HomeItemText>
+      <HomeItemText>{clientName}</HomeItemText>
       <CaretDownIcon />
     </WorkItemStyled>
   );

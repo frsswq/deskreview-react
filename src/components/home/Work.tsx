@@ -7,8 +7,8 @@ import {
 } from "../common/styles/CommonStyled.tsx";
 import WorkItem from "./WorkItemButton.tsx";
 import WorkItemDetail from "./WorkItemDetail.tsx";
-import { workItemData } from "../../data/home/workItemData";
-import { workItemDataTypes } from "../../types/homeTypes";
+import { WorkItemTestData } from "../../data/home/workItemTestData";
+import { workItemTestDataTypes } from "../../types/homeTypes";
 
 export default function Work() {
   const [openItemIndex, setOpenItemIndex] = useState<number | null>(null);
@@ -22,24 +22,26 @@ export default function Work() {
       <DefaultTitle style={{ textIndent: "-0.15em" }}>Works</DefaultTitle>
       <HomeItemTitle>Company</HomeItemTitle>
       <Divider />
-      {workItemData.map((workItem: workItemDataTypes, index: number) => (
-        <div key={index}>
-          <WorkItem
-            isOpen={openItemIndex === index}
-            onClick={() => toggleItem(index)}
-            companyName={workItem.companyName}
-          />
-          <WorkItemDetail
-            servicesItems={workItem.servicesItems}
-            year={workItem.year}
-            industry={workItem.industry}
-            detail={workItem.detail}
-            images={workItem.images}
-            isOpen={openItemIndex === index}
-          />
-          <Divider />
-        </div>
-      ))}
+      {WorkItemTestData.map(
+        (workItem: workItemTestDataTypes, index: number) => (
+          <div key={index}>
+            <WorkItem
+              isOpen={openItemIndex === index}
+              onClick={() => toggleItem(index)}
+              clientName={workItem.clientName}
+            />
+            <WorkItemDetail
+              servicesItems={workItem.servicesItems}
+              date={workItem.date}
+              industry={workItem.industry}
+              detail={workItem.detail}
+              images={workItem.images}
+              isOpen={openItemIndex === index}
+            />
+            <Divider />
+          </div>
+        )
+      )}
     </SectionContainer>
   );
 }

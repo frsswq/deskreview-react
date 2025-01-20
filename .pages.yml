@@ -2,8 +2,8 @@ media:
   input: public/img
   output: /deskreview-react/img
 content:
-  - name: posts
-    label: Posts
+  - name: blog_posts
+    label: Blog Posts
     type: collection
     path: src/contents
     filename: "{fields.linkname}.md"
@@ -38,7 +38,7 @@ content:
       - name: body
         label: Body
         type: rich-text
-  - name: works
+  - name: works_portfolio
     label: Works Portfolio
-    type: file
-    path: src/data/home/workItemData.ts
+    type: collection
+    path: src/data/home/portofolio

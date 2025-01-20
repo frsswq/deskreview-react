@@ -7,15 +7,25 @@ export interface workItemDataTypes {
   images?: string[];
 }
 
+export interface workItemTestDataTypes {
+  clientName: string;
+  filename: string;
+  servicesItems: string[];
+  date: string;
+  industry: string;
+  detail: string;
+  images?: string[];
+}
+
 export interface workItemButtonProps {
-  companyName: string;
+  clientName: string;
   isOpen: boolean;
   onClick: () => void;
 }
 
 export interface workItemDetailProps {
   servicesItems: string[];
-  year: string;
+  date: string;
   industry: string;
   detail: string;
   images?: string[];
