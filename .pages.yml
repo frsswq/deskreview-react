@@ -5,7 +5,7 @@ content:
   - name: posts
     label: Posts
     type: collection
-    path: "src/contents"
+    path: src/contents
     filename: "{fields.linkname}.md"
     view:
       fields: [title, date]
@@ -38,3 +38,7 @@ content:
       - name: body
         label: Body
         type: rich-text
+  - name: works
+    label: Works Portfolio
+    type: file
+    path: src/data/home/workItemData.ts
