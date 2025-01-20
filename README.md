@@ -1,4 +1,4 @@
-# Deskreview (still in development)
+# Deskreview
 
 Static site for deskreview creative agency. Built with ❤️ using [React](https://react.dev/).
 

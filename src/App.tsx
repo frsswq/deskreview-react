@@ -19,12 +19,36 @@ export default function App() {
       <GlobalStyles />
       {!is404 && <Navbar />}
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route
+          path="/"
+          element={
+            <>
+              <title>Deskreview | Brand and Marketing Strategy Studies</title>
+              <Home />
+            </>
+          }
+        />
         <Route path="/study">
-          <Route index element={<Blog />} />
+          <Route
+            index
+            element={
+              <>
+                <title>Study | Deskreview</title>
+                <Blog />
+              </>
+            }
+          />
           {mdRoutes}
         </Route>
-        <Route path="*" element={<NotFound />} />
+        <Route
+          path="*"
+          element={
+            <>
+              <title>Not Found | Deskreview</title>
+              <NotFound />
+            </>
+          }
+        />
       </Routes>
       {!is404 && <Footer />}
     </>

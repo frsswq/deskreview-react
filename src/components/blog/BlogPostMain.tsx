@@ -16,7 +16,7 @@ import {
   useBlogPostFixIndent,
   useTextCenterFix,
 } from "../../hooks/blogPostHooks.ts";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { formatDateBlogUtil } from "../../utils/dateUtil.ts";
 
 export default function BlogPostMain({ frontmatter, children }: BlogPostProps) {
@@ -28,6 +28,10 @@ export default function BlogPostMain({ frontmatter, children }: BlogPostProps) {
   useTextCenterFix();
 
   const displayHeaderDetail = tag && author && formattedDate;
+
+  useEffect(() => {
+    document.title = `${title} | Deskreview`;
+  }, [title]);
 
   return (
     <MainStyled>
