@@ -25,7 +25,7 @@ export interface workItemButtonProps {
 
 export interface workItemDetailProps {
   servicesItems: string[];
-  date: string;
+  year: string;
   industry: string;
   detail: string;
   images?: string[];

@@ -1,6 +1,7 @@
 media:
   input: public/img
   output: /deskreview-react/img
+  categories: [image]
 content:
   - name: blog_posts
     label: Blog Posts
@@ -42,3 +43,41 @@ content:
     label: Works Portfolio
     type: collection
     path: src/data/home/portofolio
+    filename: "{fields.filename}.json"
+    view:
+      fields: [clientName, date]
+      sort: [date, clientName]
+    fields:
+      - name: clientName
+        label: Client
+        type: string
+        required: true
+      - name: filename
+        label: Filename (lowercase_client_name_with_underscore)
+        type: string
+        pattern: ^[a-z]+(_[a-z]+)*$
+        required: true
+      - name: servicesItems
+        label: Services
+        type: string
+        list: true
+        required: true
+      - name: date
+        label: Date (mm-yyyy)
+      - name: industry
+        label: Industry
+        type: string
+        pattern: ^(0[1-9]|1[0-2])-(19\d{2}|20\d{2}|2100)$
+        required: true
+      - name: detail
+        label: Project Description / Detail
+        type: string
+        required: true
+      - name: images
+        label: Images
+        type: image
+        list: true
+        options:
+          input: public/img/home/work
+          output: img/home/work
+          categories: [image]

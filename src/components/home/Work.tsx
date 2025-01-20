@@ -7,7 +7,7 @@ import {
 } from "../common/styles/CommonStyled.tsx";
 import WorkItem from "./WorkItemButton.tsx";
 import WorkItemDetail from "./WorkItemDetail.tsx";
-import { WorkItemTestData } from "../../data/home/workItemTestData";
+import { sortedWorkItemTestData } from "../../data/home/workItemTestData";
 import { workItemTestDataTypes } from "../../types/homeTypes";
 
 export default function Work() {
@@ -22,7 +22,7 @@ export default function Work() {
       <DefaultTitle style={{ textIndent: "-0.15em" }}>Works</DefaultTitle>
       <HomeItemTitle>Company</HomeItemTitle>
       <Divider />
-      {WorkItemTestData.map(
+      {sortedWorkItemTestData.map(
         (workItem: workItemTestDataTypes, index: number) => (
           <div key={index}>
             <WorkItem
@@ -32,7 +32,7 @@ export default function Work() {
             />
             <WorkItemDetail
               servicesItems={workItem.servicesItems}
-              date={workItem.date}
+              year={workItem.date}
               industry={workItem.industry}
               detail={workItem.detail}
               images={workItem.images}
