@@ -1,11 +1,10 @@
 export interface workItemDataTypes {
   clientName: string;
-  filename: string;
   servicesItems: string[];
-  date: string;
-  industry: string;
-  detail: string;
-  images?: string[];
+  projectYear: string;
+  clientIndustry: string;
+  projectDetail: string;
+  projectImages?: string[];
 }
 
 export interface workItemButtonProps {
@@ -16,10 +15,10 @@ export interface workItemButtonProps {
 
 export interface workItemDetailProps {
   servicesItems: string[];
-  year: string;
-  industry: string;
-  detail: string;
-  images?: string[];
+  projectYear: string;
+  clientIndustry: string;
+  projectDetail: string;
+  projectImages?: string[];
   isOpen: boolean;
 }
 

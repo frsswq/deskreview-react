@@ -2,10 +2,10 @@
   "clientName": "Astra Honda",
   "filename": "astra_honda",
   "servicesItems": ["Content Research & Analytic", "Digital Trend Analytic"],
-  "date": "2023",
-  "industry": "Vehicle Manufacture",
-  "detail": "As their effort to gain trust with local wisdom and the spirit of #OneHeart, Honda aims to reach more trust and connection withing Indonesia market.",
-  "images": [
+  "projectYear": "2023",
+  "clientIndustry": "Vehicle Manufacture",
+  "projectDetail": "As their effort to gain trust with local wisdom and the spirit of #OneHeart, Honda aims to reach more trust and connection withing Indonesia market.",
+  "projectImages": [
     "img/home/astra_1.webp",
     "img/home/astra_2.webp",
     "img/home/astra_3.webp"

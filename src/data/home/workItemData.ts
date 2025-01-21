@@ -7,8 +7,8 @@ export const workItemData: workItemDataTypes[] = Object.values(modules).map(
 );
 
 export const sortedWorkItemData = workItemData.sort((a, b) => {
-  if (a.date !== b.date) {
-    return b.date.localeCompare(a.date);
+  if (a.projectYear !== b.projectYear) {
+    return b.projectYear.localeCompare(a.projectYear);
   }
 
   return a.clientName.localeCompare(b.clientName);

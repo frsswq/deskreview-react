@@ -38,6 +38,8 @@ jobs:
           cache: "npm"
       - name: Install dependencies
         run: npm ci
+      - name: Convert home images to WebP
+        run: node src/utils/convertHomeImagesToWebP.js
       - name: Build
         run: npm run build
       - name: Setup Pages

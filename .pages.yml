@@ -16,12 +16,13 @@ content:
         label: Title
         type: string
         required: true
+        description: Blog Post Title
       - name: linkname
         label: Linkname (your-title-shortened-with-hyphen)
         type: string
         pattern: ^[a-z0-9]+(?:-[a-z0-9]+)*$
         required: true
-        description: The directory that will be used in the web (deskreview.com/study/...)
+        description: Directory that will be used in the web (deskreview.com/study/...)
       - name: date
         label: Date (dd-mm-yyyy)
         type: string
@@ -33,6 +34,7 @@ content:
         options:
           values: [On-Review, Method Review, Working View, Portfolio Review]
         required: true
+        description: Single Relevant Tag for the Blog Post
       - name: author
         label: Author
         type: string
@@ -46,33 +48,33 @@ content:
     path: src/data/home/portfolio
     filename: "{fields.clientName}.json"
     view:
-      fields: [clientName, date]
-      sort: [date, clientName]
+      fields: [clientName]
+      sort: [projectYear, clientName]
     fields:
       - name: clientName
-        label: Client
+        label: Client Name
         type: string
         required: true
       - name: servicesItems
-        label: Services
+        label: Services Items
         type: string
         list: true
         required: true
-      - name: date
-        label: Date
+      - name: projectYear
+        label: Project Year
         type: string
         pattern: ^\d{4}$
         required: true
-        description: In yyyy format (2025)
-      - name: industry
-        label: Industry
+        description: In yyyy format
+      - name: clientIndustry
+        label: Client Industry
         type: string
         required: true
-      - name: detail
+      - name: projectDetail
         label: Project Description / Detail
         type: text
         required: true
-      - name: images
-        label: Images
+      - name: projectImages
+        label: Project Images
         type: image
         list: true

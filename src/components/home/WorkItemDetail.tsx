@@ -8,19 +8,21 @@ import { useState } from "react";
 
 export default function WorkItemDetail({
   servicesItems = [],
-  year,
-  industry,
-  detail,
-  images = [],
+  projectYear,
+  clientIndustry,
+  projectDetail,
+  projectImages = [],
   isOpen,
 }: workItemDetailProps) {
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
 
-  usePreloadImages(images);
+  usePreloadImages(projectImages);
 
   const handleImageClick = (): void => {
-    if (images.length > 0) {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    if (projectImages.length > 0) {
+      setCurrentImageIndex(
+        (prevIndex) => (prevIndex + 1) % projectImages.length
+      );
     }
   };
 
@@ -38,24 +40,24 @@ export default function WorkItemDetail({
       </WorkItemGrid>
       <WorkItemGrid>
         <p className="title">Year</p>
-        <p className="text">{year}</p>
+        <p className="text">{projectYear}</p>
       </WorkItemGrid>
       <WorkItemGrid>
         <p className="title">Industry</p>
-        <p className="text">{industry}</p>
+        <p className="text">{clientIndustry}</p>
       </WorkItemGrid>
       <WorkItemGrid>
         <p className="title">Description</p>
-        <p className="text">{detail}</p>
+        <p className="text">{projectDetail}</p>
       </WorkItemGrid>
-      {images.length > 0 && (
+      {projectImages.length > 0 && (
         <WorkItemGrid>
           <p className="title">
-            {images.length === 1 ? "Picture" : "Pictures"} <br />
-            {currentImageIndex + 1} ⁄ {images.length}
+            {projectImages.length === 1 ? "Picture" : "Pictures"} <br />
+            {currentImageIndex + 1} ⁄ {projectImages.length}
           </p>
           <img
-            src={images[currentImageIndex]}
+            src={projectImages[currentImageIndex]}
             onClick={handleImageClick}
             width="340"
             height="425"

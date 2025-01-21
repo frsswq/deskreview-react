@@ -31,10 +31,10 @@ export default function Work() {
           />
           <WorkItemDetail
             servicesItems={workItem.servicesItems}
-            year={workItem.date}
-            industry={workItem.industry}
-            detail={workItem.detail}
-            images={workItem.images}
+            projectYear={workItem.projectYear}
+            clientIndustry={workItem.clientIndustry}
+            projectDetail={workItem.projectDetail}
+            projectImages={workItem.projectImages}
             isOpen={openItemIndex === index}
           />
           <Divider />

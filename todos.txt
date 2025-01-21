@@ -1,3 +1,1 @@
-- Work setups for client
 - Setup domain and url
-- Contact form?
