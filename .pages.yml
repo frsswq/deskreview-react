@@ -16,7 +16,6 @@ content:
         label: Title
         type: string
         required: true
-        description: Blog Post Title
       - name: linkname
         label: Linkname (your-title-shortened-with-hyphen)
         type: string
