@@ -1,13 +1,4 @@
 export interface workItemDataTypes {
-  companyName: string;
-  servicesItems: string[];
-  year: string;
-  industry: string;
-  detail: string;
-  images?: string[];
-}
-
-export interface workItemTestDataTypes {
   clientName: string;
   filename: string;
   servicesItems: string[];

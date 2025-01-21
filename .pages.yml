@@ -78,7 +78,3 @@ content:
         label: Images
         type: image
         list: true
-        options:
-          input: public/img/home/work
-          output: img/home/work
-          categories: [image]

@@ -7,8 +7,8 @@ import {
 } from "../common/styles/CommonStyled.tsx";
 import WorkItem from "./WorkItemButton.tsx";
 import WorkItemDetail from "./WorkItemDetail.tsx";
-import { sortedWorkItemTestData } from "../../data/home/workItemTestData";
-import { workItemTestDataTypes } from "../../types/homeTypes";
+import { sortedWorkItemData } from "../../data/home/workItemData.ts";
+import { workItemDataTypes } from "../../types/homeTypes";
 
 export default function Work() {
   const [openItemIndex, setOpenItemIndex] = useState<number | null>(null);
@@ -22,26 +22,24 @@ export default function Work() {
       <DefaultTitle style={{ textIndent: "-0.15em" }}>Works</DefaultTitle>
       <HomeItemTitle>Company</HomeItemTitle>
       <Divider />
-      {sortedWorkItemTestData.map(
-        (workItem: workItemTestDataTypes, index: number) => (
-          <div key={index}>
-            <WorkItem
-              isOpen={openItemIndex === index}
-              onClick={() => toggleItem(index)}
-              clientName={workItem.clientName}
-            />
-            <WorkItemDetail
-              servicesItems={workItem.servicesItems}
-              year={workItem.date}
-              industry={workItem.industry}
-              detail={workItem.detail}
-              images={workItem.images}
-              isOpen={openItemIndex === index}
-            />
-            <Divider />
-          </div>
-        )
-      )}
+      {sortedWorkItemData.map((workItem: workItemDataTypes, index: number) => (
+        <div key={index}>
+          <WorkItem
+            isOpen={openItemIndex === index}
+            onClick={() => toggleItem(index)}
+            clientName={workItem.clientName}
+          />
+          <WorkItemDetail
+            servicesItems={workItem.servicesItems}
+            year={workItem.date}
+            industry={workItem.industry}
+            detail={workItem.detail}
+            images={workItem.images}
+            isOpen={openItemIndex === index}
+          />
+          <Divider />
+        </div>
+      ))}
     </SectionContainer>
   );
 }
