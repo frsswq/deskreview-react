@@ -48,7 +48,7 @@ content:
     path: src/data/home/portfolio
     filename: "{fields.clientName}.json"
     view:
-      fields: [clientName]
+      fields: [clientName, projectYear]
       sort: [projectYear, clientName]
     fields:
       - name: clientName

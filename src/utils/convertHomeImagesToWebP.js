@@ -19,7 +19,10 @@ async function convertToWebP(dir) {
           .webp({ quality: 80 })
           .toFile(outputPath);
 
+        console.log(`Converted ${item.name} to ${path.basename(outputPath)}`);
+
         await fs.unlink(itemPath);
+        console.log(`Deleted original file: ${item.name}`);
       }
     }
   } catch (error) {
