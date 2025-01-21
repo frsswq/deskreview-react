@@ -11,7 +11,7 @@ export default function Contact() {
     <SectionContainer>
       <DefaultTitle id="contact">Get in touch</DefaultTitle>
       <ContactContainer>
-        <ContactButton href="mailto:zaidandzaki@gmail.com" target="_blank">
+        <ContactButton href="mailto:dzaki.zaidan@gmail.com" target="_blank">
           <p>Email us</p>
           <EnvelopeClosedIcon />
         </ContactButton>
