@@ -62,13 +62,15 @@ content:
         label: Date
         type: string
         pattern: ^\d{4}$
+        required: true
+        description: In yyyy format (2025)
       - name: industry
         label: Industry
         type: string
         required: true
       - name: detail
         label: Project Description / Detail
-        type: string
+        type: text
         required: true
       - name: images
         label: Images
