@@ -1,4 +1,4 @@
-import{G as e}from"./react-markdown-maCznKtX.js";import{f as p,M as f,S as h}from"./main-CSk8M8r4.js";import{d as c}from"./styled-components-CgetkSgC.js";import{r as d}from"./vendor-C-q9OyUs.js";import"./@radix-ui/react-icons-88m-rOiV.js";import"./date-fns-B4QYC8g5.js";import"./remark-gfm-BYX8R0Us.js";import"./rehype-raw-CHXFhoZm.js";const u=c.article`
+import{G as e}from"./react-markdown-maCznKtX.js";import{f as p,M as f,S as h}from"./main-C3HvrP1X.js";import{d as c}from"./styled-components-CgetkSgC.js";import{r as d}from"./vendor-C-q9OyUs.js";import"./@radix-ui/react-icons-88m-rOiV.js";import"./date-fns-B4QYC8g5.js";import"./remark-gfm-BYX8R0Us.js";import"./rehype-raw-CHXFhoZm.js";const u=c.article`
   display: flex;
   flex-direction: column;
   margin-top: 16px;
