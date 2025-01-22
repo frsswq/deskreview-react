@@ -10,7 +10,7 @@ Static site for deskreview creative agency. Built with ❤️ using [React](http
 - [Styled Component](https://styled-components.com/) [ Styling ]
 - [Pages CMS](https://pagescms.org/) [ CMS ]
 - [Fontsource](https://fontsource.org/) [ Self-host Fonts ]
-- [Sharp](https://sharp.pixelplumbing.com/) [ On-Build Image Optimization ]
+- [Sharp](https://sharp.pixelplumbing.com/) [ Image Optimization ]
 - [gray-matter](https://github.com/jonschlinkert/gray-matter) [ YAML Frontmatter Parser ]
 
 ## Steps
