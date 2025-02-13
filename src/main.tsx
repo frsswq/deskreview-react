@@ -15,7 +15,7 @@ import "@fontsource/eb-garamond/latin-600.css";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter basename="/deskreview-react/">
+    <BrowserRouter>
       <ScrollToTop />
       <App />
     </BrowserRouter>

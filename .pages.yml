@@ -1,6 +1,6 @@
 media:
   input: public/img
-  output: /deskreview-react/img
+  output: /img
   categories: [image]
 content:
   - name: blog_posts
