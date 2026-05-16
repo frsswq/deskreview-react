@@ -2,10 +2,11 @@ import { dependencies } from "./package.json";
 import { defineConfig } from "vite";
 import { resolve } from "path";
 import react from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
 import matter from "gray-matter";
 
 function renderChunks(deps: Record<string, string>) {
-  let chunks: Record<string, string[]> = {};
+  const chunks: Record<string, string[]> = {};
   Object.keys(deps).forEach((key) => {
     if (
       [
@@ -29,6 +30,7 @@ function renderChunks(deps: Record<string, string>) {
 export default defineConfig({
   plugins: [
     react(),
+    tailwindcss(),
     {
       name: "markdown-loader",
       transform(code, id) {
@@ -43,6 +45,7 @@ export default defineConfig({
 
   build: {
     outDir: "docs",
+    emptyOutDir: false,
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
@@ -50,9 +53,21 @@ export default defineConfig({
       },
 
       output: {
-        manualChunks: {
-          vendor: ["react", "react-dom", "react-router"],
-          ...renderChunks(dependencies),
+        manualChunks(id) {
+          const manualChunks = {
+            vendor: ["react", "react-dom", "react-router"],
+            ...renderChunks(dependencies),
+          };
+
+          for (const [chunkName, packages] of Object.entries(manualChunks)) {
+            if (
+              packages.some((packageName) =>
+                id.includes(`/node_modules/${packageName}/`),
+              )
+            ) {
+              return chunkName;
+            }
+          }
         },
       },
     },
