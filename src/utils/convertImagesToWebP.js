@@ -1,8 +1,19 @@
-import path from "node:path";
 import fs from "node:fs/promises";
+import path from "node:path";
 
-const targetDir = "public/img/blog";
+const imageProfiles = {
+  blog: {
+    targetDir: "public/img/blog",
+    width: 2000,
+  },
+  home: {
+    targetDir: "public/img/home",
+    width: 680,
+  },
+};
+
 const referenceFiles = ["src/contents", "src/data/home/portfolio"];
+const sourceImagePattern = /\.(jpg|jpeg|png)$/i;
 
 function escapeRegExp(value) {
   return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -73,21 +84,32 @@ async function updateReferences(conversions) {
   }
 }
 
-async function convertToWebP(dir) {
+async function convertToWebP({ targetDir, width }) {
   const conversions = [];
-  const items = await fs.readdir(dir, { withFileTypes: true });
+  const items = await fs.readdir(targetDir, { withFileTypes: true });
 
   for (const item of items) {
-    const itemPath = path.join(dir, item.name);
+    const itemPath = path.join(targetDir, item.name);
 
     if (item.isDirectory()) {
-      conversions.push(...(await convertToWebP(itemPath)));
-    } else if (item.isFile() && /\.(jpg|jpeg|png)$/i.test(item.name)) {
-      const outputPath = path.join(dir, `${path.parse(item.name).name}.webp`);
+      conversions.push(
+        ...(await convertToWebP({ targetDir: itemPath, width })),
+      );
+    } else if (item.isFile() && sourceImagePattern.test(item.name)) {
+      const outputPath = path.join(
+        targetDir,
+        `${path.parse(item.name).name}.webp`,
+      );
+
+      if (await Bun.file(outputPath).exists()) {
+        throw new Error(
+          `Cannot convert ${itemPath}: output already exists at ${outputPath}`,
+        );
+      }
 
       await Bun.file(itemPath)
         .image()
-        .resize(2000, undefined, { withoutEnlargement: true })
+        .resize(width, undefined, { withoutEnlargement: true })
         .webp({ quality: 80 })
         .write(outputPath);
 
@@ -103,5 +125,29 @@ async function convertToWebP(dir) {
   return conversions;
 }
 
-const conversions = await convertToWebP(targetDir);
-await updateReferences(conversions);
+async function optimizeProfile(profileName) {
+  const profile = imageProfiles[profileName];
+
+  if (!profile) {
+    throw new Error(
+      `Unknown image optimization profile "${profileName}". Expected one of: ${Object.keys(imageProfiles).join(", ")}`,
+    );
+  }
+
+  const conversions = await convertToWebP(profile);
+
+  if (conversions.length === 0) {
+    console.log(`No source images to optimize for ${profileName}.`);
+    return;
+  }
+
+  await updateReferences(conversions);
+}
+
+const profiles = process.argv.slice(2);
+const profilesToOptimize =
+  profiles.length > 0 ? profiles : Object.keys(imageProfiles);
+
+for (const profile of profilesToOptimize) {
+  await optimizeProfile(profile);
+}

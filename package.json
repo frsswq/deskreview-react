@@ -18,9 +18,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "optimize:images:blog": "bun src/utils/convertBlogImagesToWebP.js",
-    "optimize:images:home": "bun src/utils/convertHomeImagesToWebP.js",
-    "optimize:images": "bun run optimize:images:blog && bun run optimize:images:home",
+    "optimize:images:blog": "bun src/utils/convertImagesToWebP.js blog",
+    "optimize:images:home": "bun src/utils/convertImagesToWebP.js home",
+    "optimize:images": "bun src/utils/convertImagesToWebP.js",
     "lint": "oxlint --react-plugin --import-plugin --deny-warnings .",
     "lint:fix": "oxlint --react-plugin --import-plugin --fix .",
     "format": "oxfmt --write package.json index.html 404.html vite.config.ts \"src/**/*.{ts,tsx,css,json}\" \"tsconfig*.json\"",
