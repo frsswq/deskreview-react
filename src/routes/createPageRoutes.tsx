@@ -18,10 +18,7 @@ export function createPageRoutes() {
           path={path}
           element={
             <BlogPost frontmatter={frontmatter}>
-              <ReactMarkdown
-                remarkPlugins={[remarkGfm]}
-                rehypePlugins={[rehypeRaw]}
-              >
+              <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>
                 {content}
               </ReactMarkdown>
             </BlogPost>
