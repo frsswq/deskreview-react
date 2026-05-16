@@ -3,33 +3,29 @@ export default function About() {
     <section className="desk-section">
       <h1 className="desk-title">Manifesto</h1>
       <p className="manifesto-text">
-        <span>To Seek for The Sun</span>–A commitment to constantly exploring
-        innovative and emerging sciences in marketing and branding. We focus on
-        crafting strategies that seamlessly position brands within the hearts
-        and minds of society, ensuring they resonate deeply with their audience.
-        Each project we undertake is a journey—an exploration for the{" "}
-        <span>“ideal truth”</span> : we are inspired by the understanding that
-        the branding and marketing science is ever-evolving and dynamic.
+        <span>To Seek for The Sun</span>–A commitment to constantly exploring innovative and
+        emerging sciences in marketing and branding. We focus on crafting strategies that seamlessly
+        position brands within the hearts and minds of society, ensuring they resonate deeply with
+        their audience. Each project we undertake is a journey—an exploration for the{" "}
+        <span>“ideal truth”</span> : we are inspired by the understanding that the branding and
+        marketing science is ever-evolving and dynamic.
       </p>
       <p className="manifesto-text">
-        Our mission transcends traditional branding; we aim to harmonize the
-        rationality of the left brain with the creativity of the right brain,
-        empowering businesses to navigate the complexities of modern markets. In
-        today’s fast-paced, information-rich, and time-poor world, a brand’s
-        value is determined by how effortlessly it enables customers to say{" "}
+        Our mission transcends traditional branding; we aim to harmonize the rationality of the left
+        brain with the creativity of the right brain, empowering businesses to navigate the
+        complexities of modern markets. In today’s fast-paced, information-rich, and time-poor
+        world, a brand’s value is determined by how effortlessly it enables customers to say{" "}
         <span>“yes.”</span>
       </p>
       <p className="manifesto-text">
-        Branding, as we see it, is the art of connecting sound strategy with
-        brilliant creativity. A strong brand pairs these elements to create
-        symbols and messages that resonate with customers, far beyond product
-        features, benefits, or price.
+        Branding, as we see it, is the art of connecting sound strategy with brilliant creativity. A
+        strong brand pairs these elements to create symbols and messages that resonate with
+        customers, far beyond product features, benefits, or price.
       </p>
       <p className="manifesto-text">
-        Our ultimate goal is to help brands become charismatic entities that
-        inspire belief in their uniqueness. A charismatic brand is irreplaceable
-        in the eyes of its audience, and we firmly believe that with the right
-        approach, any brand—<span>yours included</span>
+        Our ultimate goal is to help brands become charismatic entities that inspire belief in their
+        uniqueness. A charismatic brand is irreplaceable in the eyes of its audience, and we firmly
+        believe that with the right approach, any brand—<span>yours included</span>
         —can achieve this distinction.
       </p>
       <blockquote className="manifesto-quote">

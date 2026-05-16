@@ -1,8 +1,4 @@
-import {
-  EnvelopeClosedIcon,
-  ChatBubbleIcon,
-  InstagramLogoIcon,
-} from "@radix-ui/react-icons";
+import { EnvelopeClosedIcon, ChatBubbleIcon, InstagramLogoIcon } from "@radix-ui/react-icons";
 
 export default function Contact() {
   const contactLinks = [

@@ -1,11 +1,7 @@
 import type { workItemButtonProps } from "../../types/homeTypes.ts";
 import { CaretDownIcon } from "@radix-ui/react-icons";
 
-export default function WorkItem({
-  clientName,
-  isOpen,
-  onClick,
-}: workItemButtonProps) {
+export default function WorkItem({ clientName, isOpen, onClick }: workItemButtonProps) {
   return (
     <button
       className="grid w-full cursor-pointer grid-cols-[8fr_2fr] items-center border-none bg-transparent pr-2 text-left"

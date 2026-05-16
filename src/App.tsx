@@ -10,8 +10,7 @@ export default function App() {
   const mdRoutes = createPageRoutes();
   const location = useLocation();
 
-  const is404 =
-    location.pathname !== "/" && !location.pathname.startsWith("/study");
+  const is404 = location.pathname !== "/" && !location.pathname.startsWith("/study");
 
   return (
     <>

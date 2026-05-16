@@ -16,9 +16,7 @@ export default function WorkItemDetail({
 
   const handleImageClick = (): void => {
     if (projectImages.length > 0) {
-      setCurrentImageIndex(
-        (prevIndex) => (prevIndex + 1) % projectImages.length,
-      );
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % projectImages.length);
     }
   };
 
