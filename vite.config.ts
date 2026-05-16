@@ -1,6 +1,6 @@
 import { dependencies } from "./package.json";
 import { defineConfig } from "vite";
-import { resolve } from "path";
+import { resolve } from "node:path";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import matter from "gray-matter";
@@ -13,10 +13,6 @@ function renderChunks(deps: Record<string, string>) {
         "react",
         "react-router",
         "react-dom",
-        "path",
-        "fs",
-        "fs-extra",
-        "sharp",
         "@fontsource/eb-garamond",
         "@fontsource/dm-sans",
       ].includes(key)
