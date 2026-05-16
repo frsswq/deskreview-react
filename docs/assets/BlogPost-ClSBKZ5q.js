@@ -1,4 +1,4 @@
-import{G as e}from"./react-markdown-CdbJyoHg.js";import{f as p,M as f,S as h}from"./main-Cte-JLwX.js";import{d as c}from"./styled-components-BOF5XIQs.js";import{r as d}from"./vendor-CvfCuUZz.js";import"./@radix-ui/react-icons-T6wVLuVb.js";import"./date-fns-B4QYC8g5.js";import"./remark-gfm-RXI-vKoo.js";import"./rehype-raw-B3D9AqIt.js";const u=c.article`
+import{r as e}from"./rolldown-runtime-CpWojdLp.js";import{a as t}from"./@radix-ui/react-icons-DoJMcfKb.js";import{t as n}from"./styled-components-D-X338SB.js";import{N as r}from"./react-markdown-yAIc5ENR.js";import{n as i,r as a,t as o}from"./main-C5900bDm.js";var s=n.article`
   display: flex;
   flex-direction: column;
   margin-top: 16px;
@@ -24,7 +24,7 @@ import{G as e}from"./react-markdown-CdbJyoHg.js";import{f as p,M as f,S as h}fro
       font-size: 36px;
     }
   }
-`,b=c.div`
+`,c=n.div`
   display: flex;
 
   flex-direction: column;
@@ -55,7 +55,7 @@ import{G as e}from"./react-markdown-CdbJyoHg.js";import{f as p,M as f,S as h}fro
       font-size: var(--text-lg);
     }
   }
-`,k=c.article`
+`,l=n.article`
   // Text and paragraph
 
   p:not(:has(img)),
@@ -386,7 +386,7 @@ import{G as e}from"./react-markdown-CdbJyoHg.js";import{f as p,M as f,S as h}fro
   h3.indent-fix-small {
     text-indent: -0.025em;
   }
-`,y=c.div`
+`,u=n.div`
   position: fixed;
   top: 0;
   left: 0;
@@ -403,4 +403,4 @@ import{G as e}from"./react-markdown-CdbJyoHg.js";import{f as p,M as f,S as h}fro
     max-width: 90%;
     max-height: 90%;
   }
-`,v=o=>{const[n,t]=d.useState(null),l=d.useCallback(()=>{t(null)},[]);return d.useEffect(()=>{if(!o.current)return;const r=s=>{const i=s.target;i.tagName.toLowerCase()==="img"&&t(i.src)},a=o.current;return a.addEventListener("click",r),()=>{a.removeEventListener("click",r)}},[o]),{selectedImage:n,closeModal:l}},z=o=>{d.useEffect(()=>{if(!o.current)return;document.querySelectorAll("h1, h2, h3").forEach(t=>{var l,r,a,s,i;((l=t.textContent)!=null&&l.startsWith("T")||(r=t.textContent)!=null&&r.startsWith("V")||(a=t.textContent)!=null&&a.startsWith("W"))&&t.classList.add("indent-fix-big"),((s=t.textContent)!=null&&s.startsWith("Y")||(i=t.textContent)!=null&&i.startsWith("U"))&&t.classList.add("indent-fix-small")})},[o])},w=()=>{d.useEffect(()=>{document.querySelectorAll("p").forEach(n=>{n.style.textAlign==="center"&&n.classList.add("text-center")})})};function j({frontmatter:o,children:n}){const{title:t,date:l,tag:r,author:a}=o,s=l?p(l):null,i=d.useRef(null),{selectedImage:x,closeModal:g}=v(i);z(i),w();const m=r&&a&&s;return d.useEffect(()=>{document.title=`${t} | Deskreview`},[t]),e.jsxs(f,{children:[e.jsx("meta",{name:"author",content:a}),e.jsx("meta",{name:"keywords",content:r}),e.jsxs(h,{children:[e.jsxs(u,{children:[t&&e.jsx("h1",{children:t}),m&&e.jsxs(b,{children:[r&&e.jsx("p",{className:"tag",children:r}),a&&e.jsx("p",{className:"author",children:a}),s&&e.jsx("p",{className:"date",children:s})]})]}),e.jsx(k,{ref:i,children:n})]}),x&&e.jsx(y,{onClick:g,children:e.jsx("img",{src:x,alt:"Full sized image"})})]})}function L({frontmatter:o,children:n}){return e.jsx(j,{frontmatter:o,children:n})}export{L as default};
+`,d=e(t(),1),f=e=>{let[t,n]=(0,d.useState)(null),r=(0,d.useCallback)(()=>{n(null)},[]);return(0,d.useEffect)(()=>{if(!e.current)return;let t=e=>{let t=e.target;t.tagName.toLowerCase()===`img`&&n(t.src)},r=e.current;return r.addEventListener(`click`,t),()=>{r.removeEventListener(`click`,t)}},[e]),{selectedImage:t,closeModal:r}},p=e=>{(0,d.useEffect)(()=>{e.current&&document.querySelectorAll(`h1, h2, h3`).forEach(e=>{(e.textContent?.startsWith(`T`)||e.textContent?.startsWith(`V`)||e.textContent?.startsWith(`W`))&&e.classList.add(`indent-fix-big`),(e.textContent?.startsWith(`Y`)||e.textContent?.startsWith(`U`))&&e.classList.add(`indent-fix-small`)})},[e])},m=()=>{(0,d.useEffect)(()=>{document.querySelectorAll(`p`).forEach(e=>{e.style.textAlign===`center`&&e.classList.add(`text-center`)})})},h=r();function g({frontmatter:e,children:t}){let{title:n,date:r,tag:g,author:_}=e,v=r?o(r):null,y=(0,d.useRef)(null),{selectedImage:b,closeModal:x}=f(y);p(y),m();let S=g&&_&&v;return(0,d.useEffect)(()=>{document.title=`${n} | Deskreview`},[n]),(0,h.jsxs)(i,{children:[(0,h.jsx)(`meta`,{name:`author`,content:_}),(0,h.jsx)(`meta`,{name:`keywords`,content:g}),(0,h.jsxs)(a,{children:[(0,h.jsxs)(s,{children:[n&&(0,h.jsx)(`h1`,{children:n}),S&&(0,h.jsxs)(c,{children:[g&&(0,h.jsx)(`p`,{className:`tag`,children:g}),_&&(0,h.jsx)(`p`,{className:`author`,children:_}),v&&(0,h.jsx)(`p`,{className:`date`,children:v})]})]}),(0,h.jsx)(l,{ref:y,children:t})]}),b&&(0,h.jsx)(u,{onClick:x,children:(0,h.jsx)(`img`,{src:b,alt:`Full sized image`})})]})}function _({frontmatter:e,children:t}){return(0,h.jsx)(g,{frontmatter:e,children:t})}export{_ as default};
