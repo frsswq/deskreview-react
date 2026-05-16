@@ -1,6 +1,5 @@
-import sharp from "sharp";
-import path from "path";
-import fs from "fs/promises";
+import path from "node:path";
+import fs from "node:fs/promises";
 
 async function convertToWebP(dir) {
   try {
@@ -11,13 +10,14 @@ async function convertToWebP(dir) {
 
       if (item.isDirectory()) {
         await convertToWebP(itemPath);
-      } else if (item.isFile() && /\.(jpg|jpeg|png|gif)$/i.test(item.name)) {
+      } else if (item.isFile() && /\.(jpg|jpeg|png)$/i.test(item.name)) {
         const outputPath = path.join(dir, `${path.parse(item.name).name}.webp`);
 
-        await sharp(itemPath)
-          .resize({ witdh: 2000, withoutEnlargement: true })
+        await Bun.file(itemPath)
+          .image()
+          .resize(2000, undefined, { withoutEnlargement: true })
           .webp({ quality: 80 })
-          .toFile(outputPath);
+          .write(outputPath);
 
         console.log(`Converted ${item.name} to ${path.basename(outputPath)}`);
 
