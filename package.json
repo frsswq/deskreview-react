@@ -23,8 +23,8 @@
     "optimize:images": "bun src/utils/convertImagesToWebP.js",
     "lint": "oxlint --react-plugin --import-plugin --deny-warnings .",
     "lint:fix": "oxlint --react-plugin --import-plugin --fix .",
-    "format": "oxfmt --write package.json index.html 404.html vite.config.ts \"src/**/*.{ts,tsx,css,json}\" \"tsconfig*.json\"",
-    "format:check": "oxfmt --check package.json index.html 404.html vite.config.ts \"src/**/*.{ts,tsx,css,json}\" \"tsconfig*.json\"",
+    "format": "oxfmt --write package.json index.html vite.config.ts \"src/**/*.{ts,tsx,css,json,js}\" \"tsconfig*.json\"",
+    "format:check": "oxfmt --check package.json index.html vite.config.ts \"src/**/*.{ts,tsx,css,json,js}\" \"tsconfig*.json\"",
     "preview": "vite preview"
   },
   "dependencies": {

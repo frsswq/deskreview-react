@@ -1,6 +1,5 @@
 import { dependencies } from "./package.json";
 import { defineConfig } from "vite";
-import { resolve } from "node:path";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import matter from "gray-matter";
@@ -42,11 +41,6 @@ export default defineConfig({
   build: {
     outDir: "dist",
     rollupOptions: {
-      input: {
-        main: resolve(__dirname, "index.html"),
-        404: resolve(__dirname, "404.html"),
-      },
-
       output: {
         manualChunks(id) {
           const manualChunks = {
