@@ -9,6 +9,7 @@ Static site for deskreview creative agency. Built with ❤️ using [React](http
 - [React Router](https://reactrouter.com/) [ Routing ]
 - [Tailwind CSS](https://tailwindcss.com/) [ Styling ]
 - [Pages CMS](https://pagescms.org/) [ CMS ]
+- [Netlify](https://www.netlify.com/) [ Deployment ]
 - [Fontsource](https://fontsource.org/) [ Self-host Fonts ]
 - [Bun Image API](https://bun.com/docs/runtime/image) [ Image Optimization ]
 - [gray-matter](https://github.com/jonschlinkert/gray-matter) [ YAML Frontmatter Parser ]
