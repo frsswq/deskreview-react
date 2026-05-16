@@ -13,7 +13,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="sticky top-0 z-[1000] h-auto w-full border-b border-desk-gray-300 bg-desk-white px-5 py-4 max-md:px-4">
+    <nav className="sticky top-0 z-1000 h-auto w-full border-b border-desk-gray-300 bg-desk-white px-5 py-4 max-md:px-4">
       <div className="mx-auto flex w-full max-w-7xl flex-row">
         <img
           className="block h-[22px] w-[120px] cursor-pointer hover:opacity-80"

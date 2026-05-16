@@ -28,7 +28,7 @@ export default function BlogPostMain({ frontmatter, children }: BlogPostProps) {
       <section className="desk-section">
         <article className="mt-4 mb-8 flex flex-col gap-y-6 max-md:mt-2 max-md:mb-6 max-md:gap-y-4">
           {title && (
-            <h1 className="font-serif text-[52px] leading-[1.2] font-medium tracking-[-0.04em] [overflow-wrap:anywhere] italic max-md:text-4xl">
+            <h1 className="font-serif text-[52px] leading-[1.2] font-medium tracking-[-0.04em] wrap-anywhere italic max-md:text-4xl">
               {title}
             </h1>
           )}
@@ -45,7 +45,9 @@ export default function BlogPostMain({ frontmatter, children }: BlogPostProps) {
                 </p>
               )}
               {formattedDate && (
-                <p className="text-desk-base font-normal max-md:text-desk-lg">{formattedDate}</p>
+                <p className="text-desk-base font-normal max-md:text-desk-lg">
+                  {formattedDate}
+                </p>
               )}
             </div>
           )}
@@ -57,7 +59,7 @@ export default function BlogPostMain({ frontmatter, children }: BlogPostProps) {
 
       {selectedImage && (
         <div
-          className="fixed top-0 left-0 z-[1000] flex h-full w-full items-center justify-center bg-desk-black/80"
+          className="fixed top-0 left-0 z-1000 flex h-full w-full items-center justify-center bg-desk-black/80"
           onClick={closeModal}
         >
           <img
