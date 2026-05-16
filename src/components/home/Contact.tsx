@@ -1,10 +1,6 @@
 import { SectionContainer, DefaultTitle } from "../common/styles/CommonStyled";
 import { ContactContainer, ContactButton } from "./styles/ContactStyled";
-import {
-  EnvelopeClosedIcon,
-  ChatBubbleIcon,
-  InstagramLogoIcon,
-} from "@radix-ui/react-icons";
+import { EnvelopeClosedIcon, ChatBubbleIcon, InstagramLogoIcon } from "@radix-ui/react-icons";
 
 export default function Contact() {
   return (
@@ -19,10 +15,7 @@ export default function Contact() {
           <p>Chat with us</p>
           <ChatBubbleIcon />
         </ContactButton>
-        <ContactButton
-          href="https://www.instagram.com/deskreview/"
-          target="_blank"
-        >
+        <ContactButton href="https://www.instagram.com/deskreview/" target="_blank">
           <p>Follow us</p>
           <InstagramLogoIcon />
         </ContactButton>

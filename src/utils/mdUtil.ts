@@ -14,12 +14,8 @@ export const fetchMarkdownFilesUtil = () => {
 
 export const sortMarkdownFilesUtil = (files: Record<string, MarkdownFile>) => {
   return Object.entries(files).sort(([, a], [, b]) => {
-    const dateA = a.frontmatter.date
-      ? parseDateUtil(a.frontmatter.date)
-      : new Date(0);
-    const dateB = b.frontmatter.date
-      ? parseDateUtil(b.frontmatter.date)
-      : new Date(0);
+    const dateA = a.frontmatter.date ? parseDateUtil(a.frontmatter.date) : new Date(0);
+    const dateB = b.frontmatter.date ? parseDateUtil(b.frontmatter.date) : new Date(0);
     return compareDesc(dateA, dateB);
   });
 };
@@ -29,9 +25,7 @@ export const generateLinksUtil = (sortedEntries: [string, MarkdownFile][]) => {
     const fileName = extractFileNameUtil(path);
     const { frontmatter } = module;
     const title = frontmatter.title || "Untitled";
-    const formattedDate = frontmatter.date
-      ? formatDateUtil(frontmatter.date)
-      : null;
+    const formattedDate = frontmatter.date ? formatDateUtil(frontmatter.date) : null;
 
     return { title, path: `/study/${fileName}`, date: formattedDate };
   });

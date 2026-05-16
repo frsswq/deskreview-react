@@ -1,7 +1,4 @@
-import {
-  WorkItemDetailStyled,
-  WorkItemGrid,
-} from "./styles/WorkItemDetailStyled.tsx";
+import { WorkItemDetailStyled, WorkItemGrid } from "./styles/WorkItemDetailStyled.tsx";
 import { workItemDetailProps } from "../../types/homeTypes";
 import { usePreloadImages } from "../../hooks/preloadImages";
 import { useState } from "react";
@@ -20,9 +17,7 @@ export default function WorkItemDetail({
 
   const handleImageClick = (): void => {
     if (projectImages.length > 0) {
-      setCurrentImageIndex(
-        (prevIndex) => (prevIndex + 1) % projectImages.length
-      );
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % projectImages.length);
     }
   };
 

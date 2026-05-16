@@ -19,10 +19,11 @@ export function createPageRoutes() {
           element={
             <BlogPost frontmatter={frontmatter}>
               <ReactMarkdown
-                children={content}
                 remarkPlugins={[remarkGfm]}
                 rehypePlugins={[rehypeRaw]}
-              />
+              >
+                {content}
+              </ReactMarkdown>
             </BlogPost>
           }
         />

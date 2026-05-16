@@ -1,15 +1,6 @@
-import {
-  MainStyled,
-  SectionContainer,
-} from "../../components/common/styles/CommonStyled.tsx";
-import {
-  BlogPostHeader,
-  BlogPostHeaderDetail,
-} from "./styles/BlogPostHeaderStyled.tsx";
-import {
-  BlogPostContent,
-  BlogPostContentImageModal,
-} from "./styles/BlogPostContentStyled.tsx";
+import { MainStyled, SectionContainer } from "../../components/common/styles/CommonStyled.tsx";
+import { BlogPostHeader, BlogPostHeaderDetail } from "./styles/BlogPostHeaderStyled.tsx";
+import { BlogPostContent, BlogPostContentImageModal } from "./styles/BlogPostContentStyled.tsx";
 import { BlogPostProps } from "../../types/blogTypes.ts";
 import {
   useBlogPostImageModal,

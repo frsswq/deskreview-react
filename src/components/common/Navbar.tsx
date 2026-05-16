@@ -1,9 +1,4 @@
-import {
-  NavbarStyled,
-  NavbarContainer,
-  NavbarLogo,
-  NavbarMenu,
-} from "./styles/NavbarStyled.tsx";
+import { NavbarStyled, NavbarContainer, NavbarLogo, NavbarMenu } from "./styles/NavbarStyled.tsx";
 import navbarNavigation from "../../hooks/navbarNavigation.ts";
 import { Link } from "react-router";
 import logoSvg from "/svg/logo_full_navbar.svg";
@@ -31,11 +26,7 @@ export default function Navbar() {
         />
         <NavbarMenu>
           {menuItems.map((item) => (
-            <Link
-              key={item.href}
-              to={item.href}
-              onClick={(e) => handleClick(e, item.href)}
-            >
+            <Link key={item.href} to={item.href} onClick={(e) => handleClick(e, item.href)}>
               {item.label}
             </Link>
           ))}

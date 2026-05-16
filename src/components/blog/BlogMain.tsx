@@ -1,9 +1,4 @@
-import {
-  DefaultTitle,
-  MainStyled,
-  SectionContainer,
-  Divider,
-} from "../common/styles/CommonStyled";
+import { DefaultTitle, MainStyled, SectionContainer, Divider } from "../common/styles/CommonStyled";
 import { BlogButtonContainer, LinkStyled } from "./styles/BlogMainStyled";
 import {
   fetchMarkdownFilesUtil,

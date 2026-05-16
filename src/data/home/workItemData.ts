@@ -3,7 +3,7 @@ import { workItemDataTypes } from "../../types/homeTypes";
 const modules = import.meta.glob("./portfolio/*.json", { eager: true });
 
 export const workItemData: workItemDataTypes[] = Object.values(modules).map(
-  (module: any) => module.default
+  (module: any) => module.default,
 );
 
 export const sortedWorkItemData = workItemData.sort((a, b) => {

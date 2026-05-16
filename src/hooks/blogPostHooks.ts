@@ -42,10 +42,7 @@ export const useBlogPostFixIndent = (contentRef: RefObject<HTMLElement>) => {
         heading.classList.add("indent-fix-big");
       }
 
-      if (
-        heading.textContent?.startsWith("Y") ||
-        heading.textContent?.startsWith("U")
-      ) {
+      if (heading.textContent?.startsWith("Y") || heading.textContent?.startsWith("U")) {
         heading.classList.add("indent-fix-small");
       }
     });
