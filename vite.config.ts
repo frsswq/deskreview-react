@@ -40,8 +40,7 @@ export default defineConfig({
   ],
 
   build: {
-    outDir: "docs",
-    emptyOutDir: false,
+    outDir: "dist",
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
@@ -56,7 +55,11 @@ export default defineConfig({
           };
 
           for (const [chunkName, packages] of Object.entries(manualChunks)) {
-            if (packages.some((packageName) => id.includes(`/node_modules/${packageName}/`))) {
+            if (
+              packages.some((packageName) =>
+                id.includes(`/node_modules/${packageName}/`),
+              )
+            ) {
               return chunkName;
             }
           }

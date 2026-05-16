@@ -1,0 +1,11 @@
+[build]
+command = "bun run optimize:images && bun run build"
+publish = "dist"
+
+[build.environment]
+BUN_VERSION = "1.3.14"
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
