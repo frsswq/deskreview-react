@@ -45,9 +45,7 @@ export default function BlogPostMain({ frontmatter, children }: BlogPostProps) {
                 </p>
               )}
               {formattedDate && (
-                <p className="text-desk-base font-normal max-md:text-desk-lg">
-                  {formattedDate}
-                </p>
+                <p className="text-desk-base font-normal max-md:text-desk-lg">{formattedDate}</p>
               )}
             </div>
           )}
