@@ -1,6 +1,5 @@
-import { compareDesc } from "date-fns";
 import { parseDateUtil, formatDateUtil } from "./dateUtil";
-import { MarkdownFile } from "../types/blogTypes";
+import type { MarkdownFile } from "../types/blogTypes";
 
 export const extractFileNameUtil = (path: string): string => {
   return path.match(/\/([^/]+)\.md$/)?.[1] || "";
@@ -14,9 +13,13 @@ export const fetchMarkdownFilesUtil = () => {
 
 export const sortMarkdownFilesUtil = (files: Record<string, MarkdownFile>) => {
   return Object.entries(files).sort(([, a], [, b]) => {
-    const dateA = a.frontmatter.date ? parseDateUtil(a.frontmatter.date) : new Date(0);
-    const dateB = b.frontmatter.date ? parseDateUtil(b.frontmatter.date) : new Date(0);
-    return compareDesc(dateA, dateB);
+    const dateA = a.frontmatter.date
+      ? parseDateUtil(a.frontmatter.date)
+      : new Date(0);
+    const dateB = b.frontmatter.date
+      ? parseDateUtil(b.frontmatter.date)
+      : new Date(0);
+    return dateB.getTime() - dateA.getTime();
   });
 };
 
@@ -25,7 +28,9 @@ export const generateLinksUtil = (sortedEntries: [string, MarkdownFile][]) => {
     const fileName = extractFileNameUtil(path);
     const { frontmatter } = module;
     const title = frontmatter.title || "Untitled";
-    const formattedDate = frontmatter.date ? formatDateUtil(frontmatter.date) : null;
+    const formattedDate = frontmatter.date
+      ? formatDateUtil(frontmatter.date)
+      : null;
 
     return { title, path: `/study/${fileName}`, date: formattedDate };
   });
