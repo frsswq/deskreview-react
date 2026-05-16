@@ -10,7 +10,7 @@ Static site for deskreview creative agency. Built with ❤️ using [React](http
 - [Styled Component](https://styled-components.com/) [ Styling ]
 - [Pages CMS](https://pagescms.org/) [ CMS ]
 - [Fontsource](https://fontsource.org/) [ Self-host Fonts ]
-- [Sharp](https://sharp.pixelplumbing.com/) [ Image Optimization ]
+- [Bun Image API](https://bun.com/docs/runtime/image) [ Image Optimization ]
 - [gray-matter](https://github.com/jonschlinkert/gray-matter) [ YAML Frontmatter Parser ]
 
 ## Steps
@@ -27,14 +27,10 @@ $ cd deskreview-react
 
 ```bash
 # Install dependencies
-$ npm install
-or
-$ pnpm install
+$ bun install
 ```
 
 ```bash
 # Start the project in development
-$ npm run dev
-or
-$ pnpm run dev
+$ bun run dev
 ```
