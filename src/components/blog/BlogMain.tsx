@@ -1,5 +1,4 @@
-import { DefaultTitle, MainStyled, SectionContainer, Divider } from "../common/styles/CommonStyled";
-import { BlogButtonContainer, LinkStyled } from "./styles/BlogMainStyled";
+import { Link } from "react-router";
 import {
   fetchMarkdownFilesUtil,
   sortMarkdownFilesUtil,
@@ -17,25 +16,34 @@ export default function BlogMain() {
   });
 
   return (
-    <MainStyled>
+    <main className="desk-main">
       <meta name="author" content="Deskreview" />
-      <SectionContainer>
-        <DefaultTitle>Study</DefaultTitle>
+      <section className="desk-section">
+        <h1 className="desk-title">Study</h1>
         {links.length > 0 && (
-          <BlogButtonContainer>
-            <Divider />
+          <div className="flex flex-col gap-y-2 max-md:mt-4">
+            <hr className="desk-divider" />
             {links.map(({ title, path, date }) => (
-              <>
-                <LinkStyled key={path} to={path}>
-                  {date && <p className="blog-date">{date}</p>}
-                  <p className="blog-title">{title}</p>
-                </LinkStyled>
-                <Divider />
-              </>
+              <div key={path}>
+                <Link
+                  className="blog-link flex items-center justify-between no-underline"
+                  to={path}
+                >
+                  {date && (
+                    <p className="blog-date mr-3 font-serif text-desk-base leading-[1.6] whitespace-nowrap text-desk-gray-700 max-md:mr-2 max-md:text-desk-base">
+                      {date}
+                    </p>
+                  )}
+                  <p className="blog-title w-full overflow-hidden font-serif text-desk-xl leading-[1.6] text-ellipsis whitespace-nowrap">
+                    {title}
+                  </p>
+                </Link>
+                <hr className="desk-divider" />
+              </div>
             ))}
-          </BlogButtonContainer>
+          </div>
         )}
-      </SectionContainer>
-    </MainStyled>
+      </section>
+    </main>
   );
 }

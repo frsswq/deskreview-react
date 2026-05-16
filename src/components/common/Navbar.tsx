@@ -1,4 +1,3 @@
-import { NavbarStyled, NavbarContainer, NavbarLogo, NavbarMenu } from "./styles/NavbarStyled.tsx";
 import navbarNavigation from "../../hooks/navbarNavigation.ts";
 import { Link } from "react-router";
 import logoSvg from "/svg/logo_full_navbar.svg";
@@ -14,9 +13,10 @@ export default function Navbar() {
   ];
 
   return (
-    <NavbarStyled>
-      <NavbarContainer>
-        <NavbarLogo
+    <nav className="sticky top-0 z-[1000] h-auto w-full border-b border-desk-gray-300 bg-desk-white px-5 py-4 max-md:px-4">
+      <div className="mx-auto flex w-full max-w-7xl flex-row">
+        <img
+          className="block h-[22px] w-[120px] cursor-pointer hover:opacity-80"
           src={logoSvg}
           alt="Navbar_Logo"
           width="120"
@@ -24,14 +24,19 @@ export default function Navbar() {
           aria-label="Home"
           onClick={(e) => handleClick(e, "/")}
         />
-        <NavbarMenu>
+        <menu className="ml-auto flex flex-row items-center">
           {menuItems.map((item) => (
-            <Link key={item.href} to={item.href} onClick={(e) => handleClick(e, item.href)}>
+            <Link
+              className="navbar-link"
+              key={item.href}
+              to={item.href}
+              onClick={(e) => handleClick(e, item.href)}
+            >
               {item.label}
             </Link>
           ))}
-        </NavbarMenu>
-      </NavbarContainer>
-    </NavbarStyled>
+        </menu>
+      </div>
+    </nav>
   );
 }

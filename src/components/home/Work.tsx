@@ -1,14 +1,8 @@
 import { useState } from "react";
-import {
-  SectionContainer,
-  DefaultTitle,
-  Divider,
-  HomeItemTitle,
-} from "../common/styles/CommonStyled.tsx";
 import WorkItem from "./WorkItemButton.tsx";
 import WorkItemDetail from "./WorkItemDetail.tsx";
 import { sortedWorkItemData } from "../../data/home/workItemData.ts";
-import { workItemDataTypes } from "../../types/homeTypes";
+import type { workItemDataTypes } from "../../types/homeTypes";
 
 export default function Work() {
   const [openItemIndex, setOpenItemIndex] = useState<number | null>(null);
@@ -18,10 +12,10 @@ export default function Work() {
   };
 
   return (
-    <SectionContainer>
-      <DefaultTitle style={{ textIndent: "-0.15em" }}>Works</DefaultTitle>
-      <HomeItemTitle>Company</HomeItemTitle>
-      <Divider />
+    <section className="desk-section">
+      <h1 className="desk-title indent-[-0.15em]">Works</h1>
+      <h2 className="home-item-title">Company</h2>
+      <hr className="desk-divider" />
       {sortedWorkItemData.map((workItem: workItemDataTypes, index: number) => (
         <div key={index}>
           <WorkItem
@@ -37,9 +31,9 @@ export default function Work() {
             projectImages={workItem.projectImages}
             isOpen={openItemIndex === index}
           />
-          <Divider />
+          <hr className="desk-divider" />
         </div>
       ))}
-    </SectionContainer>
+    </section>
   );
 }

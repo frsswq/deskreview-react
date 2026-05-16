@@ -1,4 +1,3 @@
-import { MainStyled } from "../common/styles/CommonStyled.tsx";
 import Work from "./Work.tsx";
 import About from "./About.tsx";
 import Services from "./Services.tsx";
@@ -11,12 +10,12 @@ export default function HomeMain() {
   });
 
   return (
-    <MainStyled>
+    <main className="desk-main">
       <meta name="author" content="Deskreview" />
       <About />
       <Work />
       <Services />
       <Contact />
-    </MainStyled>
+    </main>
   );
 }

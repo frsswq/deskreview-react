@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import Navbar from "../components/common/Navbar.tsx";
 
 export default function NotFound() {
@@ -6,54 +5,17 @@ export default function NotFound() {
     <>
       <meta name="author" content="Deskreview" />
       <title>Not Found | Deskreview</title>
-      <FixedContainer>
+      <div className="[&_nav]:fixed">
         <Navbar />
-      </FixedContainer>
-      <NotFoundStyled>
-        <p>404</p>
-        <p>Not Found</p>
-      </NotFoundStyled>
+      </div>
+      <main className="flex h-screen flex-row items-center justify-center max-md:flex-col">
+        <p className="mr-[30px] font-sans text-[5rem] leading-none font-normal tracking-[-0.025em] max-md:mr-0 max-md:text-[5rem]">
+          404
+        </p>
+        <p className="font-sans text-[4rem] leading-none font-light tracking-[-0.025em] max-md:text-2xl">
+          Not Found
+        </p>
+      </main>
     </>
   );
 }
-
-const FixedContainer = styled.div`
-  nav {
-    position: fixed;
-  }
-`;
-
-const NotFoundStyled = styled.main`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-
-  p {
-    font-family: "DM Sans", sans-serif;
-    font-weight: 300;
-    letter-spacing: -0.025em;
-    font-size: 4rem;
-    line-height: 1;
-
-    &:first-of-type {
-      font-weight: 400;
-      font-size: 5rem;
-      margin-right: 30px;
-    }
-  }
-
-  @media (width <= 768px) {
-    flex-direction: column;
-    p {
-      font-size: 2rem;
-
-      &:first-of-type {
-        margin-right: 0;
-        line-height: 1;
-        font-size: 5rem;
-      }
-    }
-  }
-`;

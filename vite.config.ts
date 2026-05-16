@@ -56,11 +56,7 @@ export default defineConfig({
           };
 
           for (const [chunkName, packages] of Object.entries(manualChunks)) {
-            if (
-              packages.some((packageName) =>
-                id.includes(`/node_modules/${packageName}/`),
-              )
-            ) {
+            if (packages.some((packageName) => id.includes(`/node_modules/${packageName}/`))) {
               return chunkName;
             }
           }
