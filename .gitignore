@@ -12,6 +12,10 @@ dist
 dist-ssr
 *.local
 
+# Agent/session files
+.pi-lens/
+session/
+
 # Editor directories and files
 .vscode
 .vscode/*
