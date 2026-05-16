@@ -7,7 +7,7 @@ Static site for deskreview creative agency. Built with ❤️ using [React](http
 - [React](https://react.dev/) [ Development ]
 - [Vite](https://vite.dev/) [ Build Tool ]
 - [React Router](https://reactrouter.com/) [ Routing ]
-- [Styled Component](https://styled-components.com/) [ Styling ]
+- [Tailwind CSS](https://tailwindcss.com/) [ Styling ]
 - [Pages CMS](https://pagescms.org/) [ CMS ]
 - [Fontsource](https://fontsource.org/) [ Self-host Fonts ]
 - [Bun Image API](https://bun.com/docs/runtime/image) [ Image Optimization ]
